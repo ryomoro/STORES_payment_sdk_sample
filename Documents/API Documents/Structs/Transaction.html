@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Transaction Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Transaction" class="dashAnchor"></a>
+    <a title="Transaction Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 1.0.0 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        Transaction Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CardBrand.html">CardBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EmoneyBrand.html">EmoneyBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EmoneyPaymentStatus.html">EmoneyPaymentStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FinancingOption.html">FinancingOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FinancingType.html">FinancingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Installments.html">Installments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentMethod.html">PaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/STORESPaymentsSDKError.html">STORESPaymentsSDKError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TerminalError.html">TerminalError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionAction.html">TransactionAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionMode.html">TransactionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionStatus.html">TransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/EmoneyTransaction.html">EmoneyTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STP.html">STP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STP/SDKMode.html">– SDKMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STP/EmoneyInitializationStatus.html">– EmoneyInitializationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STP/Settings.html">– Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STP/ImageResources.html">– ImageResources</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STP/ShopInformation.html">– ShopInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:17STORESPaymentsSDK19TransactionRevisionV">TransactionRevision</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Transaction</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Transaction</span></code></pre>
+
+                </div>
+              </div>
+            <p>クレジットカード、WeChatPayの決済情報</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV10identifierSSvp"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV10identifierSSvp">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>識別子</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV13paymentMethodAA07PaymentE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/paymentMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV13paymentMethodAA07PaymentE0Ovp">paymentMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済方法</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">paymentMethod</span><span class="p">:</span> <span class="kt"><a href="../Enums/PaymentMethod.html">PaymentMethod</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV6statusAA0C6StatusOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV6statusAA0C6StatusOSgvp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>状態</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransactionStatus.html">TransactionStatus</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV8latitudeSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/latitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV8latitudeSdSgvp">latitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済位置・緯度</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV9longitudeSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/longitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV9longitudeSdSgvp">longitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済位置・経度</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV6amountSivp"></a>
+                    <a name="//apple_ref/swift/Property/amount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV6amountSivp">amount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済金額</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV9createdAt10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/createdAt" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV9createdAt10Foundation4DateVSgvp">createdAt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済情報作成日時</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV9updatedAt10Foundation4DateVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/updatedAt" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV9updatedAt10Foundation4DateVSgvp">updatedAt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済情報更新日時</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">updatedAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV13financingTypeAA09FinancingE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/financingType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV13financingTypeAA09FinancingE0OSgvp">financingType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>支払い方法</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">financingType</span><span class="p">:</span> <span class="kt"><a href="../Enums/FinancingType.html">FinancingType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV20numberOfInstallmentsAA0F0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/numberOfInstallments" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV20numberOfInstallmentsAA0F0OSgvp">numberOfInstallments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>支払い回数</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">numberOfInstallments</span><span class="p">:</span> <span class="kt"><a href="../Enums/Installments.html">Installments</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV9cardBrandAA04CardE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardBrand" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV9cardBrandAA04CardE0OSgvp">cardBrand</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>カードブランド</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cardBrand</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardBrand.html">CardBrand</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV10cardSuffixSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardSuffix" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV10cardSuffixSSSgvp">cardSuffix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>カード番号 (下四桁)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cardSuffix</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV12approvalCodeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/approvalCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV12approvalCodeSSSgvp">approvalCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>承認番号</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">approvalCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV11pinVerifiedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/pinVerified" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV11pinVerifiedSbSgvp">pinVerified</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PIN 認証済みか</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pinVerified</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV17signatureReceivedSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/signatureReceived" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV17signatureReceivedSbSgvp">signatureReceived</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>サイン受領済みか</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">signatureReceived</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV21applicationIdentifierSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/applicationIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV21applicationIdentifierSSSgvp">applicationIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>アプリケーション識別子</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">applicationIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV16applicationLabelSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/applicationLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV16applicationLabelSSSgvp">applicationLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>アプリケーションラベル</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">applicationLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV4memoSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/memo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV4memoSSSgvp">memo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済メモ</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">memo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV15transactionModeAA0cE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transactionMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV15transactionModeAA0cE0OSgvp">transactionMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>クレジットカード決済モード</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transactionMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransactionMode.html">TransactionMode</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV9revisionsSayAA0C8RevisionVGvp"></a>
+                    <a name="//apple_ref/swift/Property/revisions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV9revisionsSayAA0C8RevisionVGvp">revisions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>決済履歴</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">revisions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs.html#/s:17STORESPaymentsSDK19TransactionRevisionV">TransactionRevision</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV10identifier13paymentMethod6status8latitude9longitude6amount9createdAt07updatedL011emoneyBrand13financingType20numberOfInstallments04cardO00U6Suffix12approvalCode11pinVerified17signatureReceived21applicationIdentifier16applicationLabel15transactionMode4memo9revisionsACSS_AA07PaymentF0OAA0C6StatusOSgSdSgA2_Si10Foundation4DateVSgA6_SSSgAA09FinancingQ0OSgAA0T0OSgAA04CardO0OSgA7_A7_SbSgA17_A7_A7_AA0C4ModeOSgA7_SayAA0C8RevisionVGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(identifier:paymentMethod:status:latitude:longitude:amount:createdAt:updatedAt:emoneyBrand:financingType:numberOfInstallments:cardBrand:cardSuffix:approvalCode:pinVerified:signatureReceived:applicationIdentifier:applicationLabel:transactionMode:memo:revisions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV10identifier13paymentMethod6status8latitude9longitude6amount9createdAt07updatedL011emoneyBrand13financingType20numberOfInstallments04cardO00U6Suffix12approvalCode11pinVerified17signatureReceived21applicationIdentifier16applicationLabel15transactionMode4memo9revisionsACSS_AA07PaymentF0OAA0C6StatusOSgSdSgA2_Si10Foundation4DateVSgA6_SSSgAA09FinancingQ0OSgAA0T0OSgAA04CardO0OSgA7_A7_SbSgA17_A7_A7_AA0C4ModeOSgA7_SayAA0C8RevisionVGtcfc">init(identifier:<wbr>paymentMethod:<wbr>status:<wbr>latitude:<wbr>longitude:<wbr>amount:<wbr>createdAt:<wbr>updatedAt:<wbr>emoneyBrand:<wbr>financingType:<wbr>numberOfInstallments:<wbr>cardBrand:<wbr>cardSuffix:<wbr>approvalCode:<wbr>pinVerified:<wbr>signatureReceived:<wbr>applicationIdentifier:<wbr>applicationLabel:<wbr>transactionMode:<wbr>memo:<wbr>revisions:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">paymentMethod</span><span class="p">:</span> <span class="kt"><a href="../Enums/PaymentMethod.html">PaymentMethod</a></span><span class="p">,</span>
+            <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransactionStatus.html">TransactionStatus</a></span><span class="p">?,</span>
+            <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?,</span>
+            <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?,</span>
+            <span class="nv">amount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+            <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?,</span>
+            <span class="nv">updatedAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?,</span>
+            <span class="nv">emoneyBrand</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">financingType</span><span class="p">:</span> <span class="kt"><a href="../Enums/FinancingType.html">FinancingType</a></span><span class="p">?,</span>
+            <span class="nv">numberOfInstallments</span><span class="p">:</span> <span class="kt"><a href="../Enums/Installments.html">Installments</a></span><span class="p">?,</span>
+            <span class="nv">cardBrand</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardBrand.html">CardBrand</a></span><span class="p">?,</span>
+            <span class="nv">cardSuffix</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">approvalCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">pinVerified</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?,</span>
+            <span class="nv">signatureReceived</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?,</span>
+            <span class="nv">applicationIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">applicationLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">transactionMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransactionMode.html">TransactionMode</a></span><span class="p">?,</span>
+            <span class="nv">memo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">revisions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs.html#/s:17STORESPaymentsSDK19TransactionRevisionV">TransactionRevision</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Transaction"></a>
+                <a name="//apple_ref/swift/Section/Transaction" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Transaction"></a>
+                  <h3 class="section-name"><span>Transaction</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17STORESPaymentsSDK11TransactionV13paymentMethod6amount4memo8latitude9longitudeAcA07PaymentE0O_SiSSSgSdSgALtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(paymentMethod:amount:memo:latitude:longitude:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK11TransactionV13paymentMethod6amount4memo8latitude9longitudeAcA07PaymentE0O_SiSSSgSdSgALtcfc">init(paymentMethod:<wbr>amount:<wbr>memo:<wbr>latitude:<wbr>longitude:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">paymentMethod</span><span class="p">:</span> <span class="kt"><a href="../Enums/PaymentMethod.html">PaymentMethod</a></span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">memo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://coiney.com/" target="_blank" rel="external noopener">hey inc.</a>. All rights reserved. (Last updated: 2022-06-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

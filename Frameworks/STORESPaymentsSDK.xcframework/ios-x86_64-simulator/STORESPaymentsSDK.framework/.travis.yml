@@ -1,0 +1,19 @@
+language: cpp
+compiler: gcc
+
+# The version of cmake and g++ offered by a standard Travis environment are
+# ancient and don't support the features we need. To work around this we add
+# special PPA repositories to apt-get and use them to get more recent versions
+# which do provide these features. To make sure that the correct version of g++
+# is used we then deliberately set (overwrite) the standard C++ and C compiler
+# environment variables.
+before_install:
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq cmake cmake-data
+  - sudo apt-get install g++-5
+  - export CXX="g++-5"
+  - export CC="gcc-5"
+
+script:
+  - cd MPI/ && cmake -DTEST=ON -DCMAKE_BUILD_TYPE=Debug . && make && ./build/MPITest

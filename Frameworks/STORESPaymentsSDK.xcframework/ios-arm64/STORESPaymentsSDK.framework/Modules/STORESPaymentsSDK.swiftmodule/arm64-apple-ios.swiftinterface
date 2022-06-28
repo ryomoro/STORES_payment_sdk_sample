@@ -1,0 +1,1390 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name STORESPaymentsSDK
+import AVFoundation
+import CommonCrypto
+import Compression
+import CoreFoundation
+import CoreGraphics
+import CoreLocation
+import CryptoTokenKit
+import ExternalAccessory
+import Foundation
+import LocalAuthentication
+import Network
+import PassKit
+import QuartzCore
+import SQLite3
+@_exported import STORESPaymentsSDK
+import SafariServices
+import Security
+import Swift
+import SystemConfiguration
+import TCMPayment
+import UIKit
+import WebKit
+import _Concurrency
+public struct CoineyAPIError : Swift.Error {
+  public let statusCode: Swift.Int
+  public let identifier: Swift.String
+  public let title: Swift.String
+  public let detail: Swift.String
+  public init(title: Swift.String, detail: Swift.String)
+}
+@_hasMissingDesignatedInitializers final public class LoggerBundler {
+  final public var configMap: [STORESPaymentsSDK.LoggerComponentID : STORESPaymentsSDK.LoggerBundler.Configuration]
+  final public var mutations: [STORESPaymentsSDK.Mutation]
+  final public func add(component: STORESPaymentsSDK.LoggerComponent)
+  
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func send(_ event: STORESPaymentsSDK.Loggable, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
+  #endif
+
+  
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func update(userProperties: [STORESPaymentsSDK.UserProperty]) async
+  #endif
+
+  final public func set(userIdentifier: Swift.String)
+  final public func startLogging()
+  @objc deinit
+}
+extension STORESPaymentsSDK.LoggerBundler {
+  public enum LoggingPolicy {
+    case immediately
+    case bufferingFirst
+    public static func == (a: STORESPaymentsSDK.LoggerBundler.LoggingPolicy, b: STORESPaymentsSDK.LoggerBundler.LoggingPolicy) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum LoggerScope {
+    case only([STORESPaymentsSDK.LoggerComponentID])
+    case exclude([STORESPaymentsSDK.LoggerComponentID])
+  }
+  public struct LoggingOption {
+    public init(policy: STORESPaymentsSDK.LoggerBundler.LoggingPolicy = .immediately, scope: STORESPaymentsSDK.LoggerBundler.LoggerScope? = nil)
+  }
+}
+extension STORESPaymentsSDK.LoggerBundler {
+  public struct Configuration {
+    public init(allowBuffering: Swift.Bool)
+  }
+}
+extension STORESPaymentsSDK.LoggerBundler {
+  
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func send(_ event: STORESPaymentsSDK.TrackingEvent, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
+  #endif
+
+  final public func update(userProperty: STORESPaymentsSDK.UserProperty)
+  final public func update(userProperties: [STORESPaymentsSDK.UserProperty])
+}
+public protocol Reloadable {
+  func reload()
+}
+public struct EmoneyAcceptedBrands {
+  public let acceptedBrands: [STORESPaymentsSDK.EmoneyAcceptedBrand]
+  public init(acceptedBrands: [STORESPaymentsSDK.EmoneyAcceptedBrand])
+}
+public struct EmoneyAcceptedBrand {
+  public let name: Swift.String
+  public let maximumTransactionAmount: Swift.Int
+  public init(name: Swift.String, maximumTransactionAmount: Swift.Int)
+}
+public enum Installments : Swift.Int, Swift.Decodable {
+  case one
+  case two
+  case three
+  case five
+  case six
+  case ten
+  case twelve
+  case fifteen
+  case eighteen
+  case twenty
+  case twentyFour
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension STORESPaymentsSDK.STP {
+  public static func login(presentOn viewController: UIKit.UIViewController, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func logout()
+  public static var isLoggedIn: Swift.Bool {
+    get
+  }
+}
+extension UIKit.UITableView : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UITableView>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UITableView {
+  final public func register<T>(_: T.Type) where T : UIKit.UITableViewCell
+  final public func register<T>(_: T.Type) where T : UIKit.UITableViewCell, T : STORESPaymentsSDK.NibLoadable
+  final public func register<T>(_: T.Type) where T : UIKit.UITableViewHeaderFooterView
+  final public func register<T>(_: T.Type) where T : UIKit.UITableViewHeaderFooterView, T : STORESPaymentsSDK.NibLoadable
+  final public func dequeueReusableCell<T>(_: T.Type, for indexPath: Foundation.IndexPath) -> T where T : UIKit.UITableViewCell
+  final public func dequeueReusableHeaderFooterView<T>(_: T.Type) -> T where T : UIKit.UITableViewHeaderFooterView
+}
+public struct TransactionRevision {
+}
+public typealias NotiName = Foundation.Notification.Name.SPSDK
+extension Foundation.NSNotification.Name {
+  public enum SPSDK {
+    public static let sessionTimedOut: Foundation.Notification.Name
+    public static let userLoggedOut: Foundation.Notification.Name
+    public static let readyForUse: Foundation.Notification.Name
+    public static let shopInfoFetchedNotification: Foundation.Notification.Name
+    public static let emvDidReceiveCardSwipeNotification: Foundation.Notification.Name
+    public static let emoneyAuthenticateDeviceNotification: Foundation.Notification.Name
+  }
+}
+public struct EmoneyTransaction {
+  public var identifier: Swift.String
+  public var status: STORESPaymentsSDK.EmoneyPaymentStatus
+  public var brand: STORESPaymentsSDK.EmoneyBrand
+  public var amount: Swift.Int
+  public var memo: Swift.String?
+  public var latitude: Swift.Double?
+  public var longitude: Swift.Double?
+  public var terminalId: Swift.String
+  public var initialCardBalance: Swift.Int?
+  public var finalCardBalance: Swift.Int?
+  public var cardNumber: Swift.String?
+  public var sprwid: Swift.String?
+  public var thincaDealNumber: Swift.String?
+  public var unconfirmedDate: Foundation.Date?
+  public var thincaSucceededDate: Foundation.Date?
+  public var thincaUnconfirmedDate: Foundation.Date?
+  public var chargeDate: Foundation.Date?
+  public init(identifier: Swift.String, status: STORESPaymentsSDK.EmoneyPaymentStatus, brand: STORESPaymentsSDK.EmoneyBrand, amount: Swift.Int, memo: Swift.String?, latitude: Swift.Double?, longitude: Swift.Double?, terminalId: Swift.String, initialCardBalance: Swift.Int?, finalCardBalance: Swift.Int?, cardNumber: Swift.String?, sprwid: Swift.String?, thincaDealNumber: Swift.String?, unconfirmedDate: Foundation.Date?, thincaSucceededDate: Foundation.Date?, thincaUnconfirmedDate: Foundation.Date?, chargeDate: Foundation.Date?)
+  public var humanReadableIdentifier: Swift.String? {
+    get
+  }
+  public var formattedCardNumber: Swift.String? {
+    get
+  }
+  public var maskedCardNumber: Swift.String? {
+    get
+  }
+  public var isCharged: Swift.Bool {
+    get
+  }
+  public var isUnconfirmed: Swift.Bool {
+    get
+  }
+  public var succeededDateAndTime: (date: Swift.String, time: Swift.String) {
+    get
+  }
+  public var unconfirmedDateAndTime: (date: Swift.String, time: Swift.String) {
+    get
+  }
+}
+extension STORESPaymentsSDK.EmoneyTransaction {
+  public init(brand: STORESPaymentsSDK.EmoneyBrand, amount: Swift.Int, memo: Swift.String?, latitude: Swift.Double?, longitude: Swift.Double?, terminalId: Swift.String)
+}
+public enum TransactionAction : Swift.String, Swift.Decodable {
+  case authorize
+  case unauthorize
+  case charge
+  case refund
+  case submitArqc
+  case submitAac
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Swift.String : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<Swift.String>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == Swift.String {
+  final public var containsHalfWidthKatakana: Swift.Bool {
+    get
+  }
+  final public var stringByApplyingSHA1: Swift.String {
+    get
+  }
+  final public var isEmail: Swift.Bool {
+    get
+  }
+  final public func alignWithSpace(within width: Swift.Int, shouldTruncateIfLonger shouldTruncate: Swift.Bool = false) -> Swift.String
+}
+public struct Receipt {
+  public let shopName: Swift.String
+  public let address: Swift.String
+  public let phoneNumber: Swift.String
+  public let email: Swift.String
+  public let URL: Swift.String
+  public let comment: Swift.String
+  public init(shopName: Swift.String, address: Swift.String, phoneNumber: Swift.String, email: Swift.String, URL: Swift.String, comment: Swift.String)
+}
+public struct STP {
+}
+extension STORESPaymentsSDK.STP {
+  public enum SDKMode : Swift.String, Swift.CaseIterable {
+    case staffOperation
+    case semiSelfCheckout
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [STORESPaymentsSDK.STP.SDKMode]
+    public typealias RawValue = Swift.String
+    public static var allCases: [STORESPaymentsSDK.STP.SDKMode] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum EmoneyInitializationStatus {
+    case authenticated
+    case authenticating
+    case unsupportedDevice
+    case unsupportedShopAccount
+    case unknown
+    public static func == (a: STORESPaymentsSDK.STP.EmoneyInitializationStatus, b: STORESPaymentsSDK.STP.EmoneyInitializationStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct Settings {
+    public let isPrintReceiptEnabled: Swift.Bool
+    public let isSendReceiptMailEnabled: Swift.Bool
+    public let mode: STORESPaymentsSDK.STP.SDKMode
+    public init(isPrintReceiptEnabled: Swift.Bool, isSendReceiptMailEnabled: Swift.Bool, mode: STORESPaymentsSDK.STP.SDKMode = .staffOperation)
+  }
+  public static func configure(applicationToken: Swift.String, endPoint: STORESPaymentsSDK.STPSDKEndpoint.Endpoint = .product, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void, terminalErrorHandler: ((STORESPaymentsSDK.TerminalError) -> Swift.Void)? = nil)
+  public static func setup(_ settings: STORESPaymentsSDK.STP.Settings)
+  public static func currentSettings() -> STORESPaymentsSDK.STP.Settings?
+  public static func emoneyInitializationStatus(completion: @escaping (Swift.Result<STORESPaymentsSDK.STP.EmoneyInitializationStatus, Swift.Error>) -> Swift.Void)
+}
+public enum UserRole : Swift.String, Swift.Decodable {
+  case owner
+  case manager
+  case cashier
+  case unknown
+  public var name: Swift.String? {
+    get
+  }
+  public var canManageStore: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension STORESPaymentsSDK.UserRole : Swift.Comparable {
+  public static func < (lhs: STORESPaymentsSDK.UserRole, rhs: STORESPaymentsSDK.UserRole) -> Swift.Bool
+}
+public struct User : Swift.Decodable {
+  public let identifier: Swift.String
+  public let fullName: Swift.String
+  public let email: Swift.String
+  public let suspended: Swift.Bool
+  public let role: STORESPaymentsSDK.UserRole?
+  public init(identifier: Swift.String, fullName: Swift.String, email: Swift.String, suspended: Swift.Bool, role: STORESPaymentsSDK.UserRole?)
+  public func toSummary() -> STORESPaymentsSDK.UserSummary
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UserSummary : Swift.Decodable {
+  public let name: Swift.String?
+  public let role: STORESPaymentsSDK.UserRole?
+  public init(name: Swift.String?, role: STORESPaymentsSDK.UserRole?)
+  public init(from decoder: Swift.Decoder) throws
+}
+extension STORESPaymentsSDK.User : Swift.Comparable {
+  public static func < (lhs: STORESPaymentsSDK.User, rhs: STORESPaymentsSDK.User) -> Swift.Bool
+  public static func == (a: STORESPaymentsSDK.User, b: STORESPaymentsSDK.User) -> Swift.Bool
+}
+extension UIKit.UITableViewHeaderFooterView : STORESPaymentsSDK.Reusable {
+}
+extension UIKit.UIViewController : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UIViewController>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UIViewController {
+  final public func add(_ child: UIKit.UIViewController)
+  final public func remove()
+  final public func disableInteractiveDismissal()
+  final public func returnToHome(animated: Swift.Bool, completion: (() -> Swift.Void)?, resetAmount: Swift.Bool)
+  final public func setBackBarButton(action: ObjectiveC.Selector)
+  final public func displayAlert(title: Swift.String?, message: Swift.String?, buttonTitle: Swift.String?, handler: ((UIKit.UIAlertAction) -> Swift.Void)?, cancel: Swift.Bool, cancelHandler: ((UIKit.UIAlertAction) -> Swift.Void)?)
+  final public func hideAlert(animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  final public func displayLocationDisabledAlert(cancelHandler: ((UIKit.UIAlertAction) -> Swift.Void)?)
+  final public func displayLocationRequiredAlert(cancelHandler: ((UIKit.UIAlertAction) -> Swift.Void)?)
+  final public func displayCameraRequiredAlert(cancelHandler: ((UIKit.UIAlertAction) -> Swift.Void)?)
+  final public func displayCameraRestrictedAlert(cancelHandler: ((UIKit.UIAlertAction) -> Swift.Void)?)
+  final public func topModalViewController() -> UIKit.UIViewController
+  final public func isAlertControllerPresented() -> Swift.Bool
+  final public func generateAccessibilityIdentifiers()
+  final public func setMinimumModalSizeIfiPad(_ minSize: CoreGraphics.CGSize = .init(width: 540, height: 690))
+}
+public protocol TransactionDetailFooterViewDelegate : AnyObject {
+  func footerViewDidTapPrint()
+  func footerViewDidTapRefund()
+  func footerViewDidTapSendReceiptButton()
+}
+extension STORESPaymentsSDK.TransactionDetailFooterViewDelegate {
+  public func footerViewDidTapRefund()
+  public func footerViewDidTapSendReceiptButton()
+}
+public struct LoggerComponentID : Swift.Hashable {
+  public init(_ value: Swift.String)
+  public static func == (a: STORESPaymentsSDK.LoggerComponentID, b: STORESPaymentsSDK.LoggerComponentID) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol LoggerSendable {
+  var event: STORESPaymentsSDK.Loggable { get }
+  var timestamp: Foundation.Date { get }
+}
+public protocol LoggerComponent {
+  static var identifier: STORESPaymentsSDK.LoggerComponentID { get }
+  
+  #if compiler(>=5.3) && $AsyncAwait
+  func send(_: [STORESPaymentsSDK.LoggerSendable]) async -> Swift.Bool
+  #endif
+
+  
+  #if compiler(>=5.3) && $AsyncAwait
+  func update(_ userProperties: [Swift.String : Any]) async -> Swift.Bool
+  #endif
+
+  func set(userIdentifier: Swift.String)
+}
+public protocol PublicExtensionable {
+  associatedtype ExtensionType
+  var sp: Self.ExtensionType { get }
+}
+final public class SDKExtension<Base> {
+  public init(_ base: Base)
+  @objc deinit
+}
+extension STORESPaymentsSDK.PublicExtensionable {
+  public var sp: STORESPaymentsSDK.SDKExtension<Self> {
+    get
+  }
+}
+public protocol NibInstantiable : STORESPaymentsSDK.Injectable, STORESPaymentsSDK.NibLoadable {
+  static var nibBundle: Foundation.Bundle { get }
+  static var nib: UIKit.UINib { get }
+  static var instantiateIndex: Swift.Int { get }
+  static func instantiate(with dependency: Self.Dependency) -> Self
+}
+extension STORESPaymentsSDK.NibInstantiable where Self : ObjectiveC.NSObjectProtocol {
+  public static var nibBundle: Foundation.Bundle {
+    get
+  }
+  public static var nib: UIKit.UINib {
+    get
+  }
+  public static var instantiateIndex: Swift.Int {
+    get
+  }
+  public static func instantiate(with dependency: Self.Dependency) -> Self
+}
+extension STORESPaymentsSDK.NibInstantiable where Self.Dependency == Swift.Void {
+  public static func instantiate() -> Self
+}
+public enum EmoneyBalanceUseCase : Swift.String, Swift.Decodable {
+  case checkBalance
+  case checkTransactionStatus
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Transaction {
+  public var identifier: Swift.String
+  public var paymentMethod: STORESPaymentsSDK.PaymentMethod
+  public var status: STORESPaymentsSDK.TransactionStatus?
+  public var latitude: Swift.Double?
+  public var longitude: Swift.Double?
+  public var amount: Swift.Int
+  public var createdAt: Foundation.Date?
+  public var updatedAt: Foundation.Date?
+  public var emoneyBrand: Swift.String?
+  public var financingType: STORESPaymentsSDK.FinancingType?
+  public var numberOfInstallments: STORESPaymentsSDK.Installments?
+  public var cardBrand: STORESPaymentsSDK.CardBrand?
+  public var cardSuffix: Swift.String?
+  public var approvalCode: Swift.String?
+  public var pinVerified: Swift.Bool?
+  public var signatureReceived: Swift.Bool?
+  public var applicationIdentifier: Swift.String?
+  public var applicationLabel: Swift.String?
+  public var memo: Swift.String?
+  public var transactionMode: STORESPaymentsSDK.TransactionMode?
+  public var revisions: [STORESPaymentsSDK.TransactionRevision]
+  public init(identifier: Swift.String, paymentMethod: STORESPaymentsSDK.PaymentMethod, status: STORESPaymentsSDK.TransactionStatus?, latitude: Swift.Double?, longitude: Swift.Double?, amount: Swift.Int, createdAt: Foundation.Date?, updatedAt: Foundation.Date?, emoneyBrand: Swift.String?, financingType: STORESPaymentsSDK.FinancingType?, numberOfInstallments: STORESPaymentsSDK.Installments?, cardBrand: STORESPaymentsSDK.CardBrand?, cardSuffix: Swift.String?, approvalCode: Swift.String?, pinVerified: Swift.Bool?, signatureReceived: Swift.Bool?, applicationIdentifier: Swift.String?, applicationLabel: Swift.String?, transactionMode: STORESPaymentsSDK.TransactionMode?, memo: Swift.String?, revisions: [STORESPaymentsSDK.TransactionRevision])
+}
+extension STORESPaymentsSDK.Transaction {
+  public init(paymentMethod: STORESPaymentsSDK.PaymentMethod, amount: Swift.Int, memo: Swift.String?, latitude: Swift.Double?, longitude: Swift.Double?)
+}
+public enum EmoneyBrand : Swift.String, Swift.Decodable {
+  case transport
+  case unknown
+  public var name: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum WechatPaymentMode {
+  case payment
+  case practice(completeVC: UIKit.UIViewController)
+}
+extension UIKit.UITableViewCell : STORESPaymentsSDK.Reusable {
+}
+extension STORESPaymentsSDK.STP {
+  public static func payment(presentOn viewController: UIKit.UIViewController, amount: Swift.Int, memo: Swift.String?, transactionFinished: @escaping (STORESPaymentsSDK.TransactionType) -> Swift.Void, completion: @escaping (Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)
+}
+public enum TerminalError : Swift.Error {
+  case initializationError(code: Swift.Int, title: Swift.String, message: Swift.String)
+  case updateError(code: Swift.Int, title: Swift.String, message: Swift.String)
+  case connectionError(code: Swift.Int, title: Swift.String, message: Swift.String)
+  public var code: Swift.Int {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+}
+public struct AutomaticDeposits {
+  public var isEnabled: Swift.Bool
+  public init(isEnabled: Swift.Bool = false)
+}
+public enum EmoneyIncompatibilityReason {
+  case model
+  case os
+  public static func == (a: STORESPaymentsSDK.EmoneyIncompatibilityReason, b: STORESPaymentsSDK.EmoneyIncompatibilityReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum TransactionDetailTwoLinesDetailLabelTitle {
+  case text(Swift.String?)
+  case icon(UIKit.UIImage?)
+}
+extension Foundation.URL : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<Foundation.URL>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == Foundation.URL {
+  final public var queryParameters: [Swift.String : Swift.String]? {
+    get
+  }
+}
+public protocol SeparatorViewDisplayable {
+  var separatorView: UIKit.UIView? { get set }
+  func addSeparatorView()
+}
+extension STORESPaymentsSDK.SeparatorViewDisplayable where Self : UIKit.UIView {
+  public var separatorView: UIKit.UIView? {
+    get
+    nonmutating set
+  }
+  public func addSeparatorView()
+}
+public struct DisplayedPrompt {
+  public var title: Swift.String?
+  public var message: Swift.String?
+  public var image: UIKit.UIImage?
+  public var firstButtonTitle: Swift.String?
+  public var firstButtonHandler: (() -> Swift.Void)?
+  public var secondButtonTitle: Swift.String?
+  public var secondButtonHandler: (() -> Swift.Void)?
+  public init(title: Swift.String?, message: Swift.String?, image: UIKit.UIImage?, firstButtonTitle: Swift.String? = nil, firstButtonHandler: (() -> Swift.Void)? = nil, secondButtonTitle: Swift.String? = nil, secondButtonHandler: (() -> Swift.Void)? = nil)
+}
+@objc @_hasMissingDesignatedInitializers final public class DialogAction : ObjectiveC.NSObject {
+  @objc deinit
+}
+public struct Revisions {
+  public let revisions: [STORESPaymentsSDK.RevisionInformation]
+  public let currentPage: Swift.Int?
+  public let totalPages: Swift.Int?
+  public init(revisions: [STORESPaymentsSDK.RevisionInformation], currentPage: Swift.Int?, totalPages: Swift.Int?)
+}
+public struct RevisionInformation {
+  public let identifier: Swift.String
+  public let action: STORESPaymentsSDK.TransactionAction
+  public let cardBrand: STORESPaymentsSDK.CardBrandName
+  public let cardSuffix: Swift.String
+  public let date: Foundation.Date
+  public let amount: Swift.Int
+  public let transactionFee: Swift.Int
+  public let approvalCode: Swift.String
+  public let numberOfInstallments: Swift.Int
+  public let financingType: STORESPaymentsSDK.FinancingType
+  public let payable: Swift.Bool
+  public let transactionIdentifier: Swift.String
+  public let service: Swift.String?
+  public let method: STORESPaymentsSDK.PaymentMethod
+  public let memo: Swift.String
+  public var isRefund: Swift.Bool {
+    get
+  }
+  public var humanReadableIdentifier: Swift.String {
+    get
+  }
+  public var financingTypeString: Swift.String? {
+    get
+  }
+}
+extension Foundation.Bundle : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<Foundation.Bundle>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == Foundation.Bundle {
+  final public var releaseVersion: Swift.String? {
+    get
+  }
+  final public var releaseNumber: Swift.String? {
+    get
+  }
+  final public func generateBuildInfoString(endpoint: STORESPaymentsSDK.STPSDKEndpoint.Endpoint) -> Swift.String
+}
+extension UIKit.UIDevice : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UIDevice>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UIDevice {
+  final public var isPad: Swift.Bool {
+    get
+  }
+  final public var modelName: Swift.String {
+    get
+  }
+}
+public struct Device : Swift.Decodable {
+  public var identifier: Swift.String
+  public var name: Swift.String
+  public init(identifier: Swift.String, name: Swift.String)
+  public init(from decoder: Swift.Decoder) throws
+}
+extension STORESPaymentsSDK.TransactionType {
+  public func receiptML() -> Swift.String?
+  public func receiptImage(with width: Swift.Float) -> UIKit.UIImage?
+}
+@objc public enum EMVInterfaceStatus : Swift.Int {
+  case offline
+  case initialising
+  case initialisationFailed
+  case online
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct UserProperty : Swift.Codable, Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: STORESPaymentsSDK.UserProperty, b: STORESPaymentsSDK.UserProperty) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol Reusable : AnyObject {
+  static var reuseIdentifier: Swift.String { get }
+}
+extension STORESPaymentsSDK.Reusable where Self : UIKit.UIView {
+  public static var reuseIdentifier: Swift.String {
+    get
+  }
+}
+public enum CardBrand : Swift.String, Swift.CaseIterable, Swift.Decodable {
+  case visa
+  case mastercard
+  case jcb
+  case amex
+  case diners
+  case discover
+  case unknown
+  public var uppercaseName: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var imageLarge: UIKit.UIImage {
+    get
+  }
+  public var image: UIKit.UIImage {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [STORESPaymentsSDK.CardBrand]
+  public typealias RawValue = Swift.String
+  public static var allCases: [STORESPaymentsSDK.CardBrand] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension STORESPaymentsSDK.CardBrand : Swift.Comparable {
+  public static func < (lhs: STORESPaymentsSDK.CardBrand, rhs: STORESPaymentsSDK.CardBrand) -> Swift.Bool
+}
+public enum CardBrandName : Swift.String, Swift.Decodable {
+  case VISA
+  case MASTER
+  case AMEX
+  case JCB
+  case DINERS
+  case DISCOVER
+  case UNKNOWN
+  public var cardBrand: STORESPaymentsSDK.CardBrand {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AccountHolder {
+  public let firstName: Swift.String
+  public let lastName: Swift.String
+  public let zipCode: Swift.String
+  public let prefectureWard: Swift.String
+  public let street: Swift.String
+  public let phoneNumber: Swift.String
+  public let dateOfBirth: Foundation.Date?
+  public let gender: STORESPaymentsSDK.AccountHolderGender
+  public init(firstName: Swift.String, lastName: Swift.String, zipCode: Swift.String, prefectureWard: Swift.String, street: Swift.String, phoneNumber: Swift.String, dateOfBirth: Foundation.Date?, gender: STORESPaymentsSDK.AccountHolderGender)
+}
+public struct DepositBusinessPeriod : Swift.Codable {
+  public let charged: Swift.Int
+  public let refunded: Swift.Int
+  public let transactionFee: Swift.Int
+  public let bonusPeriod: Swift.Bool
+  public init(charged: Swift.Int, refunded: Swift.Int, transactionFee: Swift.Int, bonusPeriod: Swift.Bool)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Deposit {
+  public let identifier: Swift.String
+  public let amount: Swift.Int
+  public let status: STORESPaymentsSDK.DepositStatus
+  public let wasCreatedAutomatically: Swift.Bool
+  public let createdAt: Foundation.Date?
+  public let updatedAt: Foundation.Date?
+  public let periodStartedAt: Foundation.Date?
+  public let periodEndedAt: Foundation.Date?
+  public let depositFee: Swift.Int
+  public let depositBusinessPeriods: [STORESPaymentsSDK.DepositBusinessPeriod]
+  public init(identifier: Swift.String, amount: Swift.Int, status: STORESPaymentsSDK.DepositStatus, wasCreatedAutomatically: Swift.Bool, createdAt: Foundation.Date?, updatedAt: Foundation.Date?, periodStartedAt: Foundation.Date?, periodEndedAt: Foundation.Date?, depositFee: Swift.Int, depositBusinessPeriods: [STORESPaymentsSDK.DepositBusinessPeriod])
+}
+public enum RoundedButtonStyle {
+  case primaryOutlined
+  case primaryFilled
+  case whiteOutlined
+  case whiteFilled
+  case grayOutlined
+  case dangerOutlined
+  case dangerFilled
+  case pickerOutlined
+  public static func == (a: STORESPaymentsSDK.RoundedButtonStyle, b: STORESPaymentsSDK.RoundedButtonStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum OverlayType {
+  case login
+  case loading
+  case processing
+  case sending
+  case canceling
+  case deleting
+  public static func == (a: STORESPaymentsSDK.OverlayType, b: STORESPaymentsSDK.OverlayType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum StatusAlertType {
+  case success
+  case danger
+  public static func == (a: STORESPaymentsSDK.StatusAlertType, b: STORESPaymentsSDK.StatusAlertType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CorporateDisplayable {
+  public let deposit: Swift.Bool
+  public let payge: Swift.Bool
+  public let setting: Swift.Bool
+  public let contractInformation: Swift.Bool
+  public let readerPurchase: Swift.Bool
+  public let option: Swift.Bool
+  public init(deposit: Swift.Bool, payge: Swift.Bool, setting: Swift.Bool, contractInformation: Swift.Bool, readerPurchase: Swift.Bool, option: Swift.Bool)
+}
+public protocol StoryboardInstantiatable : AnyObject, STORESPaymentsSDK.Injectable {
+  static var storyboard: UIKit.UIStoryboard { get }
+  static func instantiate(with dependency: Self.Dependency) -> Self
+}
+extension STORESPaymentsSDK.StoryboardInstantiatable {
+  public static func instantiate(with dependency: Self.Dependency) -> Self
+}
+extension STORESPaymentsSDK.StoryboardInstantiatable where Self.Dependency == Swift.Void {
+  public static func instantiate() -> Self
+}
+public enum TransactionType {
+  case card(STORESPaymentsSDK.Transaction)
+  case weChatPay(STORESPaymentsSDK.Transaction)
+  case emoney(transaction: STORESPaymentsSDK.EmoneyTransaction)
+  public var transaction: STORESPaymentsSDK.Transaction? {
+    get
+  }
+  public var emoneyTransaction: STORESPaymentsSDK.EmoneyTransaction? {
+    get
+  }
+  public var identifier: Swift.String {
+    get
+  }
+  public var paymentMethod: STORESPaymentsSDK.PaymentMethod {
+    get
+  }
+  public static func create(with transaction: STORESPaymentsSDK.Transaction?) -> STORESPaymentsSDK.TransactionType?
+}
+public enum AuthenticationMode : Swift.String {
+  case email
+  case device
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Foundation.Calendar : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<Foundation.Calendar>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == Foundation.Calendar {
+  final public func startOfCurrentMonth() -> Foundation.Date?
+  final public func endOfCurrentMonth() -> Foundation.Date?
+  final public func startOfMonth(for date: Foundation.Date) -> Foundation.Date?
+  final public func endOfMonth(for date: Foundation.Date) -> Foundation.Date?
+}
+public struct BankAccount {
+  public let bankName: Swift.String
+  public let branchName: Swift.String
+  public let accountType: STORESPaymentsSDK.BankAccountType
+  public let accountNumber: Swift.String
+  public let nameOnAccount: Swift.String
+  public init(bankName: Swift.String, branchName: Swift.String, accountType: STORESPaymentsSDK.BankAccountType, accountNumber: Swift.String, nameOnAccount: Swift.String)
+}
+public enum APIError : Swift.Error {
+  case parameterError
+  case invalidURLError
+  case invalidResponseError
+  case connectionError(Swift.Error)
+  case unexpectedStatusCodeError(Swift.Int)
+  case responseError(STORESPaymentsSDK.CoineyAPIError)
+}
+extension STORESPaymentsSDK.APIError {
+  public var statusCode: Swift.Int? {
+    get
+  }
+}
+public protocol Loggable {
+  var eventName: Swift.String { get }
+  var parameters: [Swift.String : Any] { get }
+  var category: Swift.String { get }
+}
+public struct TrackingEvent : STORESPaymentsSDK.Loggable {
+  public let eventName: Swift.String
+  public let parameters: [Swift.String : Any]
+  public let category: Swift.String
+  public init(eventName: Swift.String, parameters: [Swift.String : Any], category: Swift.String)
+}
+public enum BankAccountType : Swift.String, Swift.Decodable {
+  case savings
+  case checking
+  case unknown
+  public var text: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public enum EmoneyInitializationStatus : Swift.Int {
+  case authenticated
+  case authenticating
+  case unsupportedDevice
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol AmountResettable {
+  func resetAll()
+  func resetAmount()
+  func resetMemo()
+}
+public enum TransactionMode : Swift.String, Swift.Decodable {
+  case cl
+  case ic
+  case ms
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension STORESPaymentsSDK.STP {
+  public static func lookUpTransaction(transactionIdentifier: Swift.String, completion: @escaping (Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)
+  public static func presentTransactionViewController(on viewController: UIKit.UIViewController, transactionIdentifier: Swift.String, shouldAllowRefunding: Swift.Bool, shouldAutoTransitionToRefund: Swift.Bool, refundErrorHandler: ((Swift.Error) -> Swift.Void)? = nil, dismissCompletion: @escaping (Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)
+}
+public struct SupportInformation {
+  public let phoneNumber: Swift.String
+  public let phonesOpenAt: Swift.String
+  public let phonesCloseAt: Swift.String
+  public let email: Swift.String
+  public let homePageURL: Swift.String
+  public let accountManagementURL: Swift.String
+  public let helpCenterURL: Swift.String
+  public let terminalPurchaseURL: Swift.String
+  public let createPaygeURL: Swift.String
+  public let usageAgreementURL: Swift.String
+  public let forbiddenMerchandiseURL: Swift.String
+  public let privacyPolicyURL: Swift.String
+  public let supportedDevicesURL: Swift.String
+  public init(phoneNumber: Swift.String, phonesOpenAt: Swift.String, phonesCloseAt: Swift.String, email: Swift.String, homePageURL: Swift.String, accountManagementURL: Swift.String, helpCenterURL: Swift.String, terminalPurchaseURL: Swift.String, createPaygeURL: Swift.String, usageAgreementURL: Swift.String, forbiddenMerchandiseURL: Swift.String, privacyPolicyURL: Swift.String, supportedDevicesURL: Swift.String)
+}
+extension UIKit.UINavigationBar : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UINavigationBar>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UINavigationBar {
+  final public func applyCoineyTheme()
+  final public func applyCoineyPopoverTheme()
+}
+public enum Util {
+}
+public enum DepositStatus : Swift.String, Swift.Decodable {
+  case pending
+  case requested
+  case failed
+  case unknown
+  public var label: Swift.String {
+    get
+  }
+  public var color: UIKit.UIColor {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AccountHolderGender : Swift.String, Swift.Decodable {
+  case male
+  case female
+  case unknown
+  public var text: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TransactionDetailAmountTextColorSet {
+  case normal
+  case accent
+  case amountAccent
+  public static func == (a: STORESPaymentsSDK.TransactionDetailAmountTextColorSet, b: STORESPaymentsSDK.TransactionDetailAmountTextColorSet) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum STORESPaymentsSDKError : Swift.Error {
+  case unknown
+  case unsupportedApplicationToken
+  case userCancelled
+  case alreadyAuthenticated
+  case unauthorized
+  case missingRequiredInformation
+  case locationServiceDisabled
+  case locationServiceRequired
+  case avCaptureDeviceDenied
+  case avCaptureDeviceRestricted
+  case creditCardPaymentError
+  case amountRangeError
+  case emoneyPaymentError
+  case wechatPayPaymentError
+  case terminalFirmwareUpdateRequired
+  case incompatibleTerminal
+  case emoneyUnconfirmedStatus
+  case emoneyBalanceReadError
+  case transactionNotFound
+  case transactionFetchError
+  case alreadyRefunded
+  case nonRefundableAccount
+  case nonRefundablePaymentType
+  case otherRefundError
+  public static func == (a: STORESPaymentsSDK.STORESPaymentsSDKError, b: STORESPaymentsSDK.STORESPaymentsSDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol NibLoadable : AnyObject {
+  static var nibName: Swift.String { get }
+}
+extension STORESPaymentsSDK.NibLoadable where Self : UIKit.UIView {
+  public static var nibName: Swift.String {
+    get
+  }
+}
+public typealias Amount = STORESPaymentsSDK.Util.NumberFormatter
+extension STORESPaymentsSDK.Util {
+  public enum NumberFormatter {
+    public static func format(_ amount: Swift.Int) -> Swift.String?
+  }
+}
+public enum EmoneyPaymentStatus : Swift.String, Swift.Decodable {
+  case started
+  case cancelled
+  case unconfirmed
+  case success
+  case failed
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias Dims = STORESPaymentsSDK.Dimensions
+public enum Dimensions {
+  public static let xxsmall: CoreGraphics.CGFloat
+  public static let xsmall: CoreGraphics.CGFloat
+  public static let small: CoreGraphics.CGFloat
+  public static let medium: CoreGraphics.CGFloat
+  public static let large: CoreGraphics.CGFloat
+  public static let xlarge: CoreGraphics.CGFloat
+  public static let xxlarge: CoreGraphics.CGFloat
+  public enum TableView {
+    public enum Section {
+      public static let headerHeight: CoreGraphics.CGFloat
+      public static let thinHeaderHeight: CoreGraphics.CGFloat
+      public static let footerHeight: CoreGraphics.CGFloat
+      public static let leadingMargin: CoreGraphics.CGFloat
+      public static let bottomMargin: CoreGraphics.CGFloat
+    }
+    public enum Cell {
+      public static let rowHeight: CoreGraphics.CGFloat
+      public static let leadingMargin: CoreGraphics.CGFloat
+    }
+    public enum Separator {
+      public static let height: CoreGraphics.CGFloat
+    }
+  }
+  public enum Badge {
+    public static let diameter: CoreGraphics.CGFloat
+  }
+}
+public enum PaymentMethod : Swift.String, Swift.Decodable {
+  case card
+  case emoney
+  case wechatPay
+  case unknown
+  public var name: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Foundation.NSMutableAttributedString : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<Foundation.NSMutableAttributedString>
+}
+public enum STPSDKEndpoint {
+  public enum Endpoint : Swift.String, Swift.CaseIterable {
+    case test
+    case dev
+    case staging
+    case prerelease
+    case productQA
+    case product
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [STORESPaymentsSDK.STPSDKEndpoint.Endpoint]
+    public typealias RawValue = Swift.String
+    public static var allCases: [STORESPaymentsSDK.STPSDKEndpoint.Endpoint] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public enum TransactionStatus : Swift.String, Swift.Decodable {
+  case pending
+  case failed
+  case authorized
+  case aborted
+  case charged
+  case refunded
+  case arqcSubmitted
+  case processing
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Company {
+  public let name: Swift.String
+  public let zipCode: Swift.String
+  public let city: Swift.String
+  public let street: Swift.String
+  public let phoneNumber: Swift.String
+  public init(name: Swift.String, zipCode: Swift.String, city: Swift.String, street: Swift.String, phoneNumber: Swift.String)
+}
+public enum PaymentMethodSelectionKind {
+  case payment
+  case practice
+  public static func == (a: STORESPaymentsSDK.PaymentMethodSelectionKind, b: STORESPaymentsSDK.PaymentMethodSelectionKind) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ShopSettings {
+  public let locationRequired: Swift.Bool
+  public init(locationRequired: Swift.Bool)
+}
+public protocol Injectable {
+  associatedtype Dependency = Swift.Void
+  func inject(_ dependency: Self.Dependency)
+}
+extension STORESPaymentsSDK.Injectable where Self.Dependency == Swift.Void {
+  public func inject(_: Self.Dependency)
+}
+public struct NewsArticle : Swift.Equatable {
+  public let identifier: Swift.String
+  public let title: Swift.String
+  public let createdAt: Foundation.Date
+  public let updatedAt: Foundation.Date
+  public let publishedAt: Foundation.Date
+  public let expiredAt: Foundation.Date
+  public let urlString: Swift.String
+  public let tags: [Swift.String]
+  public static func == (a: STORESPaymentsSDK.NewsArticle, b: STORESPaymentsSDK.NewsArticle) -> Swift.Bool
+}
+public typealias UDF = STORESPaymentsSDK.Util.DateFormatter
+extension STORESPaymentsSDK.Util {
+  public enum DateFormatter {
+    public static func formatLong(_ date: Foundation.Date) -> Swift.String
+    public static func formatShort(_ date: Foundation.Date?) -> Swift.String
+    public static func formatDate(_ date: Foundation.Date) -> Swift.String
+    public static func formatTime(_ date: Foundation.Date) -> Swift.String
+    public static func formatDateShort(_ date: Foundation.Date) -> Swift.String
+    public static func formatDateShortDash(_ date: Foundation.Date) -> Swift.String
+    public static func formatDatePeriod(_ date: Foundation.Date) -> Swift.String
+    public static func formatLongTime(_ date: Foundation.Date) -> Swift.String
+    public static func formatDateISO8601(_ date: Foundation.Date) -> Swift.String
+    public static func formatDateShortISO8601(_ date: Foundation.Date) -> Swift.String
+    public static func formatDateShortISO8601(_ date: Foundation.Date?) -> Swift.String?
+    public static func dateFromShortDashString(string: Swift.String) -> Foundation.Date?
+    public static func dateFromISO8601String(string: Swift.String) -> Foundation.Date?
+    public static func dateFromShortISO8601String(string: Swift.String) -> Foundation.Date?
+  }
+}
+public enum FinancingType : Swift.String, Swift.Decodable {
+  case installments
+  case revolving
+  case bonus
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol Mutation {
+  func transform(_: STORESPaymentsSDK.Loggable, identifier: STORESPaymentsSDK.LoggerComponentID) -> STORESPaymentsSDK.Loggable
+}
+extension Swift.Int : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<Swift.Int>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == Swift.Int {
+  final public var formattedAmount: Swift.String {
+    get
+  }
+  final public var shorthandAmount: Swift.String {
+    get
+  }
+}
+extension STORESPaymentsSDK.Util {
+  public enum Int {
+    public static let tenThousand: Swift.Int
+  }
+}
+extension STORESPaymentsSDK.LoggerComponentID {
+  public static let mixpanel: STORESPaymentsSDK.LoggerComponentID
+  public static let crashlytics: STORESPaymentsSDK.LoggerComponentID
+}
+public struct Shop {
+  public let identifier: Swift.String
+  public let shopName: Swift.String
+  public let zipCode: Swift.String
+  public let prefectureWard: Swift.String
+  public let street: Swift.String
+  public let streetNumber: Swift.String
+  public let phoneNumber: Swift.String
+  public let currency: Swift.String
+  public let minimumDepositAmount: Swift.Int
+  public let industry: Swift.String
+  public let placeOfUse: Swift.String?
+  public let URL: Swift.String
+  public let minimumTransactionAmount: Swift.Int
+  public let maximumTransactionAmount: Swift.Int
+  public let hasIndirectJCBContract: Swift.Bool
+  public let sandboxed: Swift.Bool
+  public let paymentByInstallmentsAllowed: Swift.Bool
+  public let staffManagementAllowed: Swift.Bool
+  public let autoDepositAllowed: Swift.Bool
+  public let magstripeFallbackAllowed: Swift.Bool
+  public let balanceManagedByThirdParty: Swift.Bool
+  public let acceptedPaymentMethods: [STORESPaymentsSDK.PaymentMethod]
+  public let acceptedCardBrands: [STORESPaymentsSDK.CardBrand]
+  public let financingTypesAllowed: [STORESPaymentsSDK.FinancingType]
+  public let installmentTypesAllowed: [STORESPaymentsSDK.Installments]
+  public let minimumTerminalOSVersion: Swift.String
+  public let accountHolder: STORESPaymentsSDK.AccountHolder?
+  public let automaticDeposits: STORESPaymentsSDK.AutomaticDeposits?
+  public let bankAccount: STORESPaymentsSDK.BankAccount?
+  public let company: STORESPaymentsSDK.Company?
+  public let corporateDisplayable: STORESPaymentsSDK.CorporateDisplayable?
+  public let emoneyAcceptedBrands: STORESPaymentsSDK.EmoneyAcceptedBrands?
+  public let receipt: STORESPaymentsSDK.Receipt?
+  public let shopSettings: STORESPaymentsSDK.ShopSettings?
+  public let supportInformation: STORESPaymentsSDK.SupportInformation?
+  public init(identifier: Swift.String, shopName: Swift.String, zipCode: Swift.String, prefectureWard: Swift.String, street: Swift.String, streetNumber: Swift.String, phoneNumber: Swift.String, currency: Swift.String, minimumDepositAmount: Swift.Int, industry: Swift.String, placeOfUse: Swift.String?, URL: Swift.String, minimumTransactionAmount: Swift.Int, maximumTransactionAmount: Swift.Int, hasIndirectJCBContract: Swift.Bool, sandboxed: Swift.Bool, paymentByInstallmentsAllowed: Swift.Bool, staffManagementAllowed: Swift.Bool, autoDepositAllowed: Swift.Bool, magstripeFallbackAllowed: Swift.Bool, balanceManagedByThirdParty: Swift.Bool, acceptedPaymentMethods: [STORESPaymentsSDK.PaymentMethod], acceptedCardBrands: [STORESPaymentsSDK.CardBrand], financingTypesAllowed: [STORESPaymentsSDK.FinancingType], installmentTypesAllowed: [STORESPaymentsSDK.Installments], minimumTerminalOSVersion: Swift.String, accountHolder: STORESPaymentsSDK.AccountHolder?, automaticDeposits: STORESPaymentsSDK.AutomaticDeposits?, bankAccount: STORESPaymentsSDK.BankAccount?, company: STORESPaymentsSDK.Company?, corporateDisplayable: STORESPaymentsSDK.CorporateDisplayable?, emoneyAcceptedBrands: STORESPaymentsSDK.EmoneyAcceptedBrands?, receipt: STORESPaymentsSDK.Receipt?, shopSettings: STORESPaymentsSDK.ShopSettings?, supportInformation: STORESPaymentsSDK.SupportInformation?)
+  public var financingOptionsAllowed: [STORESPaymentsSDK.FinancingOption] {
+    get
+  }
+}
+extension STORESPaymentsSDK.Shop {
+  public var isSupportEmoney: Swift.Bool {
+    get
+  }
+  public var isSupportWechatPay: Swift.Bool {
+    get
+  }
+}
+public enum STPError {
+  public static func code(_ error: Swift.Error) -> Swift.Int
+  public static func requestMayHaveReachedHost(_ error: Swift.Error) -> Swift.Bool
+  public static func hasFailedToReceiveResponse(_ error: Swift.Error) -> Swift.Bool
+  public static func errorStrings(_ error: Swift.Error) -> (title: Swift.String, message: Swift.String)
+  public static func title(_ error: Swift.Error) -> Swift.String
+  public static func message(_ error: Swift.Error) -> Swift.String
+}
+extension STORESPaymentsSDK.STP {
+  public struct ImageResources {
+    public let contactlessLogo: UIKit.UIImage
+  }
+  public struct ShopInformation {
+    public let shopName: Swift.String
+    public let acceptedPaymentMethods: [STORESPaymentsSDK.PaymentMethod]
+    public let acceptedCardBrands: [STORESPaymentsSDK.CardBrand]
+    public let imageResources: STORESPaymentsSDK.STP.ImageResources
+  }
+  public static func shopInformation(completion: @escaping (Swift.Result<STORESPaymentsSDK.STP.ShopInformation, Swift.Error>) -> Swift.Void)
+}
+extension STORESPaymentsSDK.PaymentMethod {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public var largeImage: UIKit.UIImage? {
+    get
+  }
+}
+extension Swift.Dictionary : STORESPaymentsSDK.Loggable where Key == Swift.PartialKeyPath<STORESPaymentsSDK.Loggable>, Value == Any {
+  public var eventName: Swift.String {
+    get
+  }
+  public var parameters: [Swift.String : Any] {
+    get
+  }
+  public var category: Swift.String {
+    get
+  }
+}
+public enum FinancingOption : Swift.Comparable, Swift.CaseIterable {
+  case oneInstallment
+  case twoInstallments
+  case threeInstallments
+  case fiveInstallments
+  case sixInstallments
+  case tenInstallments
+  case twelveInstallments
+  case fifteenInstallments
+  case eighteenInstallments
+  case twentyInstallments
+  case twentyFourInstallments
+  case revolving
+  case bonus
+  case none
+  public static func == (a: STORESPaymentsSDK.FinancingOption, b: STORESPaymentsSDK.FinancingOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func < (a: STORESPaymentsSDK.FinancingOption, b: STORESPaymentsSDK.FinancingOption) -> Swift.Bool
+  public typealias AllCases = [STORESPaymentsSDK.FinancingOption]
+  public static var allCases: [STORESPaymentsSDK.FinancingOption] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UITextField : STORESPaymentsSDK.PublicExtensionable {
+  public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UITextField>
+}
+extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UITextField {
+  final public var maxLength: Swift.Int? {
+    get
+    set
+  }
+  final public func validateMaxLength(shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+public struct BalanceStatement {
+  public let charged: Swift.Int
+  public let refunded: Swift.Int
+  public let transactionFees: Swift.Int
+  public let depositFee: Swift.Int
+  public let startDate: Foundation.Date?
+  public let endDate: Foundation.Date?
+  public init(charged: Swift.Int, refunded: Swift.Int, transactionFees: Swift.Int, depositFee: Swift.Int, startDate: Foundation.Date?, endDate: Foundation.Date?)
+  public var transactionAmount: Swift.Int {
+    get
+  }
+  public var balanceAmount: Swift.Int {
+    get
+  }
+}
+public struct RevisionsStatistics {
+  public let chargesWithPayablesVolume: Swift.Int
+  public let chargesFees: Swift.Int
+  public let refundsWithPayablesVolume: Swift.Int
+  public let refundsFees: Swift.Int
+  public let chargesWithoutPayablesVolume: Swift.Int
+  public let refundsWithoutPayablesVolume: Swift.Int
+  public let netChargesVolume: Swift.Int
+  public let netTransactionFees: Swift.Int
+  public init(chargesWithPayablesVolume: Swift.Int, chargesFees: Swift.Int, refundsWithPayablesVolume: Swift.Int, refundsFees: Swift.Int, chargesWithoutPayablesVolume: Swift.Int, refundsWithoutPayablesVolume: Swift.Int, netChargesVolume: Swift.Int, netTransactionFees: Swift.Int)
+}
+public struct SectionModel<Section, ItemType> {
+  public var model: Section
+  public var items: [ItemType]
+  public init(model: Section, items: [ItemType])
+  public init(original: STORESPaymentsSDK.SectionModel<Section, ItemType>, items: [ItemType])
+  public init(original: STORESPaymentsSDK.SectionModel<Section, ItemType>)
+}
+extension STORESPaymentsSDK.LoggerBundler.LoggingPolicy : Swift.Equatable {}
+extension STORESPaymentsSDK.LoggerBundler.LoggingPolicy : Swift.Hashable {}
+extension STORESPaymentsSDK.Installments : Swift.Equatable {}
+extension STORESPaymentsSDK.Installments : Swift.Hashable {}
+extension STORESPaymentsSDK.Installments : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.TransactionAction : Swift.Equatable {}
+extension STORESPaymentsSDK.TransactionAction : Swift.Hashable {}
+extension STORESPaymentsSDK.TransactionAction : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.STP.SDKMode : Swift.Equatable {}
+extension STORESPaymentsSDK.STP.SDKMode : Swift.Hashable {}
+extension STORESPaymentsSDK.STP.SDKMode : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.STP.EmoneyInitializationStatus : Swift.Equatable {}
+extension STORESPaymentsSDK.STP.EmoneyInitializationStatus : Swift.Hashable {}
+extension STORESPaymentsSDK.UserRole : Swift.Hashable {}
+extension STORESPaymentsSDK.UserRole : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.EmoneyBalanceUseCase : Swift.Equatable {}
+extension STORESPaymentsSDK.EmoneyBalanceUseCase : Swift.Hashable {}
+extension STORESPaymentsSDK.EmoneyBalanceUseCase : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.EmoneyBrand : Swift.Equatable {}
+extension STORESPaymentsSDK.EmoneyBrand : Swift.Hashable {}
+extension STORESPaymentsSDK.EmoneyBrand : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.EmoneyIncompatibilityReason : Swift.Equatable {}
+extension STORESPaymentsSDK.EmoneyIncompatibilityReason : Swift.Hashable {}
+extension STORESPaymentsSDK.EMVInterfaceStatus : Swift.Equatable {}
+extension STORESPaymentsSDK.EMVInterfaceStatus : Swift.Hashable {}
+extension STORESPaymentsSDK.EMVInterfaceStatus : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.CardBrand : Swift.Hashable {}
+extension STORESPaymentsSDK.CardBrand : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.CardBrandName : Swift.Equatable {}
+extension STORESPaymentsSDK.CardBrandName : Swift.Hashable {}
+extension STORESPaymentsSDK.CardBrandName : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.RoundedButtonStyle : Swift.Equatable {}
+extension STORESPaymentsSDK.RoundedButtonStyle : Swift.Hashable {}
+extension STORESPaymentsSDK.OverlayType : Swift.Equatable {}
+extension STORESPaymentsSDK.OverlayType : Swift.Hashable {}
+extension STORESPaymentsSDK.StatusAlertType : Swift.Equatable {}
+extension STORESPaymentsSDK.StatusAlertType : Swift.Hashable {}
+extension STORESPaymentsSDK.AuthenticationMode : Swift.Equatable {}
+extension STORESPaymentsSDK.AuthenticationMode : Swift.Hashable {}
+extension STORESPaymentsSDK.AuthenticationMode : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.BankAccountType : Swift.Equatable {}
+extension STORESPaymentsSDK.BankAccountType : Swift.Hashable {}
+extension STORESPaymentsSDK.BankAccountType : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.EmoneyInitializationStatus : Swift.Equatable {}
+extension STORESPaymentsSDK.EmoneyInitializationStatus : Swift.Hashable {}
+extension STORESPaymentsSDK.EmoneyInitializationStatus : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.TransactionMode : Swift.Equatable {}
+extension STORESPaymentsSDK.TransactionMode : Swift.Hashable {}
+extension STORESPaymentsSDK.TransactionMode : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.DepositStatus : Swift.Equatable {}
+extension STORESPaymentsSDK.DepositStatus : Swift.Hashable {}
+extension STORESPaymentsSDK.DepositStatus : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.AccountHolderGender : Swift.Equatable {}
+extension STORESPaymentsSDK.AccountHolderGender : Swift.Hashable {}
+extension STORESPaymentsSDK.AccountHolderGender : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.TransactionDetailAmountTextColorSet : Swift.Equatable {}
+extension STORESPaymentsSDK.TransactionDetailAmountTextColorSet : Swift.Hashable {}
+extension STORESPaymentsSDK.STORESPaymentsSDKError : Swift.Equatable {}
+extension STORESPaymentsSDK.STORESPaymentsSDKError : Swift.Hashable {}
+extension STORESPaymentsSDK.EmoneyPaymentStatus : Swift.Equatable {}
+extension STORESPaymentsSDK.EmoneyPaymentStatus : Swift.Hashable {}
+extension STORESPaymentsSDK.EmoneyPaymentStatus : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.STPSDKEndpoint.Endpoint : Swift.Equatable {}
+extension STORESPaymentsSDK.STPSDKEndpoint.Endpoint : Swift.Hashable {}
+extension STORESPaymentsSDK.STPSDKEndpoint.Endpoint : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.PaymentMethod : Swift.Equatable {}
+extension STORESPaymentsSDK.PaymentMethod : Swift.Hashable {}
+extension STORESPaymentsSDK.PaymentMethod : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.TransactionStatus : Swift.Equatable {}
+extension STORESPaymentsSDK.TransactionStatus : Swift.Hashable {}
+extension STORESPaymentsSDK.TransactionStatus : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.PaymentMethodSelectionKind : Swift.Equatable {}
+extension STORESPaymentsSDK.PaymentMethodSelectionKind : Swift.Hashable {}
+extension STORESPaymentsSDK.FinancingType : Swift.Equatable {}
+extension STORESPaymentsSDK.FinancingType : Swift.Hashable {}
+extension STORESPaymentsSDK.FinancingType : Swift.RawRepresentable {}
+extension STORESPaymentsSDK.FinancingOption : Swift.Hashable {}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> 1.0.0 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/CardBrand.html">CardBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EmoneyBrand.html">EmoneyBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EmoneyPaymentStatus.html">EmoneyPaymentStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FinancingOption.html">FinancingOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FinancingType.html">FinancingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Installments.html">Installments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PaymentMethod.html">PaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/STORESPaymentsSDKError.html">STORESPaymentsSDKError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TerminalError.html">TerminalError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionAction.html">TransactionAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionMode.html">TransactionMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionStatus.html">TransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/EmoneyTransaction.html">EmoneyTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/STP.html">STP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/STP/SDKMode.html">– SDKMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/STP/EmoneyInitializationStatus.html">– EmoneyInitializationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/STP/Settings.html">– Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/STP/ImageResources.html">– ImageResources</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/STP/ShopInformation.html">– ShopInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:17STORESPaymentsSDK19TransactionRevisionV">TransactionRevision</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+  <img src="https://user-images.githubusercontent.com/11662366/170399271-4310f7ec-ef4b-4529-a27d-ceed33d2ea24.png" width=300 />
+</p>
+<h1 id='stores-payments-sdk' class='heading'>STORES Payments SDK</h1>
+<h2 id='必要条件' class='heading'>必要条件</h2>
+
+<ul>
+<li>Xcode: 13.4</li>
+<li>Swift: 5.6.0</li>
+<li>iOS 13〜</li>
+</ul>
+
+<hr>
+<h2 id='組み込み方法' class='heading'>組み込み方法</h2>
+<h3 id='セットアップ' class='heading'>セットアップ</h3>
+<h4 id='sdkをprojectに追加する' class='heading'>SDKをProjectに追加する</h4>
+
+<p><code>STORESPaymentsSDK.xcframework</code> を SPM (Swift Package Manager) でProjectに追加してください。<br>
+その際に<code>TCMPayment.xcframework</code> も追加してください。</p>
+<h5 id='step1' class='heading'>Step1</h5>
+
+<ul>
+<li>Projectの設定 &gt; Package Dependencies タブ で <code>+</code> をクリック
+<p align="center">
+<img src="https://user-images.githubusercontent.com/11662366/171581394-28a51497-846e-49bf-8c40-d70489e12e06.png"/ width=400>
+</p></li>
+</ul>
+<h5 id='step2' class='heading'>Step2</h5>
+
+<ul>
+<li>Search fieldに <code>git@github.com:Coiney-SDK/STORESPaymentsSDK-iOS.git</code> または、 <code>https://github.com/Coiney-SDK/STORESPaymentsSDK-iOS</code> と入力し、 <code>STORESPaymentsSDK-iOS</code> を選択して <code>Add Package</code> ボタンをクリック</li>
+</ul>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/11662366/171582163-f6988cd1-dce6-4d10-9669-313db55ddbb5.png"/ width=400>
+</p>
+<h5 id='step3' class='heading'>Step3</h5>
+
+<ul>
+<li><code>STORESPaymentsSDK</code> と <code>TCMPayment</code> 両方にチェックを入れて <code>Add Package</code>ボタンをクリック</li>
+</ul>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/11662366/171582536-f03b4339-34fb-46a1-9224-9cddff753129.png"/ width=400>
+</p>
+
+<hr>
+<h4 id='info-plist-への追加' class='heading'>Info.plist への追加</h4>
+
+<p>BluetoothでSTORES 決済端末に接続し、ICや磁気カード決済をするために、<code>UISupportedExternalAccessoryProtocols</code> をInfo.plistへ追加する必要があります。</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>UISupportedExternalAccessoryProtocols<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;array&gt;</span>
+  <span class="nt">&lt;string&gt;</span>com.coiney.Coiney<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/array&gt;</span>
+</code></pre>
+
+<p>Bluetoothでの接続の許可を取得する為に <code>NSBluetoothAlwaysUsageDescription</code> 及び <code>NSBluetoothPeripheralUsageDescription</code> を Info.plistに追加します。</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSBluetoothAlwaysUsageDescription<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;string&gt;</span>{Bluetooth接続のパーミッション取得時に表示される任意の文字列}<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;key&gt;</span>NSBluetoothPeripheralUsageDescription<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;string&gt;</span>{Bluetooth接続のパーミッション取得時に表示される任意の文字列}<span class="nt">&lt;/string&gt;</span>
+</code></pre>
+
+<p>決済処理で位置情報を取得する必要がある為 <code>NSLocationWhenInUseUsageDescription</code> を Info.plistに追加します。</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSLocationWhenInUseUsageDescription<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;string&gt;</span>{位置情報のパーミッション取得時に表示される任意の文字列}<span class="nt">&lt;/string&gt;</span>
+</code></pre>
+
+<p>WechatPay 決済を利用する場合は <code>NSCameraUsageDescription</code> を Info.plistに追加します。</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSCameraUsageDescription<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;string&gt;</span>{カメラのパーミッション取得時に表示される任意の文字列}<span class="nt">&lt;/string&gt;</span>
+</code></pre>
+
+<hr>
+<h3 id='初期化' class='heading'>初期化</h3>
+
+<p>アプリケーション起動時に <code>configure()</code> メソッドを呼んでください。</p>
+
+<p>※configureメソッドに引数で渡すTokenは、Bundle ID毎に発行が必要です。</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span>
+        <span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
+        <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+
+        <span class="k">let</span> <span class="nv">token</span> <span class="o">=</span> <span class="s">"{APPLICATION-TOKEN}"</span>
+        <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">applicationToken</span><span class="p">:</span> <span class="n">token</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"STP.configure result = </span><span class="se">\(</span><span class="n">result</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span> <span class="nv">terminalErrorHandler</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">terminalError</span> <span class="k">in</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">terminalError</span><span class="o">.</span><span class="n">title</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="p">}</span>
+</code></pre>
+<h3 id='設定' class='heading'>設定</h3>
+
+<p>決済処理の前に設定を変更することができます。</p>
+
+<ul>
+<li><p>このメソッドを呼ばない場合は以下のデフォルト値で動作します</p>
+
+<ul>
+<li><strong>デフォルト値</strong></li>
+<li>isPrintReceiptEnabled (レシート印刷) : false</li>
+<li>isSendReceiptMailEnabled (レシートメール送信) : false</li>
+<li>mode (SDK動作モード) : .staffOperation</li>
+</ul></li>
+<li><p>設定した値はアプリケーション起動中はSDK側で保持されます。</p></li>
+<li><p>アプリケーション起動中何度でもこのメソッドを使用して設定を変更できます。</p></li>
+</ul>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+        <span class="k">let</span> <span class="nv">settings</span> <span class="o">=</span> <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="kt">Settings</span><span class="p">(</span>
+            <span class="nv">isPrintReceiptEnabled</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nv">isSendReceiptMailEnabled</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nv">mode</span><span class="p">:</span> <span class="o">.</span><span class="n">staffOperation</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="nf">setup</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+
+</code></pre>
+<h3 id='ログイン' class='heading'>ログイン</h3>
+
+<p>STORES 決済にログインします</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+    <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="nf">login</span><span class="p">(</span><span class="nv">presentOn</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+        <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">success</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Login Success!"</span><span class="p">)</span>
+        <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Login Error! </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+</code></pre>
+<h3 id='決済' class='heading'>決済</h3>
+
+<p>決済画面を表示します</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+    <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="nf">payment</span><span class="p">(</span>
+        <span class="nv">presentOn</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span>
+        <span class="nv">amount</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+        <span class="nv">memo</span><span class="p">:</span> <span class="s">"Memo"</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">transactionType</span> <span class="k">in</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Payments Finish </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="p">}</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+        <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">transactionType</span><span class="p">):</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Payments Complete </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Payments Error </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+</code></pre>
+<h3 id='売り上げ情報-返金' class='heading'>売り上げ情報・返金</h3>
+<h4 id='売り上げ情報取得' class='heading'>売り上げ情報取得</h4>
+
+<p>売り上げ情報を取得します</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+    <span class="k">let</span> <span class="nv">transactionId</span> <span class="o">=</span> <span class="s">"{Transaction_ID}"</span>
+    <span class="kt">STORESPaymentsSDK</span>
+        <span class="o">.</span><span class="kt">STP</span>
+        <span class="o">.</span><span class="nf">lookUpTransaction</span><span class="p">(</span><span class="nv">transactionIdentifier</span><span class="p">:</span> <span class="n">transactionId</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+            <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">transactionType</span><span class="p">):</span>
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Lookup transaction success </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+            <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Lookup transaction error </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre>
+<h4 id='売り上げ詳細画面表示' class='heading'>売り上げ詳細画面表示</h4>
+
+<p>売り上げ詳細画面表示を表示します<br>
+この画面から返金処理も実行できます  </p>
+
+<p>また、<code>shouldAutoTransitionToRefund</code> を <code>true</code> にすることで<br>
+自動的に返金画面へ遷移します</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+    <span class="k">let</span> <span class="nv">transactionId</span> <span class="o">=</span> <span class="s">"{Transaction_ID}"</span>
+    <span class="kt">STORESPaymentsSDK</span>
+        <span class="o">.</span><span class="kt">STP</span>
+        <span class="o">.</span><span class="nf">presentTransactionViewController</span><span class="p">(</span>
+            <span class="nv">on</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span>
+            <span class="nv">transactionIdentifier</span><span class="p">:</span> <span class="n">transactionId</span><span class="p">,</span>
+            <span class="nv">shouldAllowRefunding</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nv">shouldAutoTransitionToRefund</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nv">refundErrorHandler</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+              <span class="nf">print</span><span class="p">(</span><span class="s">"Refund Error = </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+            <span class="p">},</span>
+              <span class="nv">dismissCompletion</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+                <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+                <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">transactionType</span><span class="p">):</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Show transaction success </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Show transaction error </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                <span class="p">}</span>
+            <span class="p">})</span>
+
+</code></pre>
+<h3 id='加盟店情報取得' class='heading'>加盟店情報取得</h3>
+
+<p>ログインしている加盟店の情報を取得します</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+
+    <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="n">shopInformation</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+        <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">shopInfo</span><span class="p">):</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Get Shop Info Success </span><span class="se">\(</span><span class="n">shopInfo</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Get Shop Info Error </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+</code></pre>
+<h3 id='レシート' class='heading'>レシート</h3>
+
+<p>TransactionType から売り上げレシートの ReceiptML 形式の文字列や<br>
+レシート画像を取得できます。</p>
+
+<p>実装例</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">STORESPaymentsSDK</span>
+
+<span class="err">〜〜</span> <span class="n">中略</span> <span class="err">〜〜</span>
+    <span class="k">let</span> <span class="nv">trancationType</span><span class="p">:</span> <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">TransactionType</span> <span class="o">=</span> <span class="p">{</span><span class="n">決済処理などから取得できます</span><span class="p">}</span>
+
+    <span class="k">let</span> <span class="nv">receiptML</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="n">trancationType</span><span class="o">.</span><span class="nf">receipt</span><span class="p">()</span>
+
+    <span class="k">let</span> <span class="nv">receiptWidth</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mi">400</span>
+    <span class="k">let</span> <span class="nv">receiptImage</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="o">=</span> <span class="n">trancationType</span><span class="o">.</span><span class="nf">receiptImage</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="n">receiptWidth</span><span class="p">)</span>
+
+</code></pre>
+
+<hr>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://coiney.com/" target="_blank" rel="external noopener">hey inc.</a>. All rights reserved. (Last updated: 2022-06-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
