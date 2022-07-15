@@ -856,7 +856,7 @@ public enum TransactionMode : Swift.String, Swift.Decodable {
 }
 extension STORESPaymentsSDK.STP {
   public static func lookUpTransaction(transactionIdentifier: Swift.String, completion: @escaping (Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)
-  public static func presentTransactionViewController(on viewController: UIKit.UIViewController, transactionIdentifier: Swift.String, shouldAllowRefunding: Swift.Bool, shouldAutoTransitionToRefund: Swift.Bool, refundErrorHandler: ((Swift.Error) -> Swift.Void)? = nil, dismissCompletion: @escaping (Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)
+  public static func presentTransactionViewController(on viewController: UIKit.UIViewController, transactionIdentifier: Swift.String, shouldAllowRefunding: Swift.Bool, shouldAutoTransitionToRefund: Swift.Bool, refundResultHandler: ((Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)? = nil, dismissCompletion: @escaping (Swift.Result<STORESPaymentsSDK.TransactionType, Swift.Error>) -> Swift.Void)
 }
 public struct SupportInformation {
   public let phoneNumber: Swift.String

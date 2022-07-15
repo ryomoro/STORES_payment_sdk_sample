@@ -346,7 +346,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r1yoRo2k18ssw9AS6JfocBEVtgM=
+		dmjuOhEMZE3WoJpXPzApC7WzamQ=
 		</data>
 		<key>LoginStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -362,15 +362,15 @@
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		P2xZcZjNa39oZJ1R9dcMNR2rsfk=
+		kKJeF/4Q+M9mWy7LGsCrsTegYRA=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZP6BRw+3JDgHgM3IPndB7BdwdWw=
+		/SXI47lgsypei4U/pjD9duyRiAc=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FGAuo8v9iZQ1/PY4NKZJdpVuQdQ=
+		nlxYxlFwtOWbygMy2IbE0lEwY+4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1280,21 +1280,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i448I9YTDnFZdujpOyinmNvcTVC/tLqS42RiolgjO7A=
+			MC0f9WDRFPP9YbuEDN4c0BWboI1d1cybNLozv+ryTds=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			43yuNFK1jJ7g4aHgKMG65HAP0LE7fmEiCR36HvXaBXw=
+			XLKpJhuLinjVNTq8KKpvq/gsboeLtqlL+tmGdXygz8w=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Dzy36BHeE7M56vxIVo6lSDJPnSqsTOFPslcayZ6g04=
+			fwp6/fpqJT9UqTntPMlhDugeo4CXlz7d+leZVGBL1UI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
