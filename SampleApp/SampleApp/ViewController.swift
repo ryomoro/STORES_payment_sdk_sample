@@ -77,16 +77,24 @@ final class ViewController: UIViewController {
         STP.presentTransactionViewController(
             on: self, transactionIdentifier: type.identifier,
             shouldAllowRefunding: true,
-            shouldAutoTransitionToRefund: false) { error in
+            shouldAutoTransitionToRefund: false) { [weak self] result in
                 /*
-                 shouldAutoTransitionToRefund に trueを渡した場合
-                 売り上げ取り消し・返品処理 がエラーやキャンセルされた場合に
-                 このクロージャに Errorが返ります
+                 shouldAutoTransitionToRefund に trueを渡した場合など
+                 売り上げ詳細が画面から売り上げ取り消し・返品処理を実行した結果が
+                 このクロージャに返ります
+                 このタイミングではSTORES Payments SDK の画面は表示されています。
                  */
-                print("Refund Error = \(error)")
+                switch result {
+                case let .success(type):
+                    let isRefunded = self?.isRefunded(type: type) ?? false
+                    print("Refund Success = \(isRefunded)")
+                case let .failure(error):
+                    print("Refund Error = \(error)")
+                }
             } dismissCompletion: { [weak self] result in
                 /*
-                 表示結果した最新の売り上げ情報が返ります
+                 STORES Payments SDK の画面を閉じたタイミングで呼ばれ
+                 表示した最新の売り上げ情報が返ります
                  売り上げ取り消し・返品処理を実施した場合は、statusが refunded に更新されています
                  */
                 switch result {

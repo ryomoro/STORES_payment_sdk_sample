@@ -17,7 +17,7 @@
     <a title="STP Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> 1.0.1 Docs</a> (100% documented)</p>
+        <p><a href="../index.html"> 1.0.2 Docs</a> (100% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -622,9 +622,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17STORESPaymentsSDK3STPV32presentTransactionViewController2on21transactionIdentifier20shouldAllowRefunding0K22AutoTransitionToRefund18refundErrorHandler17dismissCompletionySo06UIViewG0C_SSS2bys0S0_pcSgys6ResultOyAA0E4TypeOsAM_pGctFZ"></a>
-                    <a name="//apple_ref/swift/Method/presentTransactionViewController(on:transactionIdentifier:shouldAllowRefunding:shouldAutoTransitionToRefund:refundErrorHandler:dismissCompletion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17STORESPaymentsSDK3STPV32presentTransactionViewController2on21transactionIdentifier20shouldAllowRefunding0K22AutoTransitionToRefund18refundErrorHandler17dismissCompletionySo06UIViewG0C_SSS2bys0S0_pcSgys6ResultOyAA0E4TypeOsAM_pGctFZ">presentTransactionViewController(on:<wbr>transactionIdentifier:<wbr>shouldAllowRefunding:<wbr>shouldAutoTransitionToRefund:<wbr>refundErrorHandler:<wbr>dismissCompletion:<wbr>)</a>
+                    <a name="/s:17STORESPaymentsSDK3STPV32presentTransactionViewController2on21transactionIdentifier20shouldAllowRefunding0K22AutoTransitionToRefund19refundResultHandler17dismissCompletionySo06UIViewG0C_SSS2bys0S0OyAA0E4TypeOs5Error_pGcSgyARctFZ"></a>
+                    <a name="//apple_ref/swift/Method/presentTransactionViewController(on:transactionIdentifier:shouldAllowRefunding:shouldAutoTransitionToRefund:refundResultHandler:dismissCompletion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17STORESPaymentsSDK3STPV32presentTransactionViewController2on21transactionIdentifier20shouldAllowRefunding0K22AutoTransitionToRefund19refundResultHandler17dismissCompletionySo06UIViewG0C_SSS2bys0S0OyAA0E4TypeOs5Error_pGcSgyARctFZ">presentTransactionViewController(on:<wbr>transactionIdentifier:<wbr>shouldAllowRefunding:<wbr>shouldAutoTransitionToRefund:<wbr>refundResultHandler:<wbr>dismissCompletion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -644,7 +644,7 @@
     <span class="nv">transactionIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
     <span class="nv">shouldAllowRefunding</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
     <span class="nv">shouldAutoTransitionToRefund</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-    <span class="nv">refundErrorHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">refundResultHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/TransactionType.html">TransactionType</a></span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">dismissCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/TransactionType.html">TransactionType</a></span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
 <span class="p">)</span></code></pre>
 
@@ -705,12 +705,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>refundErrorHandler</em>
+                                <em>refundResultHandler</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>返金処理がエラーになった際にErrorが返ります</p>
+                                  <p>返金処理の結果が返ります</p>
                                 </div>
                               </td>
                             </tr>
@@ -940,7 +940,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2022 <a class="link" href="https://coiney.com/" target="_blank" rel="external noopener">hey inc.</a>. All rights reserved. (Last updated: 2022-07-05)</p>
+          <p>&copy; 2022 <a class="link" href="https://coiney.com/" target="_blank" rel="external noopener">hey inc.</a>. All rights reserved. (Last updated: 2022-07-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
