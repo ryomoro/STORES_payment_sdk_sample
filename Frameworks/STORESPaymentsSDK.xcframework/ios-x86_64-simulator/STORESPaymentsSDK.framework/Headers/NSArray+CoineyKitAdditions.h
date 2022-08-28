@@ -16,7 +16,3 @@
 - (NSArray *)cy_map:(id (^)(NSUInteger aIdx, id aObj))aMapBlock;
 - (id)cy_firstObjectPassingTest:(BOOL (^)(id obj))aPredicate;
 @end
-
-@interface NSMutableArray (CoineyKitAdditions)
-- (id)cy_pop;
-@end

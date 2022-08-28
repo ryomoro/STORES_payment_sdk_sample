@@ -42,7 +42,7 @@
 		</data>
 		<key>CardPaymentStoryboard.storyboardc/er9-hO-7FM-view-hMZ-tm-Rg0.nib</key>
 		<data>
-		0h37VSunUqGbS3dSV8TkR+789wY=
+		nOzWgYYU78zb33I/FJEcnYqSCvc=
 		</data>
 		<key>CardPracticeStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>EmailReceiptStoryboard.storyboardc/UIViewController-oqg-io-6sw.nib</key>
 		<data>
-		an8q6r+Y3LhY6YiyBn609agaLWE=
+		/XTGloPjF7Qz+aCXtHBZBaMtLwM=
 		</data>
 		<key>EmailReceiptStoryboard.storyboardc/oqg-io-6sw-view-TU4-lH-tsS.nib</key>
 		<data>
-		mmMpVqH5M5zxiBE3kReh0bhA6h4=
+		dcaWx+Mn6eFthRUYG04vK00PAHg=
 		</data>
 		<key>EmoneyBalanceDisplayStoryboard.storyboardc/A98-gw-CZP-view-8uP-lb-Ncx.nib</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/7SP-eI-MUp-view-het-iW-Zqn.nib</key>
 		<data>
-		Wrrs78KZalrbakzyN0x4RrW8/8c=
+		BfgiUvNQ5v6tOoDWcyO6Lsl1R7o=
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -240,45 +240,13 @@
 		<data>
 		2DFcJtPvcLfvnjRmDUP8Zt9y104=
 		</data>
-		<key>Headers/CYBitmapReceiptRenderer.h</key>
-		<data>
-		pR1z7n9wQ3H3lYDACRJjimW6Xes=
-		</data>
-		<key>Headers/CYBluetoothLEPrinter.h</key>
-		<data>
-		d8APSThFB9sIm3V6jBcGqhRWHRE=
-		</data>
 		<key>Headers/CYCollectionNullRemoval.h</key>
 		<data>
 		ENaUSi2GTbTG5pTMgjn9nKV2Jv0=
 		</data>
-		<key>Headers/CYCurrency.h</key>
+		<key>Headers/CYPrinterTraits.h</key>
 		<data>
-		EQuPMqj1k36R9iU5vQawUq3RNS0=
-		</data>
-		<key>Headers/CYPrinter+CYReceiptPrinting.h</key>
-		<data>
-		PD6h1gZOcj3J0gUkMGYBbBn/Fbc=
-		</data>
-		<key>Headers/CYPrinter.h</key>
-		<data>
-		AwM/gaYlVHpkOSLT5O0GMyBrhM4=
-		</data>
-		<key>Headers/CYPrinterDiscoveryManager.h</key>
-		<data>
-		o1T1xShqhd0/wDhu80gNpHTycyg=
-		</data>
-		<key>Headers/CYReceiptParser.h</key>
-		<data>
-		lleu8G/qyC0YRWhtK4dUHeLLdsI=
-		</data>
-		<key>Headers/CYReceiptRenderer.h</key>
-		<data>
-		nlsupODMV2yAfzzvpno8Bgj4KRM=
-		</data>
-		<key>Headers/CYTypes.h</key>
-		<data>
-		Yq8Uz4y34TdG7ld42ZnRcUH28IY=
+		tPeJPrbl4HmBoUk+wDl1LI/N8LU=
 		</data>
 		<key>Headers/CommonMPI.h</key>
 		<data>
@@ -290,11 +258,11 @@
 		</data>
 		<key>Headers/Macros.h</key>
 		<data>
-		coFb47zhvDloPJREmWTg+JPKqLM=
+		OPCJIJD8W1MFgQW3pKTi8SWk8Zg=
 		</data>
 		<key>Headers/NSArray+CoineyKitAdditions.h</key>
 		<data>
-		khnARKkNsTDgzi87rK0DJylqtNM=
+		NcfSmBZzcbCHmjfqff2DFOoLkEg=
 		</data>
 		<key>Headers/NSData+TLV.h</key>
 		<data>
@@ -302,11 +270,7 @@
 		</data>
 		<key>Headers/NSDictionary+CoineyKitAdditions.h</key>
 		<data>
-		BF3bTEgpgPNY/QSzE2zyWbOqGQ8=
-		</data>
-		<key>Headers/NSNumberFormatter+CoineyKitAdditions.h</key>
-		<data>
-		Q5qJc4BRUl7z6Xq0ZeCFAYFg8hg=
+		JxGa4F23cM2ctC7SJ9X161lm3PU=
 		</data>
 		<key>Headers/NSRegularExpression+CoineyKitAdditions.h</key>
 		<data>
@@ -314,19 +278,27 @@
 		</data>
 		<key>Headers/NSString+CoineyKitAdditions.h</key>
 		<data>
-		ja8BPvggHC9qLnmBEjiLMaATh+M=
+		FZLY1nOKiM7Z79FkbDj1pz8ZFsM=
 		</data>
 		<key>Headers/STORESPaymentsSDK-Swift.h</key>
 		<data>
-		4oRqNmQuVGZrRBMR0chZGm5El+o=
+		H1hfYeitTkKmCaHVrTNIsbauNd4=
 		</data>
 		<key>Headers/STORESPaymentsSDK.h</key>
 		<data>
-		nTM7RIlMszZy8wAz4KbvI2X4CMY=
+		3IHZ14AtSXsowjWJ+x9LP07vsE4=
+		</data>
+		<key>Headers/UIBezierPath+CoineyKitAdditions.h</key>
+		<data>
+		GOdt3O1zTj3XMMwidicJ3qRgMDA=
+		</data>
+		<key>Headers/UIFont+CoineyKitAdditions.h</key>
+		<data>
+		IAiSM+Af2OZH2zu11w2r8zlRREo=
 		</data>
 		<key>Headers/UIImage+CoineyKitAdditions.h</key>
 		<data>
-		IrMWoBBXJI7O5Jqp6ct6npgknuI=
+		rhMg32o2L5ejZuD+PDhoPs7VCeo=
 		</data>
 		<key>Headers/cy_printer.h</key>
 		<data>
@@ -346,7 +318,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dmjuOhEMZE3WoJpXPzApC7WzamQ=
+		GQnCEIrJPssnmAMUYp6sJ1RVxck=
 		</data>
 		<key>LoginStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -362,15 +334,15 @@
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kKJeF/4Q+M9mWy7LGsCrsTegYRA=
+		cZM11u99MxNiWBTB/GLAAJcp55M=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/SXI47lgsypei4U/pjD9duyRiAc=
+		TxW33am7QLknYw+QqBjpTC0FkwM=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nlxYxlFwtOWbygMy2IbE0lEwY+4=
+		73Eeczx2cmbpRO9meBNaHm6wodE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -382,7 +354,7 @@
 		</data>
 		<key>PaymentCompleteStoryboard.storyboardc/QZS-7v-aan-view-RYB-1h-jnI.nib</key>
 		<data>
-		46SHCYlDwe2A28euDfHpnPKjr5k=
+		v9LOH5P2pWsOQ8noheoBbnPXLDI=
 		</data>
 		<key>PaymentCompleteStoryboard.storyboardc/UIViewController-QZS-7v-aan.nib</key>
 		<data>
@@ -490,11 +462,11 @@
 		</data>
 		<key>SignatureStoryboard.storyboardc/KYe-FT-0Hw-view-oP7-Qs-0gj.nib</key>
 		<data>
-		VDsEThC5Fl9rjcmQNYyzfJdxJWI=
+		AetcDwvAxw5V0R/+pNW8hzTA01A=
 		</data>
 		<key>SignatureStoryboard.storyboardc/UIViewController-KYe-FT-0Hw.nib</key>
 		<data>
-		OS4uv0dP4BJ1e6ObMQd9+ZfK8Kk=
+		U3QeuYqS8pMgKUe+1HEN9N+4Fd8=
 		</data>
 		<key>StatusAlertView.nib</key>
 		<data>
@@ -624,7 +596,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k4RfJ6l8XeBlt/NxXKIUT3xFxKQ=
+			zhNLSq5I6vwrnu4NXpWvFS0haZM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -727,7 +699,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V7bNWga0P01pK93Rln8VsNcxEJnSpk100+Xqvju8pXc=
+			suEVc/K7yPtl62xhTWnqj4SiiV2qJJpZv2yal3lzPfg=
 			</data>
 		</dict>
 		<key>CardPracticeStoryboard.storyboardc/Info.plist</key>
@@ -769,14 +741,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ny6HQsCsX6soRl5Tp382eRwJ/8//E+A4A8erYV+Fgps=
+			LkmThBbOFBFDDTjvzkBVtMLbQHqx0nAmybvsyG9dwVw=
 			</data>
 		</dict>
 		<key>EmailReceiptStoryboard.storyboardc/oqg-io-6sw-view-TU4-lH-tsS.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MRrTy5jYnXYSu6sQpqsOZKhfiEW6ONSCp9s9hqUEGpQ=
+			Bnl7lJ32fzyn0yIbgjSD0EaVZ1IxgaZGx3D1l8NZoQ0=
 			</data>
 		</dict>
 		<key>EmoneyBalanceDisplayStoryboard.storyboardc/A98-gw-CZP-view-8uP-lb-Ncx.nib</key>
@@ -804,7 +776,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3F78ctC+wtPQfvUGyRMluyU0Vda10usuzMugAtnVLM0=
+			0BePKnA5fXDwDqSeOSb1UdlO4eS3Uorv7kTf2/0WqtQ=
 			</data>
 		</dict>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/Info.plist</key>
@@ -1073,20 +1045,6 @@
 			Gq/ENv+l6BKq9mvC7WZocVjMOE+QXH3zRxLP2Rk6nIo=
 			</data>
 		</dict>
-		<key>Headers/CYBitmapReceiptRenderer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hTNZFU70olacmPqRJ9uYweCQjLPI09592znONCamzf0=
-			</data>
-		</dict>
-		<key>Headers/CYBluetoothLEPrinter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QO3+XEa57RqrFCdzcg2h29TuHWewSJ9IjqAE4RJu3xc=
-			</data>
-		</dict>
 		<key>Headers/CYCollectionNullRemoval.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1094,53 +1052,11 @@
 			p9crf1GpxmG2kFpD2Z0e6nwCMkDkrfU1X0K7CvVnZgk=
 			</data>
 		</dict>
-		<key>Headers/CYCurrency.h</key>
+		<key>Headers/CYPrinterTraits.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			60Ku4ikAnilwmZn5Gp4gDy/3z1eNG+qc2S3ziuQ/7p4=
-			</data>
-		</dict>
-		<key>Headers/CYPrinter+CYReceiptPrinting.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PSP7P8W7EG7OwjMWR/ZbP18BOeF47AN0L8K27D0/pOI=
-			</data>
-		</dict>
-		<key>Headers/CYPrinter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EsBPMYkklZ2SKe00rZqmjXykV7EFal0+GwsMvHnf3KA=
-			</data>
-		</dict>
-		<key>Headers/CYPrinterDiscoveryManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1ak9HkdVims1b1MaJtTkZErBlxAUy9gjsIb3fKUFidw=
-			</data>
-		</dict>
-		<key>Headers/CYReceiptParser.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			e7fJSZBd/LTTEAVWQGX9Q265XXBHitTnUf5CdboFMfY=
-			</data>
-		</dict>
-		<key>Headers/CYReceiptRenderer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RKTcwElQi8rI3oPCZdXWdXKj06mb3XN72kMYYLBhhio=
-			</data>
-		</dict>
-		<key>Headers/CYTypes.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8/+GPJqb0o1M8OFLruJWxq2YkfR2nV/FQiZjOj6ccnQ=
+			+mZYGNWrtColIxVFyUm2jPStY+iioUzttRL5dYluLxU=
 			</data>
 		</dict>
 		<key>Headers/CommonMPI.h</key>
@@ -1161,14 +1077,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KVmnBhj1dYc6CyvKUGp7axFe5b/h+4uenlT6nww5vIM=
+			VTpy//69AzDY/l3b0eoSK6PxFWKYQRnXjXTy71/hSew=
 			</data>
 		</dict>
 		<key>Headers/NSArray+CoineyKitAdditions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O2dfYSaAtlcxrAbdbPcI6IdSK4uLNkviyfmC7D8FlFM=
+			uGGS4Jhi/u69GckAnxXBZlpmV519iBJhd238MQAs6w8=
 			</data>
 		</dict>
 		<key>Headers/NSData+TLV.h</key>
@@ -1182,14 +1098,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TbBwc9it5TvoUmCLmi/u+YsL6cSQdaq8TJOScPudTyI=
-			</data>
-		</dict>
-		<key>Headers/NSNumberFormatter+CoineyKitAdditions.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PMqGJPlgFgW5SAM9MNo4n7CuchW/zDzS/3whBDG9TNI=
+			IN3u0iNj5emSHpAPGi563xMZobK57uF3mMJD/rLTodI=
 			</data>
 		</dict>
 		<key>Headers/NSRegularExpression+CoineyKitAdditions.h</key>
@@ -1203,28 +1112,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ccp/pji5/wKbuMEh2oQuoXWDRYoHz8iBeyeStijP3Qs=
+			LoZ5PI9minxS+7eCbamR61yqrbFzsdTPhLIPXc8xq7A=
 			</data>
 		</dict>
 		<key>Headers/STORESPaymentsSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mNslLhGNIKOjEnCLO7gIyRH7EhFy8ZbV2ITtRRdyNvw=
+			bUp8vQHGhH+R79jrq+X/t/sQeDWJgd4UB4+7HLJbFGk=
 			</data>
 		</dict>
 		<key>Headers/STORESPaymentsSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TkEBDQlROXrP6foeASNnX21wYUTmnqi69KZd5YQWA4M=
+			zK++AWt8Mz5scLdIFeDT9oYaEaqjFpFhhg3B4am+wTo=
+			</data>
+		</dict>
+		<key>Headers/UIBezierPath+CoineyKitAdditions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXIW0nvXkG0bDfcVNAPXwxnh58xTYF/KDvno1Ayjzc=
+			</data>
+		</dict>
+		<key>Headers/UIFont+CoineyKitAdditions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DDYFqeO/cHeSo6EVwCM6VrMpi9+nEiXEVaqVNjnaw48=
 			</data>
 		</dict>
 		<key>Headers/UIImage+CoineyKitAdditions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e7FRUWHE97/XEQLMom2o4HyDJTL5kq4WliucRxzd8Eg=
+			JACF6l4HwvwS45YtVwyZ7TyxISPe2Iuz7mY0R9Y8bhQ=
 			</data>
 		</dict>
 		<key>Headers/cy_printer.h</key>
@@ -1280,21 +1203,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MC0f9WDRFPP9YbuEDN4c0BWboI1d1cybNLozv+ryTds=
+			dxPkWEAK/2rrMxZxV7OE07/+NGBt0n0fXi9rCeH3+HU=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLKpJhuLinjVNTq8KKpvq/gsboeLtqlL+tmGdXygz8w=
+			wtH33pQ7NDPtaB9YaxV/JF6LGzts9Y2Cr21fT3GdBPU=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fwp6/fpqJT9UqTntPMlhDugeo4CXlz7d+leZVGBL1UI=
+			OlHBFmZgMUukOFJv8iC3EpMkO5lF+OwtrlW9hHe4yOg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1315,7 +1238,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NKdBHPK5zH3ARTZuEXN+9Hx3AtJhmGheDYjpgg7+X4s=
+			FeVl9hOLy8cDhu7wTKqHmmrQIPlsds6JRIT9InzTnkQ=
 			</data>
 		</dict>
 		<key>PaymentCompleteStoryboard.storyboardc/UIViewController-QZS-7v-aan.nib</key>
@@ -1504,14 +1427,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qae7RzgMnEAX0mDHV/qQGuzR8Nc2SS5V5ZEUhMryT/M=
+			XrwG5dp9OMkyouCAEmT8nr7mCy8HI+QR1PRMRHhN1p8=
 			</data>
 		</dict>
 		<key>SignatureStoryboard.storyboardc/UIViewController-KYe-FT-0Hw.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kjloA+ZLjxJwpHt91mGHMSGGj9b5eU2Jvqq7gBCG/38=
+			dQRTXzgz2NZ7gOolsuOWYDJXOItfnTui2mYqF3CtWBE=
 			</data>
 		</dict>
 		<key>StatusAlertView.nib</key>
@@ -1735,7 +1658,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkUoi53F+w70BA/Keihr/XVRIM0D3m50dXcf+I1b2+Q=
+			IMK9aDAh/yScUfd7fKz3hhP/jutxA4ypx9cq6bdnpgs=
 			</data>
 			<key>optional</key>
 			<true/>

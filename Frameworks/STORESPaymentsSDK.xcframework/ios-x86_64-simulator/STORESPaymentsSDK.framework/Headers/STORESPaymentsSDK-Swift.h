@@ -235,9 +235,21 @@ typedef SWIFT_ENUM(NSInteger, EmoneyInitializationStatus, open) {
   EmoneyInitializationStatusAuthenticated = 0,
   EmoneyInitializationStatusAuthenticating = 1,
   EmoneyInitializationStatusUnsupportedDevice = 2,
-  EmoneyInitializationStatusUnknown = 3,
+  EmoneyInitializationStatusCertificateExhausted = 3,
+  EmoneyInitializationStatusAuthenticationFailed = 4,
+  EmoneyInitializationStatusAuthenticationProcessNotPerformed = 5,
 };
 
+
+
+@class NSData;
+
+SWIFT_CLASS("_TtC17STORESPaymentsSDK7Printer")
+@interface Printer : NSObject
+- (BOOL)cutPaper SWIFT_WARN_UNUSED_RESULT;
+- (void)_sendDataToPrinter:(NSData * _Nonnull)_;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 

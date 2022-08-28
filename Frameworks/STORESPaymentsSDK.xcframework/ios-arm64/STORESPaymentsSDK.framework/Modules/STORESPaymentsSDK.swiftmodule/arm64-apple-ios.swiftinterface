@@ -2,8 +2,10 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name STORESPaymentsSDK
 import AVFoundation
+import Combine
 import CommonCrypto
 import Compression
+import CoreBluetooth
 import CoreFoundation
 import CoreGraphics
 import CoreLocation
@@ -24,6 +26,7 @@ import TCMPayment
 import UIKit
 import WebKit
 import _Concurrency
+import zlib
 public struct CoineyAPIError : Swift.Error {
   public let statusCode: Swift.Int
   public let identifier: Swift.String
@@ -119,6 +122,11 @@ extension STORESPaymentsSDK.STP {
     get
   }
 }
+public struct DepositsEligibleStatement {
+  public let isEligible: Swift.Bool
+  public let ineligibleReason: STORESPaymentsSDK.IneligibleReason?
+  public init(eligible: Swift.Bool, ineligibleReasons: [STORESPaymentsSDK.IneligibleReason])
+}
 extension UIKit.UITableView : STORESPaymentsSDK.PublicExtensionable {
   public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UITableView>
 }
@@ -141,6 +149,9 @@ extension Foundation.NSNotification.Name {
     public static let shopInfoFetchedNotification: Foundation.Notification.Name
     public static let emvDidReceiveCardSwipeNotification: Foundation.Notification.Name
     public static let emoneyAuthenticateDeviceNotification: Foundation.Notification.Name
+    public static let printerConnected: Foundation.Notification.Name
+    public static let printerDisconnected: Foundation.Notification.Name
+    public static let printerStatusChanged: Foundation.Notification.Name
   }
 }
 public struct EmoneyTransaction {
@@ -246,7 +257,9 @@ extension STORESPaymentsSDK.STP {
     case authenticating
     case unsupportedDevice
     case unsupportedShopAccount
-    case unknown
+    case certificateExhausted
+    case authenticationFailed
+    case authenticationProcessNotPerformed
     public static func == (a: STORESPaymentsSDK.STP.EmoneyInitializationStatus, b: STORESPaymentsSDK.STP.EmoneyInitializationStatus) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -558,6 +571,9 @@ extension STORESPaymentsSDK.SDKExtension where Base == Foundation.Bundle {
     get
   }
   final public func generateBuildInfoString(endpoint: STORESPaymentsSDK.STPSDKEndpoint.Endpoint) -> Swift.String
+  final public var isSupportLandscapeOrientation: Swift.Bool {
+    get
+  }
 }
 extension UIKit.UIDevice : STORESPaymentsSDK.PublicExtensionable {
   public typealias ExtensionType = STORESPaymentsSDK.SDKExtension<UIKit.UIDevice>
@@ -570,6 +586,17 @@ extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UIDevice {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers public class Printer : ObjectiveC.NSObject {
+  public typealias PrinterType = STORESPaymentsSDK.cy_printer
+  public var displayName: Swift.String? {
+    get
+  }
+  @objc public func cutPaper() -> Swift.Bool
+  @objc public func _sendData(toPrinter _: Foundation.Data)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public func CYEnablePrinting(_ isEnabled: Swift.Bool)
 public struct Device : Swift.Decodable {
   public var identifier: Swift.String
   public var name: Swift.String
@@ -832,7 +859,9 @@ public enum BankAccountType : Swift.String, Swift.Decodable {
   case authenticated
   case authenticating
   case unsupportedDevice
-  case unknown
+  case certificateExhausted
+  case authenticationFailed
+  case authenticationProcessNotPerformed
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -926,6 +955,8 @@ public enum TransactionDetailAmountTextColorSet {
 public enum STORESPaymentsSDKError : Swift.Error {
   case unknown
   case unsupportedApplicationToken
+  case applicationTokenAuthenticationFailure
+  case applicationTokenUnauthorized
   case userCancelled
   case alreadyAuthenticated
   case unauthorized
@@ -940,19 +971,14 @@ public enum STORESPaymentsSDKError : Swift.Error {
   case wechatPayPaymentError
   case terminalFirmwareUpdateRequired
   case incompatibleTerminal
-  case emoneyUnconfirmedStatus
+  case emoneyUnconfirmedStatus(transaction: STORESPaymentsSDK.EmoneyTransaction?)
   case emoneyBalanceReadError
-  case transactionNotFound
-  case transactionFetchError
+  case transactionNotFound(title: Swift.String, message: Swift.String)
+  case transactionFetchError(title: Swift.String, message: Swift.String)
   case alreadyRefunded
   case nonRefundableAccount
   case nonRefundablePaymentType
   case otherRefundError
-  public static func == (a: STORESPaymentsSDK.STORESPaymentsSDKError, b: STORESPaymentsSDK.STORESPaymentsSDKError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public protocol NibLoadable : AnyObject {
   static var nibName: Swift.String { get }
@@ -966,6 +992,15 @@ public typealias Amount = STORESPaymentsSDK.Util.NumberFormatter
 extension STORESPaymentsSDK.Util {
   public enum NumberFormatter {
     public static func format(_ amount: Swift.Int) -> Swift.String?
+  }
+}
+public enum IneligibleReason : Swift.String, Swift.Decodable {
+  case outsideDepositHours
+  case restricted
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
   }
 }
 public enum EmoneyPaymentStatus : Swift.String, Swift.Decodable {
@@ -1368,8 +1403,9 @@ extension STORESPaymentsSDK.AccountHolderGender : Swift.Hashable {}
 extension STORESPaymentsSDK.AccountHolderGender : Swift.RawRepresentable {}
 extension STORESPaymentsSDK.TransactionDetailAmountTextColorSet : Swift.Equatable {}
 extension STORESPaymentsSDK.TransactionDetailAmountTextColorSet : Swift.Hashable {}
-extension STORESPaymentsSDK.STORESPaymentsSDKError : Swift.Equatable {}
-extension STORESPaymentsSDK.STORESPaymentsSDKError : Swift.Hashable {}
+extension STORESPaymentsSDK.IneligibleReason : Swift.Equatable {}
+extension STORESPaymentsSDK.IneligibleReason : Swift.Hashable {}
+extension STORESPaymentsSDK.IneligibleReason : Swift.RawRepresentable {}
 extension STORESPaymentsSDK.EmoneyPaymentStatus : Swift.Equatable {}
 extension STORESPaymentsSDK.EmoneyPaymentStatus : Swift.Hashable {}
 extension STORESPaymentsSDK.EmoneyPaymentStatus : Swift.RawRepresentable {}

@@ -5,7 +5,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CYTypes.h"
 
 @interface UIImage (CoineyKitAdditions)
 - (UIImage *)cy_resizedImage:(CGSize)newSize interpolationQuality:(CGInterpolationQuality)quality;
