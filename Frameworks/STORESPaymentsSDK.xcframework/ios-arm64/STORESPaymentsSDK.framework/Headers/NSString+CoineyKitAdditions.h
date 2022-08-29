@@ -8,10 +8,6 @@
 
 @interface NSString (CoineyKitAdditions)
 
-- (NSData *)cy_dataByApplyingSHA1;
-
-- (NSString *)cy_trimmedString;
-
 - (NSString *)cy_multiply:(NSUInteger)aTimes;
 
 // Similar to -length, except full width characters are counted twice
@@ -40,7 +36,6 @@
 @end
 
 BOOL CYCharacterIsFullWidth(unichar const aChar);
-BOOL CYCharacterIsHalfWidthKatakana(unichar const aChar);
 
 static inline NSString *CYStringToAlignmentMode(NSString * const aStr)
 {
