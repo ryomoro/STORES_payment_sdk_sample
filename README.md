@@ -25,6 +25,11 @@ STORES Payments SDK をご利用いただき、ありがとうございます。
 
 
 ## お知らせ
+### 2022-10-01：社名変更について
+2022年10月より運営会社の ヘイ株式会社 は STORES 株式会社（ストアーズ株式会社）へ社名変更しました。  
+STORES Payments SDK (旧CoineyKit)をご利用中の事業者のみなさまに行っていただく手続きは一切ございません。
+
+
 ### 2022−06−30 : STORES Payments SDK をリリースしました
 STORES 決済 はインターフェースを刷新した次世代の SDK `STORES Payments SDK` をリリースしました。
 
