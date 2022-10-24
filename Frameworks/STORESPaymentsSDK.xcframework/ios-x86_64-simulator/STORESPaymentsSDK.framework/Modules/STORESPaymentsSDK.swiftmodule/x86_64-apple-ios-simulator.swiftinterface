@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name STORESPaymentsSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Combine
 import CommonCrypto
@@ -26,6 +27,7 @@ import TCMPayment
 import UIKit
 import WebKit
 import _Concurrency
+import _StringProcessing
 import zlib
 public struct CoineyAPIError : Swift.Error {
   public let statusCode: Swift.Int
@@ -38,16 +40,12 @@ public struct CoineyAPIError : Swift.Error {
   final public var configMap: [STORESPaymentsSDK.LoggerComponentID : STORESPaymentsSDK.LoggerBundler.Configuration]
   final public var mutations: [STORESPaymentsSDK.Mutation]
   final public func add(component: STORESPaymentsSDK.LoggerComponent)
-  
   #if compiler(>=5.3) && $AsyncAwait
   final public func send(_ event: STORESPaymentsSDK.Loggable, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
   #endif
-
-  
   #if compiler(>=5.3) && $AsyncAwait
   final public func update(userProperties: [STORESPaymentsSDK.UserProperty]) async
   #endif
-
   final public func set(userIdentifier: Swift.String)
   final public func startLogging()
   @objc deinit
@@ -76,11 +74,9 @@ extension STORESPaymentsSDK.LoggerBundler {
   }
 }
 extension STORESPaymentsSDK.LoggerBundler {
-  
   #if compiler(>=5.3) && $AsyncAwait
   final public func send(_ event: STORESPaymentsSDK.TrackingEvent, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
   #endif
-
   final public func update(userProperty: STORESPaymentsSDK.UserProperty)
   final public func update(userProperties: [STORESPaymentsSDK.UserProperty])
 }
@@ -93,8 +89,9 @@ public struct EmoneyAcceptedBrands {
 }
 public struct EmoneyAcceptedBrand {
   public let name: Swift.String
+  public let minimumTransactionAmount: Swift.Int?
   public let maximumTransactionAmount: Swift.Int
-  public init(name: Swift.String, maximumTransactionAmount: Swift.Int)
+  public init(name: Swift.String, minimumTransactionAmount: Swift.Int?, maximumTransactionAmount: Swift.Int)
 }
 public enum Installments : Swift.Int, Swift.Decodable {
   case one
@@ -337,7 +334,7 @@ extension STORESPaymentsSDK.SDKExtension where Base == UIKit.UIViewController {
   final public func topModalViewController() -> UIKit.UIViewController
   final public func isAlertControllerPresented() -> Swift.Bool
   final public func generateAccessibilityIdentifiers()
-  final public func setMinimumModalSizeIfiPad(_ minSize: CoreGraphics.CGSize = .init(width: 540, height: 690))
+  final public func setMinimumModalSizeIfiPad(_ minSize: CoreFoundation.CGSize = .init(width: 540, height: 690))
 }
 public protocol TransactionDetailFooterViewDelegate : AnyObject {
   func footerViewDidTapPrint()
@@ -350,8 +347,8 @@ extension STORESPaymentsSDK.TransactionDetailFooterViewDelegate {
 }
 public struct LoggerComponentID : Swift.Hashable {
   public init(_ value: Swift.String)
-  public static func == (a: STORESPaymentsSDK.LoggerComponentID, b: STORESPaymentsSDK.LoggerComponentID) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: STORESPaymentsSDK.LoggerComponentID, b: STORESPaymentsSDK.LoggerComponentID) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -362,16 +359,12 @@ public protocol LoggerSendable {
 }
 public protocol LoggerComponent {
   static var identifier: STORESPaymentsSDK.LoggerComponentID { get }
-  
   #if compiler(>=5.3) && $AsyncAwait
   func send(_: [STORESPaymentsSDK.LoggerSendable]) async -> Swift.Bool
   #endif
-
-  
   #if compiler(>=5.3) && $AsyncAwait
   func update(_ userProperties: [Swift.String : Any]) async -> Swift.Bool
   #endif
-
   func set(userIdentifier: Swift.String)
 }
 public protocol PublicExtensionable {
@@ -405,7 +398,7 @@ extension STORESPaymentsSDK.NibInstantiable where Self : ObjectiveC.NSObjectProt
   }
   public static func instantiate(with dependency: Self.Dependency) -> Self
 }
-extension STORESPaymentsSDK.NibInstantiable where Self.Dependency == Swift.Void {
+extension STORESPaymentsSDK.NibInstantiable where Self.Dependency == () {
   public static func instantiate() -> Self
 }
 public enum EmoneyBalanceUseCase : Swift.String, Swift.Decodable {
@@ -455,6 +448,9 @@ public enum EmoneyBrand : Swift.String, Swift.Decodable {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct AmountLimitation {
+  public init(paymentMethod: STORESPaymentsSDK.PaymentMethod, minimumTransactionAmount: Swift.Int, maximumTransactionAmount: Swift.Int)
 }
 public enum WechatPaymentMode {
   case payment
@@ -771,7 +767,7 @@ public protocol StoryboardInstantiatable : AnyObject, STORESPaymentsSDK.Injectab
 extension STORESPaymentsSDK.StoryboardInstantiatable {
   public static func instantiate(with dependency: Self.Dependency) -> Self
 }
-extension STORESPaymentsSDK.StoryboardInstantiatable where Self.Dependency == Swift.Void {
+extension STORESPaymentsSDK.StoryboardInstantiatable where Self.Dependency == () {
   public static func instantiate() -> Self
 }
 public enum TransactionType {
@@ -1018,31 +1014,31 @@ public enum EmoneyPaymentStatus : Swift.String, Swift.Decodable {
 }
 public typealias Dims = STORESPaymentsSDK.Dimensions
 public enum Dimensions {
-  public static let xxsmall: CoreGraphics.CGFloat
-  public static let xsmall: CoreGraphics.CGFloat
-  public static let small: CoreGraphics.CGFloat
-  public static let medium: CoreGraphics.CGFloat
-  public static let large: CoreGraphics.CGFloat
-  public static let xlarge: CoreGraphics.CGFloat
-  public static let xxlarge: CoreGraphics.CGFloat
+  public static let xxsmall: CoreFoundation.CGFloat
+  public static let xsmall: CoreFoundation.CGFloat
+  public static let small: CoreFoundation.CGFloat
+  public static let medium: CoreFoundation.CGFloat
+  public static let large: CoreFoundation.CGFloat
+  public static let xlarge: CoreFoundation.CGFloat
+  public static let xxlarge: CoreFoundation.CGFloat
   public enum TableView {
     public enum Section {
-      public static let headerHeight: CoreGraphics.CGFloat
-      public static let thinHeaderHeight: CoreGraphics.CGFloat
-      public static let footerHeight: CoreGraphics.CGFloat
-      public static let leadingMargin: CoreGraphics.CGFloat
-      public static let bottomMargin: CoreGraphics.CGFloat
+      public static let headerHeight: CoreFoundation.CGFloat
+      public static let thinHeaderHeight: CoreFoundation.CGFloat
+      public static let footerHeight: CoreFoundation.CGFloat
+      public static let leadingMargin: CoreFoundation.CGFloat
+      public static let bottomMargin: CoreFoundation.CGFloat
     }
     public enum Cell {
-      public static let rowHeight: CoreGraphics.CGFloat
-      public static let leadingMargin: CoreGraphics.CGFloat
+      public static let rowHeight: CoreFoundation.CGFloat
+      public static let leadingMargin: CoreFoundation.CGFloat
     }
     public enum Separator {
-      public static let height: CoreGraphics.CGFloat
+      public static let height: CoreFoundation.CGFloat
     }
   }
   public enum Badge {
-    public static let diameter: CoreGraphics.CGFloat
+    public static let diameter: CoreFoundation.CGFloat
   }
 }
 public enum PaymentMethod : Swift.String, Swift.Decodable {
@@ -1122,7 +1118,7 @@ public protocol Injectable {
   associatedtype Dependency = Swift.Void
   func inject(_ dependency: Self.Dependency)
 }
-extension STORESPaymentsSDK.Injectable where Self.Dependency == Swift.Void {
+extension STORESPaymentsSDK.Injectable where Self.Dependency == () {
   public func inject(_: Self.Dependency)
 }
 public struct NewsArticle : Swift.Equatable {
@@ -1212,6 +1208,7 @@ public struct Shop {
   public let magstripeFallbackAllowed: Swift.Bool
   public let balanceManagedByThirdParty: Swift.Bool
   public let acceptedPaymentMethods: [STORESPaymentsSDK.PaymentMethod]
+  public let amountLimitations: [STORESPaymentsSDK.AmountLimitation]
   public let acceptedCardBrands: [STORESPaymentsSDK.CardBrand]
   public let financingTypesAllowed: [STORESPaymentsSDK.FinancingType]
   public let installmentTypesAllowed: [STORESPaymentsSDK.Installments]
@@ -1225,7 +1222,7 @@ public struct Shop {
   public let receipt: STORESPaymentsSDK.Receipt?
   public let shopSettings: STORESPaymentsSDK.ShopSettings?
   public let supportInformation: STORESPaymentsSDK.SupportInformation?
-  public init(identifier: Swift.String, shopName: Swift.String, zipCode: Swift.String, prefectureWard: Swift.String, street: Swift.String, streetNumber: Swift.String, phoneNumber: Swift.String, currency: Swift.String, minimumDepositAmount: Swift.Int, industry: Swift.String, placeOfUse: Swift.String?, URL: Swift.String, minimumTransactionAmount: Swift.Int, maximumTransactionAmount: Swift.Int, hasIndirectJCBContract: Swift.Bool, sandboxed: Swift.Bool, paymentByInstallmentsAllowed: Swift.Bool, staffManagementAllowed: Swift.Bool, autoDepositAllowed: Swift.Bool, magstripeFallbackAllowed: Swift.Bool, balanceManagedByThirdParty: Swift.Bool, acceptedPaymentMethods: [STORESPaymentsSDK.PaymentMethod], acceptedCardBrands: [STORESPaymentsSDK.CardBrand], financingTypesAllowed: [STORESPaymentsSDK.FinancingType], installmentTypesAllowed: [STORESPaymentsSDK.Installments], minimumTerminalOSVersion: Swift.String, accountHolder: STORESPaymentsSDK.AccountHolder?, automaticDeposits: STORESPaymentsSDK.AutomaticDeposits?, bankAccount: STORESPaymentsSDK.BankAccount?, company: STORESPaymentsSDK.Company?, corporateDisplayable: STORESPaymentsSDK.CorporateDisplayable?, emoneyAcceptedBrands: STORESPaymentsSDK.EmoneyAcceptedBrands?, receipt: STORESPaymentsSDK.Receipt?, shopSettings: STORESPaymentsSDK.ShopSettings?, supportInformation: STORESPaymentsSDK.SupportInformation?)
+  public init(identifier: Swift.String, shopName: Swift.String, zipCode: Swift.String, prefectureWard: Swift.String, street: Swift.String, streetNumber: Swift.String, phoneNumber: Swift.String, currency: Swift.String, minimumDepositAmount: Swift.Int, industry: Swift.String, placeOfUse: Swift.String?, URL: Swift.String, minimumTransactionAmount: Swift.Int, maximumTransactionAmount: Swift.Int, hasIndirectJCBContract: Swift.Bool, sandboxed: Swift.Bool, paymentByInstallmentsAllowed: Swift.Bool, staffManagementAllowed: Swift.Bool, autoDepositAllowed: Swift.Bool, magstripeFallbackAllowed: Swift.Bool, balanceManagedByThirdParty: Swift.Bool, acceptedPaymentMethods: [STORESPaymentsSDK.PaymentMethod], amountLimitations: [STORESPaymentsSDK.AmountLimitation], acceptedCardBrands: [STORESPaymentsSDK.CardBrand], financingTypesAllowed: [STORESPaymentsSDK.FinancingType], installmentTypesAllowed: [STORESPaymentsSDK.Installments], minimumTerminalOSVersion: Swift.String, accountHolder: STORESPaymentsSDK.AccountHolder?, automaticDeposits: STORESPaymentsSDK.AutomaticDeposits?, bankAccount: STORESPaymentsSDK.BankAccount?, company: STORESPaymentsSDK.Company?, corporateDisplayable: STORESPaymentsSDK.CorporateDisplayable?, emoneyAcceptedBrands: STORESPaymentsSDK.EmoneyAcceptedBrands?, receipt: STORESPaymentsSDK.Receipt?, shopSettings: STORESPaymentsSDK.ShopSettings?, supportInformation: STORESPaymentsSDK.SupportInformation?)
   public var financingOptionsAllowed: [STORESPaymentsSDK.FinancingOption] {
     get
   }
