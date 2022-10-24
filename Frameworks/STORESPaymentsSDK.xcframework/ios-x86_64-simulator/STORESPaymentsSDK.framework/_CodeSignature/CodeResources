@@ -26,11 +26,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		3iKRvOELLPJixWrcOHbNk5v36hQ=
+		TCPPhzhhJsLLYSr1OSjCyElgKU8=
 		</data>
 		<key>BasicPrinterCell.nib</key>
 		<data>
-		CDavhrmEeswOs1guOFESglrjH2Y=
+		zCZIHLWnA7A1E+NqDkqB63L8AwA=
 		</data>
 		<key>CardPaymentStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>CardPaymentStoryboard.storyboardc/UIViewController-er9-hO-7FM.nib</key>
 		<data>
-		N4pZih49oxXPI84UEG67PvlfenU=
+		2ryU6S+WEk2Mvr4k8zU3szcNVT8=
 		</data>
 		<key>CardPaymentStoryboard.storyboardc/er9-hO-7FM-view-hMZ-tm-Rg0.nib</key>
 		<data>
-		nOzWgYYU78zb33I/FJEcnYqSCvc=
+		cTHUtUfC6bb40PWDk+bixdN9oyg=
 		</data>
 		<key>CardPracticeStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -50,15 +50,19 @@
 		</data>
 		<key>CardPracticeStoryboard.storyboardc/UIViewController-xRL-F1-kwx.nib</key>
 		<data>
-		EwkP14I3LPyQdAiQ5a0eJIUCp20=
+		jKoe2HH1PpEk2hucycWIxSRQTrE=
 		</data>
 		<key>CardPracticeStoryboard.storyboardc/xRL-F1-kwx-view-hU7-Dn-ott.nib</key>
 		<data>
-		u5HtQQpbPZnbWIgFQQ4vQlzQ5BE=
+		HRB3IJvm2wChUtCElZfPcbyQWiU=
 		</data>
 		<key>CardPracticeView.nib</key>
 		<data>
 		E9P442xNqpiKrK0eRBRdziW8rnc=
+		</data>
+		<key>CopiedInfo.plist</key>
+		<data>
+		2PfDil3dFONpa4k9rQVc6WSPEBU=
 		</data>
 		<key>EmailReceiptStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>EmailReceiptStoryboard.storyboardc/UIViewController-oqg-io-6sw.nib</key>
 		<data>
-		/XTGloPjF7Qz+aCXtHBZBaMtLwM=
+		B7p8pJJQZmVfr9C+X/uOvaF56kE=
 		</data>
 		<key>EmailReceiptStoryboard.storyboardc/oqg-io-6sw-view-TU4-lH-tsS.nib</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/7SP-eI-MUp-view-het-iW-Zqn.nib</key>
 		<data>
-		BfgiUvNQ5v6tOoDWcyO6Lsl1R7o=
+		0TtXWSLQ/++QNhAukcbjWdatQQ0=
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/UIViewController-7SP-eI-MUp.nib</key>
 		<data>
-		zo/i2FyHfVXK4kqjCyHBavyq8qA=
+		gfLPAhSGQbr6+Bz2LCQpRCJqrBo=
 		</data>
 		<key>EmoneyCompatibilityStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -118,7 +122,7 @@
 		</data>
 		<key>EmoneyPaymentStoryboard.storyboardc/bgg-SJ-5V8-view-V2O-6K-UUi.nib</key>
 		<data>
-		bAIyPlYEGeIJG/XwFTnAiAC8OmU=
+		o/AmUp/DxN2ULI3HE4NQ4tthyG4=
 		</data>
 		<key>EmoneyPracticeStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -166,7 +170,7 @@
 		</data>
 		<key>EmoneyUnconfirmedResultStoryboard.storyboardc/9dZ-YX-pfj-view-GiH-uS-27r.nib</key>
 		<data>
-		HADlLZTZK9MTKG6HVmr9Oh2Z6/I=
+		k3MwJQ8OQ9H/+wTfJr9jui6k+uE=
 		</data>
 		<key>EmoneyUnconfirmedResultStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -178,7 +182,7 @@
 		</data>
 		<key>EmoneyUnconfirmedStatusButtonCell.nib</key>
 		<data>
-		GB0OoIYOjc76D3EXPiO0O5iCzVY=
+		iw9zS4BzINoaSxwKqFG+VZu2TWQ=
 		</data>
 		<key>EmoneyUnconfirmedStatusFooterView.nib</key>
 		<data>
@@ -198,11 +202,11 @@
 		</data>
 		<key>EmoneyUnconfirmedStatusStoryboard.storyboardc/lID-Cn-kJW-view-sat-nm-m5t.nib</key>
 		<data>
-		QUDfRJRGK1KYfnlWOdrBjSPvmLA=
+		VYP4PHNeSgdBjWGkAxUI5bbcY+g=
 		</data>
 		<key>FinancingOptionHeaderView.nib</key>
 		<data>
-		ljIzfAndDSDK+GqovjNSFvTEMaM=
+		4I7SbeoMkJ+Hs5Ouaj5/CJlEls4=
 		</data>
 		<key>FinancingOptionStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -210,15 +214,15 @@
 		</data>
 		<key>FinancingOptionStoryboard.storyboardc/PYH-AI-Yq3-view-b3f-OD-qUh.nib</key>
 		<data>
-		nSdnwEk4RZIsT8/LNyD50T+OEg0=
+		xguzc35LzuDE6h5p6oNHtuJMymc=
 		</data>
 		<key>FinancingOptionStoryboard.storyboardc/UIViewController-PYH-AI-Yq3.nib</key>
 		<data>
-		3ZDsS0P2zMi6Wt8yHdpmdYqQlY4=
+		UEW+T92Hf/tmjlWFtRlneD3zVkU=
 		</data>
 		<key>FirmwareUpdateStatusView.nib</key>
 		<data>
-		mDwpeSWiZO0v2uuwpEh0Gbei/a8=
+		iL7H/ZYD5tMkKhmsi3Mmn50l9Xo=
 		</data>
 		<key>FirmwareUpdateStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -282,7 +286,7 @@
 		</data>
 		<key>Headers/STORESPaymentsSDK-Swift.h</key>
 		<data>
-		H1hfYeitTkKmCaHVrTNIsbauNd4=
+		U3nc5kw/dG27ef8wauzBhIMlRL8=
 		</data>
 		<key>Headers/STORESPaymentsSDK.h</key>
 		<data>
@@ -314,11 +318,11 @@
 		</data>
 		<key>IncompatibleTerminalStoryboard.storyboardc/UIViewController-Sel-av-udu.nib</key>
 		<data>
-		2S5s+wJz5xP8U3k1tog+1F5ivO0=
+		3IS4q0QUVw9/6XhviJEm2y94HEM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SGqHFxylxmXnIGzuuZ4/MNAk8a8=
+		2PfDil3dFONpa4k9rQVc6WSPEBU=
 		</data>
 		<key>LoginStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -330,23 +334,31 @@
 		</data>
 		<key>LoginStoryboard.storyboardc/eCt-AY-Q40-view-o7a-j0-lfl.nib</key>
 		<data>
-		olDZfOsboeX3CyeNDi6O68FNfpo=
+		YL/3Wd5/3ySW3rbz5zZZvwtB72s=
+		</data>
+		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		6LY2mYi4XWQdDxeCoHtSq5DU1FI=
+		</data>
+		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		voFbdW3fRUAMiCtr1VTrsC+StDM=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cZM11u99MxNiWBTB/GLAAJcp55M=
+		GC0vUeW6WggfnDCt8X6H/y7XROQ=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TxW33am7QLknYw+QqBjpTC0FkwM=
+		voFbdW3fRUAMiCtr1VTrsC+StDM=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8rMvvCqDsOE+Eh94B5BP74EjSao=
+		Xajnig8ihb1zXTE7gOIIkcGeSrQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		eab1ufjxgV3NKBcyZnDuYOZT29I=
+		1jTY9CvNPlz3Ohck0GG62K3CRRc=
 		</data>
 		<key>PaymentCompleteStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -354,7 +366,7 @@
 		</data>
 		<key>PaymentCompleteStoryboard.storyboardc/QZS-7v-aan-view-RYB-1h-jnI.nib</key>
 		<data>
-		v9LOH5P2pWsOQ8noheoBbnPXLDI=
+		SLaroe6/33GnqaCFfi94tnkQYkU=
 		</data>
 		<key>PaymentCompleteStoryboard.storyboardc/UIViewController-QZS-7v-aan.nib</key>
 		<data>
@@ -370,11 +382,11 @@
 		</data>
 		<key>PaymentMethodSelectionStoryboard.storyboardc/UIViewController-zQJ-x8-lTF.nib</key>
 		<data>
-		GJQZzrdlIwotflzTMltB3mRzOlo=
+		sBmFAdvQ5eIeQmXtcjngoMoSer8=
 		</data>
 		<key>PaymentMethodSelectionStoryboard.storyboardc/zQJ-x8-lTF-view-0Wh-fk-DSt.nib</key>
 		<data>
-		lfUhOjOoewmfgDlDt/0xea+Ebjk=
+		nf3J2m/1DOQWhvgENVoFlsP6x94=
 		</data>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/Info.plist</key>
 		<data>
@@ -382,11 +394,11 @@
 		</data>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/UIViewController-sCi-mL-LHR.nib</key>
 		<data>
-		FqWBhMqWXbvlH6BJSntjBIHMcK4=
+		WfCwBi0YzK3NVyAexny4NmaTfo8=
 		</data>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/sCi-mL-LHR-view-H3w-6d-gXd.nib</key>
 		<data>
-		i3nP6ETk9TPRe5n7stKdk/7daak=
+		haG00GWB0KL5TsnTmIgo7lCkYj4=
 		</data>
 		<key>PaymentSuccess.mp3</key>
 		<data>
@@ -406,11 +418,11 @@
 		</data>
 		<key>PrinterInfoCell.nib</key>
 		<data>
-		W1A3HrgfdJWFI850WSv1l2nzdFA=
+		e2d43r9W5xvNfgwVM671KtfavGQ=
 		</data>
 		<key>PrinterSettingsStoryboard.storyboardc/7ZA-Td-Ion-view-3f2-Wq-eQ2.nib</key>
 		<data>
-		GcHGmrQmxO4XeB3bntbUDNn5ebo=
+		vva3uRhQgurdUmTfGr9PEG5/5/o=
 		</data>
 		<key>PrinterSettingsStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -426,7 +438,7 @@
 		</data>
 		<key>RefundConfirmationStoryboard.storyboardc/UIViewController-h1n-mB-ddm.nib</key>
 		<data>
-		xauCUzAnF+WbA62iiIiY1H1VZJ8=
+		Z3kTrAi6/gczl8pMv6a+VOISzBg=
 		</data>
 		<key>RefundConfirmationStoryboard.storyboardc/h1n-mB-ddm-view-6qv-57-9x7.nib</key>
 		<data>
@@ -434,7 +446,7 @@
 		</data>
 		<key>RightDetailTableViewCell.nib</key>
 		<data>
-		qIPPmVOvgZcEBxFq5JLPIRB3VJg=
+		Etkpqsnb3z2kHQ7ovftIkejUDko=
 		</data>
 		<key>SDKStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -474,7 +486,7 @@
 		</data>
 		<key>SwitchableTableViewCell.nib</key>
 		<data>
-		47g1ccU7EiextE9DBBiH4BTB6dE=
+		a96qj5O2eRR+6Y8jJAeEDQOb4hY=
 		</data>
 		<key>TerminalConnectionGuideStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -482,7 +494,7 @@
 		</data>
 		<key>TerminalConnectionGuideStoryboard.storyboardc/UIViewController-eyz-oU-hK0.nib</key>
 		<data>
-		WMlxrTa4asdwYlZXRQOEJYpsuBM=
+		zKAd8OwECYkC0CeRbqVEU/KzhoE=
 		</data>
 		<key>TerminalConnectionGuideStoryboard.storyboardc/eyz-oU-hK0-view-qPx-rG-6Cu.nib</key>
 		<data>
@@ -490,7 +502,7 @@
 		</data>
 		<key>TerminalInfoCell.nib</key>
 		<data>
-		sTcAk/rz2eF8yc/+pMYpTk6cqjQ=
+		cLoIqW9nhEbn9GRk1kD3AHR9gtM=
 		</data>
 		<key>TerminalInfoStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -498,11 +510,11 @@
 		</data>
 		<key>TerminalInfoStoryboard.storyboardc/LtE-nI-kZb-view-L8Q-2r-pRr.nib</key>
 		<data>
-		XKmKDTe0PpYqrPAb6ITGPv1OyXs=
+		ZCPMbIPbx7JEGcqEH64RcVuSbTM=
 		</data>
 		<key>TerminalInfoStoryboard.storyboardc/UIViewController-LtE-nI-kZb.nib</key>
 		<data>
-		LL+EKw4frqPQS0NuxrNon22WWps=
+		5MHVA1fKavM+7IQLknsZUP+UoHo=
 		</data>
 		<key>TerminalStatusView.nib</key>
 		<data>
@@ -522,7 +534,7 @@
 		</data>
 		<key>TransactionDetailAmountCell.nib</key>
 		<data>
-		ghWW55PZO0EYkIUhT1ellpFz/m8=
+		moLuk+o/LNrkhGdiD+++qp4vJPI=
 		</data>
 		<key>TransactionDetailFooterView.nib</key>
 		<data>
@@ -534,15 +546,15 @@
 		</data>
 		<key>TransactionDetailStoryboard.storyboardc/Om4-hA-tF4-view-v46-HR-1Lc.nib</key>
 		<data>
-		vFRoIiS8ClznVK/iGFAaErR6yJA=
+		HfYfZfBGQaE1Lrg6qSPqzSTJOUI=
 		</data>
 		<key>TransactionDetailStoryboard.storyboardc/UIViewController-Om4-hA-tF4.nib</key>
 		<data>
-		sOHqR4az4kcSGV4yqkD1+m2L6sU=
+		uQToxIdmWbhtQyZf8iZJW6HnBTo=
 		</data>
 		<key>TransactionDetailTwoLinesDetailLabelCell.nib</key>
 		<data>
-		QH2u/iUq62eB0G1P1Sd5kphlDnY=
+		XEPoeiC3yHpSblrt1Cbai8kcR6c=
 		</data>
 		<key>WechatPaymentStoryboard.storyboardc/8Sk-hY-wbP-view-5lh-ve-zDk.nib</key>
 		<data>
@@ -554,7 +566,7 @@
 		</data>
 		<key>WechatPaymentStoryboard.storyboardc/UIViewController-8Sk-hY-wbP.nib</key>
 		<data>
-		YHM3BcKJbTHdwo/uCYQP/PXjDHM=
+		VsttfJCZ3Pv9BQhLp8EK4wS85lc=
 		</data>
 		<key>WechatPracticeCompleteStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -578,7 +590,7 @@
 		</data>
 		<key>WechatPracticeStoryboard.storyboardc/UIViewController-OWW-Xs-QfG.nib</key>
 		<data>
-		R0dalOAY6FHaMe5KIi2QgrOct18=
+		vQ/KpMa+fKD7lmeJKJoQvHVWHdQ=
 		</data>
 		<key>card.mp4</key>
 		<data>
@@ -596,7 +608,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zhNLSq5I6vwrnu4NXpWvFS0haZM=
+			Bc0AOZBdoqEHgTgNAC/awMyU2wg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -671,14 +683,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l2DC5uVYxPyRlDAba8NJTOcjMRaHFMHa5fKtIxV4upw=
+			biM8aNqXcVRReno+SfLHksoSJsVc7R9qGlmzy/jFZYc=
 			</data>
 		</dict>
 		<key>BasicPrinterCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LHc1+pIZUP0YjJvQCzN2ykc/slYEBhGZBiSm3pnpSZc=
+			MnP4fniAVdyihzKzPPOMJviJ30gunDcZn9yXog22LBI=
 			</data>
 		</dict>
 		<key>CardPaymentStoryboard.storyboardc/Info.plist</key>
@@ -692,14 +704,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gLGfHKNvSrmPU9/ihCnw5MWcsIeICMNTE7LE2ZalYHI=
+			OkP5+qS24aBa8Moye5+JZfZ0Q3kg0UcrFqfb75cHVHk=
 			</data>
 		</dict>
 		<key>CardPaymentStoryboard.storyboardc/er9-hO-7FM-view-hMZ-tm-Rg0.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			suEVc/K7yPtl62xhTWnqj4SiiV2qJJpZv2yal3lzPfg=
+			eXo0pBBEHAmaEo56Jy7j3oiJXHr8KVpppka0WF+rTLo=
 			</data>
 		</dict>
 		<key>CardPracticeStoryboard.storyboardc/Info.plist</key>
@@ -713,14 +725,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gl18QArb4f1LWnew+teUzH4zi7sSNcKIESWHrZZe8Rk=
+			NyaQdBngxVLQbg0dG7OufaxKVGiP/Lq42BXRR/svVu0=
 			</data>
 		</dict>
 		<key>CardPracticeStoryboard.storyboardc/xRL-F1-kwx-view-hU7-Dn-ott.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+pO5gnlw9/SoADlef+oCoD+9jFCIQsZA8MtdY8aCHu0=
+			h6yWhXWeD/0PcS4hh4QTBp8njfJUNHwkJqBfiusUEBQ=
 			</data>
 		</dict>
 		<key>CardPracticeView.nib</key>
@@ -728,6 +740,13 @@
 			<key>hash2</key>
 			<data>
 			NG7EZPTsuJGlhemVjnhB80fs4hFybxYzEmrKX7GkyZg=
+			</data>
+		</dict>
+		<key>CopiedInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X0k5i2+EblOBz07QY6maAVfZwembdTo0RTnEI96qlOw=
 			</data>
 		</dict>
 		<key>EmailReceiptStoryboard.storyboardc/Info.plist</key>
@@ -741,7 +760,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LkmThBbOFBFDDTjvzkBVtMLbQHqx0nAmybvsyG9dwVw=
+			ja994F93OD92jQFMw0Gmr6id2u8SouAE+qWlHgE+YoI=
 			</data>
 		</dict>
 		<key>EmailReceiptStoryboard.storyboardc/oqg-io-6sw-view-TU4-lH-tsS.nib</key>
@@ -776,7 +795,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0BePKnA5fXDwDqSeOSb1UdlO4eS3Uorv7kTf2/0WqtQ=
+			WgQckY8s7UNTieOxldJLrj8x2laQCgW/JKGLfIW34NE=
 			</data>
 		</dict>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/Info.plist</key>
@@ -790,7 +809,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RvOF7WgEmscBQIk1hEDHfPx6P0LVUAjKYKfrIpCAlso=
+			L9tSvvAfD5YArE5c1KH2ypeuJhl3/XMHFTcFsawlll4=
 			</data>
 		</dict>
 		<key>EmoneyCompatibilityStoryboard.storyboardc/Info.plist</key>
@@ -832,7 +851,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kagly+iio1tC4yF99QsbacYdArf7b/VGucxApRMp7NA=
+			RaIX+of5RGH07UgT7XiyjWHxyMw4+WuwNy3EL/J6Y1E=
 			</data>
 		</dict>
 		<key>EmoneyPracticeStoryboard.storyboardc/Info.plist</key>
@@ -916,7 +935,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o+/ZgYuGnDslG5I6ZjWR5MPNZID2vc4dbh2q3vC61s4=
+			KmwvOBZjaj2FsPDMkdOmwcAk+URHphMmWufRzKqSRcA=
 			</data>
 		</dict>
 		<key>EmoneyUnconfirmedResultStoryboard.storyboardc/Info.plist</key>
@@ -937,7 +956,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ei0bc+pR2yjFU3qNH2gVLdPi/e8kVwoUfLC89vLGEnU=
+			9cqOez2HQ9Q5BMdSprhJg7OR85yKMbLUxfxCrL8ZFBs=
 			</data>
 		</dict>
 		<key>EmoneyUnconfirmedStatusFooterView.nib</key>
@@ -972,14 +991,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n9m2gUqVV/lHkAJePfNg29krsUq5QHNhx8Lt3X/A0Yg=
+			DPlR0lA9LMojiWEJiAfOGCbfSU94snocg4j83VgpN50=
 			</data>
 		</dict>
 		<key>FinancingOptionHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L8xeVxW4wwIeyLVrSHN3+fgyks/ZwTzwBNFm2Gyxaoc=
+			Y/kf3uL+F1BncQn+x1o7mWHym7/RjmbzLZgrOBAS2B4=
 			</data>
 		</dict>
 		<key>FinancingOptionStoryboard.storyboardc/Info.plist</key>
@@ -993,21 +1012,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qtahk0Cf2X9/NafYiE5GjvX90OQcSnLQe5Ite8hq90c=
+			KE8+Ds8bWvQwjGCz0z/3G7j9JVGVaqMG5dA4J4ZgPqE=
 			</data>
 		</dict>
 		<key>FinancingOptionStoryboard.storyboardc/UIViewController-PYH-AI-Yq3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kjE+UCIY4ZOzIpjo4zTscGK1aFf2MM1tN8oEyezsBPI=
+			3zZ9FDIw8mldD8Md3BuUTrF06zd4HCKaTHOv/D7kLVo=
 			</data>
 		</dict>
 		<key>FirmwareUpdateStatusView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gqjur5IGZVW2eilMpXzkgfGh6WgOXjnZEKGEkxaFwzw=
+			a2GC0O5/fWmK4WCkh5J3A8NbYKYS5oEul77DJgNTrxk=
 			</data>
 		</dict>
 		<key>FirmwareUpdateStoryboard.storyboardc/Info.plist</key>
@@ -1119,7 +1138,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bUp8vQHGhH+R79jrq+X/t/sQeDWJgd4UB4+7HLJbFGk=
+			3v+zpxqpi5iO8p3FkCU9wZfaXvyCYy1ayKEuYRSM5Ow=
 			</data>
 		</dict>
 		<key>Headers/STORESPaymentsSDK.h</key>
@@ -1175,7 +1194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1cJ0AsdbsGFQbtEhXpoX0cyOSi5alAwNxUjLqCx+j+4=
+			rmRoGZmicJ1uiT8ZdXs9Apb3GLEQJJcp9DOjzxFaspw=
 			</data>
 		</dict>
 		<key>LoginStoryboard.storyboardc/Info.plist</key>
@@ -1196,35 +1215,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9F6vtNsG0Md/SU4+2MccCSEHLMysj9MV2YSRI6FTCKo=
+			ZLsCSoHUyflekXyfJn7dUgUYfTQvvv40KbrWl1+T2O8=
+			</data>
+		</dict>
+		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Soc0w1gdVZoSIb/0ztkvE9qyjHHFYC9ByfUDdi9JIOU=
+			</data>
+		</dict>
+		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EyDolK6GplEidHJD0DxC+ShWruNDq8S9+fWnvoZecDM=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dxPkWEAK/2rrMxZxV7OE07/+NGBt0n0fXi9rCeH3+HU=
+			57zod4oXMin9C6FGh2sngBrlO0WU3BZO0JyyF14CJzk=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wtH33pQ7NDPtaB9YaxV/JF6LGzts9Y2Cr21fT3GdBPU=
+			EyDolK6GplEidHJD0DxC+ShWruNDq8S9+fWnvoZecDM=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ex5GNez/gwwO+P/1o7m4c0sz+d9Oeh2LsSDzevapKTI=
+			Rf8intnYJMGG6YF9BuwzKbMflWO4svEmXcAzPFTEpFM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H1YqeQqeGMLRN/AstouxgkVOO6URZUoNkTlTwFr6+ZY=
+			MvcDj7o/wCMr8p0lksKOAJ3mSnaU4x1XfWQ0dgWMN0Q=
 			</data>
 		</dict>
 		<key>PaymentCompleteStoryboard.storyboardc/Info.plist</key>
@@ -1238,7 +1271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FeVl9hOLy8cDhu7wTKqHmmrQIPlsds6JRIT9InzTnkQ=
+			/sWF+Gwxd+rdXAtYe1p4d16Hyp9FPDZbDJ1RPpcH0m0=
 			</data>
 		</dict>
 		<key>PaymentCompleteStoryboard.storyboardc/UIViewController-QZS-7v-aan.nib</key>
@@ -1266,14 +1299,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fa74Bo8KUaJhvGGalkExCy91P4C8W7xsRD3YiWzwrTA=
+			Y5sd+0UW3fqmCgkjqBAXxE2vTR72K3pkFd/y7mnNFcs=
 			</data>
 		</dict>
 		<key>PaymentMethodSelectionStoryboard.storyboardc/zQJ-x8-lTF-view-0Wh-fk-DSt.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kW7GrWZb6OOydpQN/XdG2LLx866deQjg2CaeqsbokDM=
+			ott4wBvhP+QN+tXHdVaoXBaVaimJSncV4y9Q1Drjceo=
 			</data>
 		</dict>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/Info.plist</key>
@@ -1287,14 +1320,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gVBfF+NdcqqGfSYwAfPKzn6HvgEZFVBERqriJ+eZTdc=
+			FMaPffevmFBhXphy7+v+o73iLClf/l9X6dIQ+Hh72rc=
 			</data>
 		</dict>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/sCi-mL-LHR-view-H3w-6d-gXd.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LrbU0bxHjWlVZUrcu9dNcZMKF2qx+ehiEhWSbyk+Uro=
+			Swyo+G6V6Q4KxrWH/FhBSamXeCVAxBHzhQh6JPrNCU4=
 			</data>
 		</dict>
 		<key>PaymentSuccess.mp3</key>
@@ -1329,14 +1362,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jx42q/qA1/EIEkjE1lwDSvVrx/n0Mkmlgj6abc4M/kM=
+			zW4bSLJdVt5J+ujrDfqtWyDlj3E/Ht1jllaTa8vtdzk=
 			</data>
 		</dict>
 		<key>PrinterSettingsStoryboard.storyboardc/7ZA-Td-Ion-view-3f2-Wq-eQ2.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CcJpQCUaUAmf4JjfLQtaEh6rsl2ZYb4uus5dshV5tho=
+			zwTzuDOillzUNC+1MlHD4orkMiT3ZPOJUWqrx7biqA4=
 			</data>
 		</dict>
 		<key>PrinterSettingsStoryboard.storyboardc/Info.plist</key>
@@ -1364,7 +1397,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sbyVEPjYgIEPBtHXEBRmzyH3zBw9oXPPN2TTVf2NObA=
+			u5oK0obVEo5NQzs4X2sXbR18iWiLPFGPFXH5RX/m8dw=
 			</data>
 		</dict>
 		<key>RefundConfirmationStoryboard.storyboardc/h1n-mB-ddm-view-6qv-57-9x7.nib</key>
@@ -1378,7 +1411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qPKwO3uoeNjW+zlV4p97Exe7dNK10qeNIEOJ3N2a4UA=
+			r/XD1MPMhBGeUP+Vf5YKhg1WJrQBPp4HuAzVsYabhgo=
 			</data>
 		</dict>
 		<key>SDKStoryboard.storyboardc/Info.plist</key>
@@ -1448,7 +1481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5NeKJD9d4uuiFr3Lpt6kq+t+IjUyxdSUP2fHbZielNE=
+			KS4Y3QknX5Q3QwRZWwFkwjSWQPgjSmQt3UCaQ/blarg=
 			</data>
 		</dict>
 		<key>TerminalConnectionGuideStoryboard.storyboardc/Info.plist</key>
@@ -1462,7 +1495,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rCcsG4VTvg9q0QGOa8OO1CBd4zVbV2VTYtS26pDjha0=
+			rV4FhZ1tvThkoD/WzOaNs4bjy3EZcHZ4QHfDC042Ms4=
 			</data>
 		</dict>
 		<key>TerminalConnectionGuideStoryboard.storyboardc/eyz-oU-hK0-view-qPx-rG-6Cu.nib</key>
@@ -1476,7 +1509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jzbDTdS/9jOz+0KyI6b/nlaeJLBOUkYfWoGk/MrqSjA=
+			/GRfwsivMSptrQPKaG3mvXeMHClsKQQ+0PU34iNyaZ8=
 			</data>
 		</dict>
 		<key>TerminalInfoStoryboard.storyboardc/Info.plist</key>
@@ -1490,14 +1523,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DAPyVuGRriORV7RVuvrQf8ztzy5AKj7LaxTGnbYtBBo=
+			4uwr67f8nFBFq8dLM/DcimP2lUPsjcgxWNxlkbm0XZ4=
 			</data>
 		</dict>
 		<key>TerminalInfoStoryboard.storyboardc/UIViewController-LtE-nI-kZb.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			orF7SlyDyN7Vs1YT4hkX0GnWev3t1VbRGDPGaUtby7o=
+			3rHF0btsnVHd72YWEJT7Vcb5XXltzvuN52HIjGx2thA=
 			</data>
 		</dict>
 		<key>TerminalStatusView.nib</key>
@@ -1532,7 +1565,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JnoUdA145xIMT08wcH9B/LgaG+kcj+HEziT5TdBViT4=
+			rNYMiyK4QxHdTaTwZV8yyMZp8Rf8XSDesuOLlkCbHdc=
 			</data>
 		</dict>
 		<key>TransactionDetailFooterView.nib</key>
@@ -1553,21 +1586,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Pw3th8MWEGE+6E767JCJZjp3JGVnkEV8rLjiisIq50=
+			iPsrV9Ubv4tnBApXbziuWrcyKW0WQl/bt1Q/OGcwHl4=
 			</data>
 		</dict>
 		<key>TransactionDetailStoryboard.storyboardc/UIViewController-Om4-hA-tF4.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQhE5gJeqkG8HbcX3uvYPdJncm1PKVzGmZkIV7f/YAg=
+			1P/89SwF6AqN3rYDLqFGwGNXHAXinmP1sHJTwCfYaMY=
 			</data>
 		</dict>
 		<key>TransactionDetailTwoLinesDetailLabelCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rgEjXYStdoYKMQ8weSa0MU1rTMuNaAMfhTue1tUAlXQ=
+			4HctszfP43XF4a/ItL8NKJgedyxsjhaThpNa7HdqQj0=
 			</data>
 		</dict>
 		<key>WechatPaymentStoryboard.storyboardc/8Sk-hY-wbP-view-5lh-ve-zDk.nib</key>
@@ -1588,7 +1621,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+fl9TK3rzzp1Lfow+C1+aKDoszS/Msjf7cC3cj0kVo=
+			iG2zO9Ho0DW4uvq8EHjvMCLPd0KVEcrRWvOYMWw3HJE=
 			</data>
 		</dict>
 		<key>WechatPracticeCompleteStoryboard.storyboardc/Info.plist</key>
@@ -1630,7 +1663,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ecMz9Mfe/OMtoXg0SoZH5uphUH9lOtegtJ9lG8qqdxY=
+			KWhTtyja67ZJ5uelTBIWgEPs0RqF+lSHno8qcBHB0SY=
 			</data>
 		</dict>
 		<key>card.mp4</key>
@@ -1658,7 +1691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IMK9aDAh/yScUfd7fKz3hhP/jutxA4ypx9cq6bdnpgs=
+			gAC2iUUANzmyeqCq7mrg/h49FQUBbb8p9sJMfKEXkE0=
 			</data>
 			<key>optional</key>
 			<true/>

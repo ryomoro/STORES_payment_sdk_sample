@@ -6,6 +6,6 @@ framework module STORESPaymentsSDK {
 }
 
 module STORESPaymentsSDK.Swift {
-    header "STORESPaymentsSDK-Swift.h"
-    requires objc
+  header "STORESPaymentsSDK-Swift.h"
+  requires objc
 }
