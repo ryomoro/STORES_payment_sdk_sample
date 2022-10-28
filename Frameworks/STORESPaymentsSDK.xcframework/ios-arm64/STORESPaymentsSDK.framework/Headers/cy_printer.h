@@ -4,9 +4,6 @@
 #ifndef CY_PRINTER_H
 #define CY_PRINTER_H
 
-// Bitmaps should have a width that is a multiple of the below value
-#define CY_PRINTER_PAGE_WIDTH_INCREMENT (24)
-
 enum cy_printer_type {
     cy_invalid_printer,
     cy_escpos2_printer,     // Standard ESC/P 2 (Epson printers)

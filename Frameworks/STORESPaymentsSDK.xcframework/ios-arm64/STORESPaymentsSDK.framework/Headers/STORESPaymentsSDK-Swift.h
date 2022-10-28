@@ -304,6 +304,7 @@ SWIFT_CLASS("_TtC17STORESPaymentsSDK7Printer")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif

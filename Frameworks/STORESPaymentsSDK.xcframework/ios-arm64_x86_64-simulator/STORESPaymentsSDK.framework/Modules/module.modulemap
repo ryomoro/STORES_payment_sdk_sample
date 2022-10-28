@@ -1,0 +1,11 @@
+framework module STORESPaymentsSDK {
+  umbrella header "STORESPaymentsSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module STORESPaymentsSDK.Swift {
+  header "STORESPaymentsSDK-Swift.h"
+  requires objc
+}
