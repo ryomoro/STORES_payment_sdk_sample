@@ -36,21 +36,3 @@
 @end
 
 BOOL CYCharacterIsFullWidth(unichar const aChar);
-
-static inline NSString *CYStringToAlignmentMode(NSString * const aStr)
-{
-    return [aStr isEqualToString:kCAAlignmentNatural]   ? kCAAlignmentNatural
-            : [aStr isEqualToString:kCAAlignmentRight]     ? kCAAlignmentRight
-                    : [aStr isEqualToString:kCAAlignmentCenter]    ? kCAAlignmentCenter
-                            : [aStr isEqualToString:kCAAlignmentJustified] ? kCAAlignmentJustified
-                                    : kCAAlignmentLeft;
-}
-
-static inline NSTextAlignment CYStringToNSTextAlignment(NSString * const aStr)
-{
-    return [aStr isEqualToString:kCAAlignmentNatural]   ? NSTextAlignmentNatural
-            : [aStr isEqualToString:kCAAlignmentRight]     ? NSTextAlignmentRight
-                    : [aStr isEqualToString:kCAAlignmentCenter]    ? NSTextAlignmentCenter
-                            : [aStr isEqualToString:kCAAlignmentJustified] ? NSTextAlignmentJustified
-                                    : NSTextAlignmentLeft;
-}

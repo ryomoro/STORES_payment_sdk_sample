@@ -50,6 +50,11 @@ final class ViewController: UIViewController {
                  このタイミングではSTORES Payments SDK の画面は表示されています。
                  */
                 print("Payment Finished type = \(transactionType)")
+            } receiptPrintingStartHandler: {
+                /*
+                 SDKの決済完了画面でレシート印刷が開始されたタイミングで呼ばれます
+                 */
+                print("Receipt print start")
             } completion: { [weak self] result in
                 /*
                  STORES Payments SDK の画面を閉じたタイミングで呼ばれます。
@@ -91,6 +96,11 @@ final class ViewController: UIViewController {
                 case let .failure(error):
                     print("Refund Error = \(error)")
                 }
+            } receiptPrintingStartHandler: {
+                /*
+                 SDKの売り上げ詳細画面でレシート印刷が開始されたタイミングで呼ばれます
+                 */
+                print("Receipt print start")
             } dismissCompletion: { [weak self] result in
                 /*
                  STORES Payments SDK の画面を閉じたタイミングで呼ばれ

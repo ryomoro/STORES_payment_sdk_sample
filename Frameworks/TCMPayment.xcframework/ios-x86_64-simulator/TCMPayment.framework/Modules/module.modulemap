@@ -1,6 +1,0 @@
-framework module TCMPayment {
-  umbrella header "TCMPayment.h"
-
-  export *
-  module * { export * }
-}
