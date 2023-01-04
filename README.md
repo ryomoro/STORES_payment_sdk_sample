@@ -37,7 +37,7 @@ STORES 決済 はインターフェースを刷新した次世代の SDK `STORES
 ****
 
 ## 必要なもの
-* Xcode 14.0.1
+* Xcode 14.1
 * [アプリケーション登録](#アプリケーション登録について)
 * STORES 決済端末 (購入については、 <coineykitsupport@coiney.com> までお問い合わせください)
 
