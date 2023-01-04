@@ -26,7 +26,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		TCPPhzhhJsLLYSr1OSjCyElgKU8=
+		C5gYy5E0GD/BXOZ37Q9gDHZQUTc=
 		</data>
 		<key>BasicPrinterCell.nib</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>CopiedInfo.plist</key>
 		<data>
-		ZzK2mg3N1QWg2ci3Gbk3XmgYkRI=
+		bQzdttfPK3pZjqolhKporQ4+UuY=
 		</data>
 		<key>EmailReceiptStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/7SP-eI-MUp-view-het-iW-Zqn.nib</key>
 		<data>
-		0TtXWSLQ/++QNhAukcbjWdatQQ0=
+		m4bZGYwt7ZLgsFicOitQp1JPDEc=
 		</data>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>Headers/STORESPaymentsSDK-Swift.h</key>
 		<data>
-		0yqSlLkEEtlv+lxv23cqXt8B1JM=
+		VmiaZlbqG3YT/GgBSnV+kXdZQjY=
 		</data>
 		<key>Headers/STORESPaymentsSDK.h</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZzK2mg3N1QWg2ci3Gbk3XmgYkRI=
+		bQzdttfPK3pZjqolhKporQ4+UuY=
 		</data>
 		<key>LoginStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -314,43 +314,43 @@
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mu52K+gn/vAf9cvzcWMk6Llw/K4=
+		mD0JdRVkILPhwffhaQdFul64xTA=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/z7AArrkJRx5dboOZ2TA3w0bEo4=
+		7f5PY+Mdv9Maqc/02keS+WMwmFI=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0BxUgmjnU7J3i+YpHgeAczT/gcM=
+		jr9ZkxIYJOMALP8S3Uwm7X2sZXo=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/z7AArrkJRx5dboOZ2TA3w0bEo4=
+		7f5PY+Mdv9Maqc/02keS+WMwmFI=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9a9WcAqwJQVnUza/3QBwABGXhSc=
+		f65mUOLjEN+lJb7f/qY5TC9AnEM=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mu52K+gn/vAf9cvzcWMk6Llw/K4=
+		mD0JdRVkILPhwffhaQdFul64xTA=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NfoKOLLY7iAdD0B5o9nOjByS0wE=
+		Jxa+x7VowJDIyH9HEGLfJk0N5Xw=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fKjIpLL+LxDhjSUjt1VcyZZpuy8=
+		qXATlU0Wnn6E1GFLpWQKWQrf1Nc=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NfoKOLLY7iAdD0B5o9nOjByS0wE=
+		Jxa+x7VowJDIyH9HEGLfJk0N5Xw=
 		</data>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dF6JuTXxae9DgaC/0HxozIduus0=
+		JggG3BRT94/sF/9CPoDzUF0wPVU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -382,7 +382,7 @@
 		</data>
 		<key>PaymentMethodSelectionStoryboard.storyboardc/zQJ-x8-lTF-view-0Wh-fk-DSt.nib</key>
 		<data>
-		nf3J2m/1DOQWhvgENVoFlsP6x94=
+		RuAcaH3Hm8xZFwGQj5lu6+ct6hE=
 		</data>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/Info.plist</key>
 		<data>
@@ -394,7 +394,7 @@
 		</data>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/sCi-mL-LHR-view-H3w-6d-gXd.nib</key>
 		<data>
-		haG00GWB0KL5TsnTmIgo7lCkYj4=
+		cHhiD0Yubon2NBZelxBAGVUdn5s=
 		</data>
 		<key>PaymentSuccess.mp3</key>
 		<data>
@@ -608,7 +608,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bc0AOZBdoqEHgTgNAC/awMyU2wg=
+			onK/wpqwSiFuhjQ9yapDaoU0G+k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -683,7 +683,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			biM8aNqXcVRReno+SfLHksoSJsVc7R9qGlmzy/jFZYc=
+			LAYqvgMTaqDqVejLsH5G+ygh83AinkSkG8AVws5z1Qc=
 			</data>
 		</dict>
 		<key>BasicPrinterCell.nib</key>
@@ -746,7 +746,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZnxoJCy/7eqMIWxfWTWNCPTuuPyYaH16zzD7Wjn+jKM=
+			0a3XCSFyqlQi1VVXuyk9ASremNnRtxbMAsRbOpJHQio=
 			</data>
 		</dict>
 		<key>EmailReceiptStoryboard.storyboardc/Info.plist</key>
@@ -795,7 +795,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WgQckY8s7UNTieOxldJLrj8x2laQCgW/JKGLfIW34NE=
+			0ACgRm6upABs1uOEqzRUN7taunHALRq5FW/LlygOJeA=
 			</data>
 		</dict>
 		<key>EmoneyBalanceReaderStoryboard.storyboardc/Info.plist</key>
@@ -1110,7 +1110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUMFtQmYotiqLcWlm4jjVJJa8K7z4/zlzPJQ/XUfo5g=
+			4r7xA7RyEaIdP9bEoQCwWkNwxuy88NGG62OTIvZvDVM=
 			</data>
 		</dict>
 		<key>Headers/STORESPaymentsSDK.h</key>
@@ -1180,70 +1180,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1oUeJ3TW9QRuB/wLkdnR2F2XwfC9EwxQsl9nXoG3bl8=
+			YtXFskz9cf43EVgJfxtGwW0eB3kw45Ujww85uh4vDqw=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OV8DWo14+4TYLM5GNbgOK6WWkOMRtPY2ywVj4oawrPs=
+			Y8Qp6G3UMKQKk9dxDP/e1ItRB8GkD1jk7E30qa/jj9g=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XL38b+kniqjQrp8Gkzlz4ekvUEvCb8hBk5r32It59cQ=
+			ERCZakvOaU1ImUFIRuIJ2TQMu24JIfIRTSq4jTysQw0=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OV8DWo14+4TYLM5GNbgOK6WWkOMRtPY2ywVj4oawrPs=
+			Y8Qp6G3UMKQKk9dxDP/e1ItRB8GkD1jk7E30qa/jj9g=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			afyd7nFYS25KHr7Sby4P8XY5BsUYVDhi1LBVlTZ3d0w=
+			t9XK2+ZNmEspd84TnalDN2CTLUHZJZHZqUiclc9CAxg=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1oUeJ3TW9QRuB/wLkdnR2F2XwfC9EwxQsl9nXoG3bl8=
+			YtXFskz9cf43EVgJfxtGwW0eB3kw45Ujww85uh4vDqw=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B85MP/W8WxG1SV6baBsKj+5WewLJydE8cydzrOxdvQE=
+			uF0L9bbw5jEhLy/gi0nMcBfFtJXWxpDqNmU2hox8pXI=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jg+0Bdy0u6xNX/zEAautpyR/eCSk+UzzIe9v5UaUbCg=
+			XybDd6l6N57pilYrJhuX3DsRW6KAavB5/Y1uN8IosZw=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B85MP/W8WxG1SV6baBsKj+5WewLJydE8cydzrOxdvQE=
+			uF0L9bbw5jEhLy/gi0nMcBfFtJXWxpDqNmU2hox8pXI=
 			</data>
 		</dict>
 		<key>Modules/STORESPaymentsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fc8oIjKptcT4IJljQ1bc2D69M9p196/5+lstEXyJEIo=
+			qACe+eEabh5YhonGuuVRW/ZM5yPKRYKPTJ3aFsv2QgI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1299,7 +1299,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ott4wBvhP+QN+tXHdVaoXBaVaimJSncV4y9Q1Drjceo=
+			96tcDQCOq9G6k8jeO8EUsGiUq0H9+4vXCv+pXoIyKE8=
 			</data>
 		</dict>
 		<key>PaymentMethodSelectionStoryboard_iPad.storyboardc/Info.plist</key>
@@ -1320,7 +1320,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Swyo+G6V6Q4KxrWH/FhBSamXeCVAxBHzhQh6JPrNCU4=
+			n6c9ATIRzje5i/gb6SlUbKhB2MOtEuHizefKFb5y5vE=
 			</data>
 		</dict>
 		<key>PaymentSuccess.mp3</key>
@@ -1691,7 +1691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gAC2iUUANzmyeqCq7mrg/h49FQUBbb8p9sJMfKEXkE0=
+			E+1Za0ml8oAjYZyxTFoA2LRPGWc86HySuvOsq9SUXLs=
 			</data>
 			<key>optional</key>
 			<true/>
