@@ -68,6 +68,11 @@ final class ViewController: UIViewController {
 
                      let receiptImage = transactionType.receiptImage(with: 300)
                      */
+                    /*
+                     TransactionType から 取引番号文字列を取得できます。
+
+                     let humanReadableIdentifier = transactionType.humanReadableIdentifier
+                     */
                 case let .failure(error):
                     print("Payment Error = \(error)")
                 }
