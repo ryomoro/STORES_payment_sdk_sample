@@ -16,7 +16,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> 1.1.1 Docs</a> (100% documented)</p>
+        <p><a href="index.html"> 1.1.2 Docs</a> (100% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -42,6 +42,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/EmoneyBrand.html">EmoneyBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EmoneyInitializationStatus.html">EmoneyInitializationStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/EmoneyPaymentStatus.html">EmoneyPaymentStatus</a>
@@ -91,9 +94,6 @@
                 <a href="Structs/STP/SDKMode.html">– SDKMode</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/STP/EmoneyInitializationStatus.html">– EmoneyInitializationStatus</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/STP/Settings.html">– Settings</a>
               </li>
               <li class="nav-group-task">
@@ -123,8 +123,8 @@
 <h2 id='必要条件' class='heading'>必要条件</h2>
 
 <ul>
-<li>Xcode: 14.0.1</li>
-<li>Swift: 5.7.0</li>
+<li>Xcode: 14.1.0</li>
+<li>Swift: 5.7.1</li>
 <li>iOS 13〜</li>
 </ul>
 
@@ -276,9 +276,11 @@
 
     <span class="kt">STORESPaymentsSDK</span><span class="o">.</span><span class="kt">STP</span><span class="o">.</span><span class="nf">payment</span><span class="p">(</span>
         <span class="nv">presentOn</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span>
-        <span class="nv">amount</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+        <span class="nv">amount</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
         <span class="nv">memo</span><span class="p">:</span> <span class="s">"Memo"</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">transactionType</span> <span class="k">in</span>
             <span class="nf">print</span><span class="p">(</span><span class="s">"Payments Finish </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="p">}</span> <span class="nv">receiptPrintingStartHandler</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Start receipt printing"</span><span class="p">)</span>
     <span class="p">}</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
         <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
         <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">transactionType</span><span class="p">):</span>
@@ -331,18 +333,23 @@
             <span class="nv">on</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span>
             <span class="nv">transactionIdentifier</span><span class="p">:</span> <span class="n">transactionId</span><span class="p">,</span>
             <span class="nv">shouldAllowRefunding</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nv">shouldAutoTransitionToRefund</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nv">refundErrorHandler</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
-              <span class="nf">print</span><span class="p">(</span><span class="s">"Refund Error = </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
-            <span class="p">},</span>
-              <span class="nv">dismissCompletion</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+            <span class="nv">shouldAutoTransitionToRefund</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
                 <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
                 <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">transactionType</span><span class="p">):</span>
-                    <span class="nf">print</span><span class="p">(</span><span class="s">"Show transaction success </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Refund Success </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
                 <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
-                    <span class="nf">print</span><span class="p">(</span><span class="s">"Show transaction error </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Refund Error = </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
                 <span class="p">}</span>
-            <span class="p">})</span>
+        <span class="p">}</span> <span class="nv">receiptPrintingStartHandler</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Receipt print start"</span><span class="p">)</span>
+        <span class="p">}</span> <span class="nv">dismissCompletion</span><span class="p">:</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+            <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">transactionType</span><span class="p">):</span>
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Show transaction success </span><span class="se">\(</span><span class="n">transactionType</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+            <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">):</span>
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Show transaction error </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
 
 </code></pre>
 <h3 id='加盟店情報取得' class='heading'>加盟店情報取得</h3>
@@ -387,7 +394,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2022 <a class="link" href="https://coiney.com/" target="_blank" rel="external noopener">STORES, Inc.</a>. All rights reserved. (Last updated: 2022-10-28)</p>
+          <p>&copy; 2022 <a class="link" href="https://coiney.com/" target="_blank" rel="external noopener">STORES, Inc.</a>. All rights reserved. (Last updated: 2022-12-27)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

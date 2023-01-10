@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A32C461D28498362000BD3EA /* STORESPaymentsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A32C461C28498362000BD3EA /* STORESPaymentsSDK */; };
 		A32C461F28498362000BD3EA /* TCMPayment in Frameworks */ = {isa = PBXBuildFile; productRef = A32C461E28498362000BD3EA /* TCMPayment */; };
+		A388CC422935C1D500762B87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A388CC442935C1D500762B87 /* Localizable.strings */; };
 		A3C0F2F52824A12900924075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0F2F42824A12900924075 /* AppDelegate.swift */; };
 		A3C0F2F72824A12900924075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0F2F62824A12900924075 /* SceneDelegate.swift */; };
 		A3C0F2F92824A12900924075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0F2F82824A12900924075 /* ViewController.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A388CC432935C1D500762B87 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A388CC452935C1D800762B87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3C0F2F12824A12900924075 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C0F2F42824A12900924075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C0F2F62824A12900924075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 				A3C0F2FD2824A12C00924075 /* Assets.xcassets */,
 				A3C0F2FF2824A12C00924075 /* LaunchScreen.storyboard */,
 				A3C0F3022824A12C00924075 /* Info.plist */,
+				A388CC442935C1D500762B87 /* Localizable.strings */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -131,6 +135,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = A3C0F2E82824A12900924075;
 			packageReferences = (
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3C0F3012824A12C00924075 /* LaunchScreen.storyboard in Resources */,
+				A388CC422935C1D500762B87 /* Localizable.strings in Resources */,
 				A3C0F2FE2824A12C00924075 /* Assets.xcassets in Resources */,
 				A3C0F2FC2824A12900924075 /* Main.storyboard in Resources */,
 			);
@@ -172,6 +178,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A388CC442935C1D500762B87 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A388CC432935C1D500762B87 /* ja */,
+				A388CC452935C1D800762B87 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A3C0F2FA2824A12900924075 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -195,6 +210,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -255,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -324,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hey.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -352,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hey.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
