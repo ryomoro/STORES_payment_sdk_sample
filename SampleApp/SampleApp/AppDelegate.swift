@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = "d7e871f8-3bee-45c8-9f4f-2439de91e9f3"
         /*
          アプリケーション起動時に configure methodを呼んでください
-         tokenが間違っている場合はエラーが返り、STPRES Payments SDK は動作しません
+         tokenが間違っている場合はエラーが返り、STORES Payments SDK は動作しません
          */
         STP.configure(applicationToken: token) { result in
             print("STP.configure result = \(result)")
