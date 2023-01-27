@@ -1306,13 +1306,21 @@
       },
       {
         "kind": "Import",
-        "name": "CryptoTokenKit",
-        "printedName": "CryptoTokenKit",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoTokenKit",
+        "printedName": "CryptoTokenKit",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -1488,12 +1496,32 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -3019,13 +3047,21 @@
       },
       {
         "kind": "Import",
-        "name": "ExternalAccessory",
-        "printedName": "ExternalAccessory",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExternalAccessory",
+        "printedName": "ExternalAccessory",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -3049,13 +3085,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -9184,13 +9228,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -9540,6 +9592,16 @@
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -12262,13 +12324,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -16128,6 +16198,16 @@
       },
       {
         "kind": "Import",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -16381,13 +16461,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -18905,13 +18993,21 @@
       },
       {
         "kind": "Import",
-        "name": "ExternalAccessory",
-        "printedName": "ExternalAccessory",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExternalAccessory",
+        "printedName": "ExternalAccessory",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -20104,13 +20200,21 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -22315,6 +22419,16 @@
       },
       {
         "kind": "Import",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -24317,6 +24431,16 @@
       },
       {
         "kind": "Import",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -24395,13 +24519,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -24880,6 +25012,24 @@
       },
       {
         "kind": "Import",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -24889,287 +25039,13 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "PrinterMetadata",
-        "printedName": "PrinterMetadata",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "bitmapPrintingIsImpractical",
-            "printedName": "bitmapPrintingIsImpractical",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17STORESPaymentsSDK15PrinterMetadataP27bitmapPrintingIsImpracticalSbvp",
-            "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP27bitmapPrintingIsImpracticalSbvp",
-            "moduleName": "STORESPaymentsSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP27bitmapPrintingIsImpracticalSbvg",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP27bitmapPrintingIsImpracticalSbvg",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "printerType",
-            "printedName": "printerType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17STORESPaymentsSDK15PrinterMetadataP11printerTypes5Int32Vvp",
-            "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP11printerTypes5Int32Vvp",
-            "moduleName": "STORESPaymentsSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int32",
-                    "printedName": "Swift.Int32",
-                    "usr": "s:s5Int32V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP11printerTypes5Int32Vvg",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP11printerTypes5Int32Vvg",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bitmapWidth",
-            "printedName": "bitmapWidth",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17STORESPaymentsSDK15PrinterMetadataP11bitmapWidthSivp",
-            "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP11bitmapWidthSivp",
-            "moduleName": "STORESPaymentsSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP11bitmapWidthSivg",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP11bitmapWidthSivg",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "displayName",
-            "printedName": "displayName",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17STORESPaymentsSDK15PrinterMetadataP11displayNameSSvp",
-            "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP11displayNameSSvp",
-            "moduleName": "STORESPaymentsSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP11displayNameSSvg",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP11displayNameSSvg",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "paperWidth",
-            "printedName": "paperWidth",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "cy_printer_paper_width",
-                "printedName": "STORESPaymentsSDK.cy_printer_paper_width",
-                "usr": "c:@E@cy_printer_paper_width"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvp",
-            "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvp",
-            "moduleName": "STORESPaymentsSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "cy_printer_paper_width",
-                    "printedName": "STORESPaymentsSDK.cy_printer_paper_width",
-                    "usr": "c:@E@cy_printer_paper_width"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvg",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvg",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "cy_printer_paper_width",
-                    "printedName": "STORESPaymentsSDK.cy_printer_paper_width",
-                    "usr": "c:@E@cy_printer_paper_width"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvs",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvs",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvM",
-                "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP10paperWidthSo011cy_printer_E6_widthVvM",
-                "moduleName": "STORESPaymentsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.PrinterMetadata>",
-                "sugared_genericSig": "<Self where Self : STORESPaymentsSDK.PrinterMetadata>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:17STORESPaymentsSDK15PrinterMetadataP",
-        "mangledName": "$s17STORESPaymentsSDK15PrinterMetadataP",
-        "moduleName": "STORESPaymentsSDK",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -25222,13 +25098,21 @@
       },
       {
         "kind": "Import",
-        "name": "ExternalAccessory",
-        "printedName": "ExternalAccessory",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExternalAccessory",
+        "printedName": "ExternalAccessory",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -26401,6 +26285,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -27475,6 +27369,16 @@
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -30592,13 +30496,21 @@
       },
       {
         "kind": "Import",
-        "name": "ExternalAccessory",
-        "printedName": "ExternalAccessory",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExternalAccessory",
+        "printedName": "ExternalAccessory",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -31796,13 +31708,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -35895,13 +35815,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -37149,13 +37077,21 @@
       },
       {
         "kind": "Import",
-        "name": "ExternalAccessory",
-        "printedName": "ExternalAccessory",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExternalAccessory",
+        "printedName": "ExternalAccessory",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -39097,13 +39033,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -39322,13 +39266,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -42005,13 +41957,21 @@
       },
       {
         "kind": "Import",
-        "name": "ExternalAccessory",
-        "printedName": "ExternalAccessory",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExternalAccessory",
+        "printedName": "ExternalAccessory",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -42988,6 +42948,16 @@
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ESC_POS",
+        "printedName": "ESC_POS",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -46822,7 +46792,7 @@
         "printedName": "CMResponse",
         "declKind": "Class",
         "usr": "c:objc(cs)CMResponse",
-        "moduleName": "STORESPaymentsSDK",
+        "moduleName": "CommonMPI",
         "isOpen": true,
         "objc_name": "CMResponse",
         "declAttributes": [
@@ -47900,35 +47870,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/ContactlessTransactionOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 258,
+      "offset": 296,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/ContactlessTransactionOperation.swift",
       "kind": "Array",
-      "offset": 382,
+      "offset": 420,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/ContactlessTransactionOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 423,
+      "offset": 461,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/ContactlessTransactionOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 477,
+      "offset": 515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/ContactlessTransactionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 179,
+      "offset": 217,
       "length": 31,
       "value": "\"STORESPaymentsSDK.ContactlessTransactionOperation\""
     },
@@ -48026,63 +47996,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 229,
+      "offset": 267,
       "length": 6,
       "value": "\"0392\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 261,
+      "offset": 299,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 303,
+      "offset": 341,
       "length": 4,
       "value": "0x05"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 388,
+      "offset": 426,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "Array",
-      "offset": 506,
+      "offset": 544,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 673,
+      "offset": 711,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 727,
+      "offset": 765,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "Array",
-      "offset": 1117,
+      "offset": 1155,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 315,
+      "offset": 353,
       "length": 25,
       "value": "\"STORESPaymentsSDK.EMVICTransactionOperation\""
     },
@@ -48477,6 +48447,13 @@
       "offset": 249,
       "length": 2,
       "value": "60"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Practice\/EmoneyPracticeInteractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1179,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Util\/Once.swift",
@@ -57350,133 +57327,133 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 200,
+      "offset": 238,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 211,
+      "offset": 249,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 232,
+      "offset": 270,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 251,
+      "offset": 289,
       "length": 16,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 315,
       "length": 11,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 298,
+      "offset": 336,
       "length": 18,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 200,
+      "offset": 238,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 211,
+      "offset": 249,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 232,
+      "offset": 270,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 251,
+      "offset": 289,
       "length": 16,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 315,
       "length": 11,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 298,
+      "offset": 336,
       "length": 18,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 200,
+      "offset": 238,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 211,
+      "offset": 249,
       "length": 11,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 232,
+      "offset": 270,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 251,
+      "offset": 289,
       "length": 16,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 315,
       "length": 11,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 298,
+      "offset": 336,
       "length": 18,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EAMiuraManager.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 860,
       "length": 14,
       "value": "\"STORESPaymentsSDK.EAMiuraManager\""
     },
@@ -57938,70 +57915,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 327,
       "length": 6,
       "value": "0x6A88"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 379,
       "length": 6,
       "value": "0x9F0D"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 327,
       "length": 6,
       "value": "0x6A88"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 379,
       "length": 6,
       "value": "0x9F0D"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 327,
       "length": 6,
       "value": "0x6A88"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 379,
       "length": 6,
       "value": "0x9F0D"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 4197,
+      "offset": 4235,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "Array",
-      "offset": 4661,
+      "offset": 4699,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "Array",
-      "offset": 4729,
+      "offset": 4767,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 8597,
+      "offset": 8635,
       "length": 5,
       "value": "false"
     },
@@ -58043,56 +58020,56 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 429,
+      "offset": 467,
       "length": 29,
       "value": "\"P2PE: Checking P2PE status.\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 583,
+      "offset": 621,
       "length": 29,
       "value": "\"P2PE: Initialising for RKI.\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 735,
+      "offset": 773,
       "length": 26,
       "value": "\"P2PE: Reading RKI files.\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 912,
       "length": 7,
       "value": "\"input\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1169,
+      "offset": 1207,
       "length": 29,
       "value": "\"P2PE: CYModeSubmitP2PEFiles\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1298,
+      "offset": 1336,
       "length": 28,
       "value": "\"P2PE: CYModeWriteP2PEFiles\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1426,
+      "offset": 1464,
       "length": 29,
       "value": "\"P2PE: CYModeImportP2PEFiles\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVRemoteKeyInjectionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 157,
+      "offset": 195,
       "length": 30,
       "value": "\"STORESPaymentsSDK.EMVRemoteKeyInjectionOperation\""
     },
@@ -59653,35 +59630,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Practice\/EmoneyPracticeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1937,
+      "offset": 1955,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Practice\/EmoneyPracticeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2575,
+      "offset": 2593,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Practice\/EmoneyPracticeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2665,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Practice\/EmoneyPracticeViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3076,
+      "offset": 2683,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Practice\/EmoneyPracticeViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1535,
+      "offset": 1664,
       "length": 28,
       "value": "\"STORESPaymentsSDK.EmoneyPracticeViewController\""
     },
@@ -59723,581 +59693,581 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 207,
+      "offset": 245,
       "length": 6,
       "value": "0x9F42"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 252,
+      "offset": 290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
+      "offset": 301,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 315,
       "length": 15,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 302,
+      "offset": 340,
       "length": 17,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 367,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 394,
       "length": 26,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 392,
+      "offset": 430,
       "length": 29,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 431,
+      "offset": 469,
       "length": 22,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 501,
       "length": 24,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 553,
       "length": 6,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 531,
+      "offset": 569,
       "length": 4,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 545,
+      "offset": 583,
       "length": 5,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 577,
+      "offset": 615,
       "length": 23,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 610,
+      "offset": 648,
       "length": 12,
       "value": "13"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 632,
+      "offset": 670,
       "length": 14,
       "value": "14"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 710,
       "length": 22,
       "value": "15"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 704,
+      "offset": 742,
       "length": 11,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 725,
+      "offset": 763,
       "length": 13,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 774,
+      "offset": 812,
       "length": 18,
       "value": "18"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 802,
+      "offset": 840,
       "length": 19,
       "value": "19"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 869,
       "length": 13,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 854,
+      "offset": 892,
       "length": 15,
       "value": "21"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 917,
       "length": 14,
       "value": "22"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 941,
       "length": 15,
       "value": "23"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 961,
+      "offset": 999,
       "length": 7,
       "value": "24"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 1016,
       "length": 8,
       "value": "25"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 996,
+      "offset": 1034,
       "length": 19,
       "value": "26"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 252,
+      "offset": 290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
+      "offset": 301,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 315,
       "length": 15,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 302,
+      "offset": 340,
       "length": 17,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 367,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 394,
       "length": 26,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 392,
+      "offset": 430,
       "length": 29,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 431,
+      "offset": 469,
       "length": 22,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 501,
       "length": 24,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 553,
       "length": 6,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 531,
+      "offset": 569,
       "length": 4,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 545,
+      "offset": 583,
       "length": 5,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 577,
+      "offset": 615,
       "length": 23,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 610,
+      "offset": 648,
       "length": 12,
       "value": "13"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 632,
+      "offset": 670,
       "length": 14,
       "value": "14"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 710,
       "length": 22,
       "value": "15"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 704,
+      "offset": 742,
       "length": 11,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 725,
+      "offset": 763,
       "length": 13,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 774,
+      "offset": 812,
       "length": 18,
       "value": "18"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 802,
+      "offset": 840,
       "length": 19,
       "value": "19"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 869,
       "length": 13,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 854,
+      "offset": 892,
       "length": 15,
       "value": "21"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 917,
       "length": 14,
       "value": "22"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 941,
       "length": 15,
       "value": "23"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 961,
+      "offset": 999,
       "length": 7,
       "value": "24"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 1016,
       "length": 8,
       "value": "25"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 996,
+      "offset": 1034,
       "length": 19,
       "value": "26"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 252,
+      "offset": 290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
+      "offset": 301,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 277,
+      "offset": 315,
       "length": 15,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 302,
+      "offset": 340,
       "length": 17,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 367,
       "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 394,
       "length": 26,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 392,
+      "offset": 430,
       "length": 29,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 431,
+      "offset": 469,
       "length": 22,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 501,
       "length": 24,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 553,
       "length": 6,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 531,
+      "offset": 569,
       "length": 4,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 545,
+      "offset": 583,
       "length": 5,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 577,
+      "offset": 615,
       "length": 23,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 610,
+      "offset": 648,
       "length": 12,
       "value": "13"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 632,
+      "offset": 670,
       "length": 14,
       "value": "14"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 710,
       "length": 22,
       "value": "15"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 704,
+      "offset": 742,
       "length": 11,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 725,
+      "offset": 763,
       "length": 13,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 774,
+      "offset": 812,
       "length": 18,
       "value": "18"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 802,
+      "offset": 840,
       "length": 19,
       "value": "19"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 869,
       "length": 13,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 854,
+      "offset": 892,
       "length": 15,
       "value": "21"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 917,
       "length": 14,
       "value": "22"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 941,
       "length": 15,
       "value": "23"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 961,
+      "offset": 999,
       "length": 7,
       "value": "24"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 1016,
       "length": 8,
       "value": "25"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 996,
+      "offset": 1034,
       "length": 19,
       "value": "26"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/EMVOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1063,
       "length": 12,
       "value": "\"STORESPaymentsSDK.EMVOperation\""
     },
@@ -60437,77 +60407,77 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 210,
+      "offset": 248,
       "length": 6,
       "value": "0x9F42"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 250,
+      "offset": 288,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 297,
+      "offset": 335,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 367,
+      "offset": 405,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 422,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 367,
+      "offset": 405,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 422,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 367,
+      "offset": 405,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 422,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 574,
+      "offset": 612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 437,
       "length": 15,
       "value": "\"STORESPaymentsSDK.EmoneyOperation\""
     },
@@ -60591,14 +60561,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2104,
+      "offset": 2414,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentInteractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2444,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentInteractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1754,
       "length": 23,
       "value": "\"STORESPaymentsSDK.EmoneyPaymentInteractor\""
     },
@@ -60976,14 +60960,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/Printer\/Printer.swift",
       "kind": "Array",
-      "offset": 208,
+      "offset": 244,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/Printer\/Printer.swift",
       "kind": "BooleanLiteral",
-      "offset": 240,
+      "offset": 276,
       "length": 5,
       "value": "false"
     },
@@ -61242,28 +61226,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Files\/EMVFileWriteOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 297,
+      "offset": 335,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Files\/EMVFileWriteOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 328,
+      "offset": 366,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Files\/EMVFileWriteOperation.swift",
       "kind": "Array",
-      "offset": 383,
+      "offset": 421,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Files\/EMVFileWriteOperation.swift",
       "kind": "StringLiteral",
-      "offset": 177,
+      "offset": 215,
       "length": 21,
       "value": "\"STORESPaymentsSDK.EMVFileWriteOperation\""
     },
@@ -61305,336 +61289,336 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3602,
+      "offset": 3640,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3623,
+      "offset": 3661,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3602,
+      "offset": 3640,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3623,
+      "offset": 3661,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3602,
+      "offset": 3640,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3623,
+      "offset": 3661,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3973,
+      "offset": 4011,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3996,
+      "offset": 4034,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4017,
+      "offset": 4055,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4041,
+      "offset": 4079,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4067,
+      "offset": 4105,
       "length": 4,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4085,
+      "offset": 4123,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4106,
+      "offset": 4144,
       "length": 19,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4139,
+      "offset": 4177,
       "length": 18,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4171,
+      "offset": 4209,
       "length": 9,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4194,
+      "offset": 4232,
       "length": 15,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4223,
+      "offset": 4261,
       "length": 9,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3973,
+      "offset": 4011,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3996,
+      "offset": 4034,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4017,
+      "offset": 4055,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4041,
+      "offset": 4079,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4067,
+      "offset": 4105,
       "length": 4,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4085,
+      "offset": 4123,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4106,
+      "offset": 4144,
       "length": 19,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4139,
+      "offset": 4177,
       "length": 18,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4171,
+      "offset": 4209,
       "length": 9,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4194,
+      "offset": 4232,
       "length": 15,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4223,
+      "offset": 4261,
       "length": 9,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3973,
+      "offset": 4011,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3996,
+      "offset": 4034,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4017,
+      "offset": 4055,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4041,
+      "offset": 4079,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4067,
+      "offset": 4105,
       "length": 4,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4085,
+      "offset": 4123,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4106,
+      "offset": 4144,
       "length": 19,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4139,
+      "offset": 4177,
       "length": 18,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4171,
+      "offset": 4209,
       "length": 9,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4194,
+      "offset": 4232,
       "length": 15,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 4223,
+      "offset": 4261,
       "length": 9,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5295,
+      "offset": 5333,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5329,
+      "offset": 5367,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5365,
+      "offset": 5403,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5409,
+      "offset": 5447,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5452,
+      "offset": 5490,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5482,
+      "offset": 5520,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5513,
+      "offset": 5551,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5557,
+      "offset": 5595,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5598,
+      "offset": 5636,
       "length": 3,
       "value": "496"
     },
@@ -61704,7 +61688,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Printer Settings\/PrinterSettingsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9010,
+      "offset": 9440,
       "length": 5,
       "value": "false"
     },
@@ -62194,7 +62178,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/Printer\/BLEPrinter\/BLEPrinter.swift",
       "kind": "StringLiteral",
-      "offset": 160,
+      "offset": 196,
       "length": 10,
       "value": "\"STORESPaymentsSDK.BLEPrinter\""
     },
@@ -62705,14 +62689,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Files\/EMVFileReadOperation.swift",
       "kind": "Array",
-      "offset": 220,
+      "offset": 258,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Files\/EMVFileReadOperation.swift",
       "kind": "StringLiteral",
-      "offset": 157,
+      "offset": 195,
       "length": 20,
       "value": "\"STORESPaymentsSDK.EMVFileReadOperation\""
     },
@@ -64203,13 +64187,6 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
       "kind": "StringLiteral",
-      "offset": 232,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
-      "kind": "StringLiteral",
       "offset": 270,
       "length": 2,
       "value": "\"\""
@@ -64217,28 +64194,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 308,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 454,
       "length": 32,
       "value": "\"SYSCL: CYModeGetPEDSystemClock\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
       "kind": "StringLiteral",
-      "offset": 547,
+      "offset": 585,
       "length": 32,
       "value": "\"SYSCL: CYModeSetPEDSystemClock\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
       "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 747,
       "length": 19,
       "value": "\"SYSCL: CYModeIdle\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVSystemClockOperation.swift",
       "kind": "StringLiteral",
-      "offset": 157,
+      "offset": 195,
       "length": 23,
       "value": "\"STORESPaymentsSDK.EMVSystemClockOperation\""
     },
@@ -65232,35 +65216,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVConfigurationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 553,
+      "offset": 591,
       "length": 40,
       "value": "\"CONF: CYModeGetPEDConfigurationVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVConfigurationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 726,
+      "offset": 764,
       "length": 43,
       "value": "\"CONF: CYModeGetLatestConfigurationVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVConfigurationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 893,
+      "offset": 931,
       "length": 38,
       "value": "\"CONF: CYModeWriteLatestConfiguration\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVConfigurationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 1025,
       "length": 18,
       "value": "\"CONF: CYModeIdle\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Initialization\/EMVConfigurationOperation.swift",
       "kind": "StringLiteral",
-      "offset": 157,
+      "offset": 195,
       "length": 25,
       "value": "\"STORESPaymentsSDK.EMVConfigurationOperation\""
     },
@@ -65337,77 +65321,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2724,
+      "offset": 3040,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3027,
+      "offset": 3343,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3864,
+      "offset": 4205,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3901,
+      "offset": 4242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4046,
+      "offset": 4387,
       "length": 8,
       "value": "\"emoney\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4071,
+      "offset": 4412,
       "length": 5,
       "value": "\"mp4\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4969,
+      "offset": 5249,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5005,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5043,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5084,
+      "offset": 5290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Payment\/EmoneyPaymentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2566,
+      "offset": 2882,
       "length": 27,
       "value": "\"STORESPaymentsSDK.EmoneyPaymentViewController\""
     },
@@ -76159,21 +76129,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/MiuraTerminalConnector.swift",
       "kind": "Array",
-      "offset": 837,
+      "offset": 801,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/MiuraTerminalConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 880,
+      "offset": 844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/MiuraTerminalConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1050,
+      "offset": 1014,
       "length": 5,
       "value": "false"
     },
@@ -76530,14 +76500,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/Printer\/BluetoothPrinter\/BluetoothPrinter.swift",
       "kind": "Array",
-      "offset": 581,
+      "offset": 617,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/Printer\/BluetoothPrinter\/BluetoothPrinter.swift",
       "kind": "StringLiteral",
-      "offset": 185,
+      "offset": 221,
       "length": 16,
       "value": "\"STORESPaymentsSDK.BluetoothPrinter\""
     },
