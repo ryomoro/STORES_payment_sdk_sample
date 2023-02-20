@@ -18,7 +18,6 @@ import Network
 import PassKit
 import QuartzCore
 import SQLite3
-@_exported import STORESPaymentsSDK
 import SafariServices
 import Security
 import Swift
@@ -223,7 +222,10 @@ extension STORESPaymentsSDK.SDKExtension where Base == Swift.String {
   final public var isEmail: Swift.Bool {
     get
   }
-  final public func alignWithSpace(within width: Swift.Int, shouldTruncateIfLonger shouldTruncate: Swift.Bool = false) -> Swift.String
+  final public func alignWithSpace(within width: Swift.Int, shouldTruncateIfLonger: Swift.Bool, alignment: UIKit.NSTextAlignment) -> Swift.String
+  final public func width() -> Swift.Int
+  final public func blited(with front: Swift.String) -> Swift.String
+  final public func lengthRange(from widthRange: Swift.CountableClosedRange<Swift.Int>) -> Swift.CountableRange<Swift.Int>
 }
 public struct Receipt : Swift.Equatable {
   public let shopName: Swift.String
