@@ -35,18 +35,18 @@ public struct CoineyAPIError : Swift.Error {
   public let detail: Swift.String
   public init(title: Swift.String, detail: Swift.String)
 }
-@_hasMissingDesignatedInitializers final public class LoggerBundler {
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class LoggerBundler {
   @_Concurrency.MainActor final public var mutations: [STORESPaymentsSDK.Mutation]
-  final public var configMap: [STORESPaymentsSDK.LoggerComponentID : STORESPaymentsSDK.LoggerBundler.Configuration]
-  final public func add(component: STORESPaymentsSDK.LoggerComponent)
+  @_Concurrency.MainActor final public var configMap: [STORESPaymentsSDK.LoggerComponentID : STORESPaymentsSDK.LoggerBundler.Configuration]
+  @_Concurrency.MainActor final public func add(component: STORESPaymentsSDK.LoggerComponent)
   #if compiler(>=5.3) && $AsyncAwait
-  final public func send(_ event: some Loggable, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
+  @_Concurrency.MainActor final public func send(_ event: some Loggable, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  final public func update(userProperties: [STORESPaymentsSDK.UserProperty]) async
+  @_Concurrency.MainActor final public func update(userProperties: [STORESPaymentsSDK.UserProperty]) async
   #endif
-  final public func set(userIdentifier: Swift.String)
-  final public func startLogging()
+  @_Concurrency.MainActor final public func set(userIdentifier: Swift.String)
+  @_Concurrency.MainActor final public func startLogging()
   @objc deinit
 }
 extension STORESPaymentsSDK.LoggerBundler {
@@ -74,10 +74,10 @@ extension STORESPaymentsSDK.LoggerBundler {
 }
 extension STORESPaymentsSDK.LoggerBundler {
   #if compiler(>=5.3) && $AsyncAwait
-  final public func send(event: STORESPaymentsSDK.TrackingEvent, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
+  @_Concurrency.MainActor final public func send(event: STORESPaymentsSDK.TrackingEvent, with option: STORESPaymentsSDK.LoggerBundler.LoggingOption = .init()) async
   #endif
-  final public func update(userProperty: STORESPaymentsSDK.UserProperty)
-  final public func update(userProperties: [STORESPaymentsSDK.UserProperty])
+  @_Concurrency.MainActor final public func update(userProperty: STORESPaymentsSDK.UserProperty)
+  @_Concurrency.MainActor final public func update(userProperties: [STORESPaymentsSDK.UserProperty])
 }
 public protocol Reloadable {
   func reload()
@@ -263,6 +263,7 @@ extension STORESPaymentsSDK.STP {
   public static func setup(_ settings: STORESPaymentsSDK.STP.Settings)
   public static func currentSettings() -> STORESPaymentsSDK.STP.Settings?
   public static func emoneyInitializationStatus(completion: @escaping (Swift.Result<STORESPaymentsSDK.EmoneyInitializationStatus, Swift.Error>) -> Swift.Void)
+  public static func emoneyCompatibilityDevice(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
 }
 public enum UserRole : Swift.String, Swift.Decodable {
   case owner
@@ -967,6 +968,7 @@ public enum STORESPaymentsSDKError : Swift.Error {
   case nonRefundableAccount
   case nonRefundablePaymentType
   case otherRefundError
+  case networkError
 }
 public protocol NibLoadable : AnyObject {
   static var nibName: Swift.String { get }
@@ -1339,6 +1341,7 @@ public struct SectionModel<Section, ItemType> {
   public init(original: STORESPaymentsSDK.SectionModel<Section, ItemType>, items: [ItemType])
   public init(original: STORESPaymentsSDK.SectionModel<Section, ItemType>)
 }
+extension STORESPaymentsSDK.LoggerBundler : Swift.Sendable {}
 extension STORESPaymentsSDK.LoggerBundler.LoggingPolicy : Swift.Equatable {}
 extension STORESPaymentsSDK.LoggerBundler.LoggingPolicy : Swift.Hashable {}
 extension STORESPaymentsSDK.Installments : Swift.Hashable {}
