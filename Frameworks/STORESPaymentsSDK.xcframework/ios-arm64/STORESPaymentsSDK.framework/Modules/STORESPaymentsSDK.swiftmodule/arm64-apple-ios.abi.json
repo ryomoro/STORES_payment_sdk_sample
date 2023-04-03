@@ -364,11 +364,11 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC9mutationsSayAA8Mutation_pGvp",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "Custom"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -491,6 +491,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC9configMapSDyAA0C11ComponentIDVAC13ConfigurationVGvp",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "HasInitialValue",
               "Final",
               "HasStorage",
@@ -620,6 +621,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC3add9componentyAA0C9Component_p_tF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl"
             ],
@@ -654,6 +656,7 @@
             "moduleName": "STORESPaymentsSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : STORESPaymentsSDK.Loggable>",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl"
             ],
@@ -689,6 +692,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC6update14userPropertiesySayAA12UserPropertyVG_tYaF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl"
             ],
@@ -716,6 +720,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC3set14userIdentifierySS_tF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl"
             ],
@@ -737,6 +742,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC12startLoggingyyF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl"
             ],
@@ -1216,6 +1222,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC4send5event4withyAA13TrackingEventV_AC13LoggingOptionVtYaF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final"
             ],
             "isFromExtension": true,
@@ -1243,6 +1250,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC6update12userPropertyyAA04UserG0V_tF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final"
             ],
             "isFromExtension": true,
@@ -1278,6 +1286,7 @@
             "mangledName": "$s17STORESPaymentsSDK13LoggerBundlerC6update14userPropertiesySayAA12UserPropertyVG_tF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
+              "Custom",
               "Final"
             ],
             "isFromExtension": true,
@@ -1290,9 +1299,19 @@
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "Custom"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -7415,6 +7434,60 @@
             "declKind": "Func",
             "usr": "s:17STORESPaymentsSDK3STPV26emoneyInitializationStatus10completionyys6ResultOyAA06EmoneyeF0Os5Error_pGc_tFZ",
             "mangledName": "$s17STORESPaymentsSDK3STPV26emoneyInitializationStatus10completionyys6ResultOyAA06EmoneyeF0Os5Error_pGc_tFZ",
+            "moduleName": "STORESPaymentsSDK",
+            "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "emoneyCompatibilityDevice",
+            "printedName": "emoneyCompatibilityDevice(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17STORESPaymentsSDK3STPV25emoneyCompatibilityDevice10completionyys6ResultOySbs5Error_pGc_tFZ",
+            "mangledName": "$s17STORESPaymentsSDK3STPV25emoneyCompatibilityDevice10completionyys6ResultOySbs5Error_pGc_tFZ",
             "moduleName": "STORESPaymentsSDK",
             "static": true,
             "declAttributes": [
@@ -28418,13 +28491,21 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CommonMPI",
+        "printedName": "CommonMPI",
         "declKind": "Import",
         "moduleName": "STORESPaymentsSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "STORESPaymentsSDK"
       },
       {
         "kind": "Import",
@@ -33576,6 +33657,46 @@
             "declKind": "EnumElement",
             "usr": "s:17STORESPaymentsSDK0A8SDKErrorO16otherRefundErroryA2CmF",
             "mangledName": "$s17STORESPaymentsSDK0A8SDKErrorO16otherRefundErroryA2CmF",
+            "moduleName": "STORESPaymentsSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(STORESPaymentsSDK.STORESPaymentsSDKError.Type) -> STORESPaymentsSDK.STORESPaymentsSDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "STORESPaymentsSDKError",
+                    "printedName": "STORESPaymentsSDK.STORESPaymentsSDKError",
+                    "usr": "s:17STORESPaymentsSDK0A8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "STORESPaymentsSDK.STORESPaymentsSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "STORESPaymentsSDKError",
+                        "printedName": "STORESPaymentsSDK.STORESPaymentsSDKError",
+                        "usr": "s:17STORESPaymentsSDK0A8SDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17STORESPaymentsSDK0A8SDKErrorO12networkErroryA2CmF",
+            "mangledName": "$s17STORESPaymentsSDK0A8SDKErrorO12networkErroryA2CmF",
             "moduleName": "STORESPaymentsSDK",
             "declAttributes": [
               "RawDocComment"
@@ -48044,21 +48165,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Util\/Logger\/LoggerBundler.swift",
       "kind": "Array",
-      "offset": 531,
+      "offset": 520,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Util\/Logger\/LoggerBundler.swift",
       "kind": "Dictionary",
-      "offset": 598,
+      "offset": 587,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Util\/Logger\/LoggerBundler.swift",
       "kind": "Array",
-      "offset": 870,
+      "offset": 859,
       "length": 2,
       "value": "[]"
     },
@@ -48226,21 +48347,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 711,
+      "offset": 745,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 765,
+      "offset": 799,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionOperation.swift",
       "kind": "Array",
-      "offset": 1155,
+      "offset": 1189,
       "length": 2,
       "value": "[]"
     },
@@ -58166,28 +58287,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Modules\/EMVInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 8758,
+      "offset": 8740,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Card Payment\/CardPaymentViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5005,
+      "offset": 5022,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Card Payment\/CardPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7293,
+      "offset": 7310,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Card Payment\/CardPaymentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7330,
+      "offset": 7347,
       "length": 5,
       "value": "false"
     },
@@ -58997,237 +59118,6 @@
       "value": "0x0D"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1647,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1666,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1683,
-      "length": 10,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1703,
-      "length": 12,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1725,
-      "length": 4,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1739,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1756,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1785,
-      "length": 18,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1813,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1832,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1857,
-      "length": 9,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1647,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1666,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1683,
-      "length": 10,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1703,
-      "length": 12,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1725,
-      "length": 4,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1739,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1756,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1785,
-      "length": 18,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1813,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1832,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1857,
-      "length": 9,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1647,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1666,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1683,
-      "length": 10,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1703,
-      "length": 12,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1725,
-      "length": 4,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1739,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1756,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1785,
-      "length": 18,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1813,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1832,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/CreditCard\/EMVICTransactionProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1857,
-      "length": 9,
-      "value": "11"
-    },
-    {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Asset.swift",
       "kind": "StringLiteral",
       "offset": 919,
@@ -59818,28 +59708,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Practice\/EmoneyTransportPracticeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2122,
+      "offset": 2209,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Practice\/EmoneyTransportPracticeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2760,
+      "offset": 2847,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Practice\/EmoneyTransportPracticeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2850,
+      "offset": 2937,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Practice\/EmoneyTransportPracticeViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1813,
+      "offset": 1900,
       "length": 37,
       "value": "\"STORESPaymentsSDK.EmoneyTransportPracticeViewController\""
     },
@@ -60664,6 +60554,13 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 689,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyOperation.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 15,
@@ -60749,28 +60646,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Payment\/EmoneyTransportPaymentInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2576,
+      "offset": 2626,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Payment\/EmoneyTransportPaymentInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2606,
+      "offset": 2656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Payment\/EmoneyTransportPaymentInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2848,
+      "offset": 2696,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Payment\/EmoneyTransportPaymentInteractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Transport Payment\/EmoneyTransportPaymentInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 1871,
+      "offset": 1921,
       "length": 32,
       "value": "\"STORESPaymentsSDK.EmoneyTransportPaymentInteractor\""
     },
@@ -61477,336 +61381,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 3613,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3634,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3613,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3634,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3613,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3634,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3984,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4007,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4028,
-      "length": 10,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4052,
-      "length": 12,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4078,
-      "length": 4,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4096,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4117,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4150,
-      "length": 18,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4182,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4205,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4234,
-      "length": 9,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3984,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4007,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4028,
-      "length": 10,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4052,
-      "length": 12,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4078,
-      "length": 4,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4096,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4117,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4150,
-      "length": 18,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4182,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4205,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4234,
-      "length": 9,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3984,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4007,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4028,
-      "length": 10,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4052,
-      "length": 12,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4078,
-      "length": 4,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4096,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4117,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4150,
-      "length": 18,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4182,
-      "length": 9,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4205,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4234,
-      "length": 9,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 5281,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5340,
+      "offset": 5315,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5376,
+      "offset": 5351,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5420,
+      "offset": 5395,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5463,
+      "offset": 5438,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5493,
+      "offset": 5468,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5524,
+      "offset": 5499,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5568,
+      "offset": 5543,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Data\/TerminalDisplayMediaCommands.swift",
       "kind": "IntegerLiteral",
-      "offset": 5609,
+      "offset": 5584,
       "length": 3,
       "value": "496"
     },
@@ -61876,7 +61507,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Printer Settings\/PrinterSettingsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9440,
+      "offset": 9422,
       "length": 5,
       "value": "false"
     },
@@ -62457,63 +62088,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 236,
+      "offset": 274,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 332,
+      "offset": 370,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 496,
+      "offset": 534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 575,
+      "offset": 613,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 654,
+      "offset": 692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 740,
+      "offset": 778,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 779,
+      "offset": 817,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 814,
+      "offset": 852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Services\/EMV\/Operations\/Emoney\/EmoneyTransportPaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 245,
+      "offset": 283,
       "length": 31,
       "value": "\"STORESPaymentsSDK.EmoneyTransportPaymentOperation\""
     },
@@ -62660,14 +62291,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Workers\/TCMPaymentWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 3957,
+      "offset": 3939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Workers\/TCMPaymentWorker.swift",
       "kind": "BooleanLiteral",
-      "offset": 4829,
+      "offset": 4773,
       "length": 5,
       "value": "false"
     },
@@ -65152,133 +64783,133 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2558,
+      "offset": 2596,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2861,
+      "offset": 2899,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3478,
+      "offset": 3516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3515,
+      "offset": 3553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3844,
+      "offset": 3882,
       "length": 16,
       "value": "\"emoney_balance\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3877,
+      "offset": 3915,
       "length": 5,
       "value": "\"mp4\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4171,
+      "offset": 4209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4206,
+      "offset": 4244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4242,
+      "offset": 4280,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2388,
+      "offset": 2426,
       "length": 33,
       "value": "\"STORESPaymentsSDK.EmoneyBalanceReaderViewController\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Balance Reader\/EmoneyBalanceReaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21180,
+      "offset": 22094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1327,
+      "offset": 1370,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1836,
+      "offset": 1879,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2387,
+      "offset": 2430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2761,
+      "offset": 2804,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2918,
+      "offset": 2961,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2971,
+      "offset": 3014,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3483,
+      "offset": 3526,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Payment Method Selection\/PaymentMethodSelectionViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1152,
+      "offset": 1195,
       "length": 36,
       "value": "\"STORESPaymentsSDK.PaymentMethodSelectionViewController\""
     },
@@ -65306,7 +64937,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Emoney Unconfirmed Status\/EmoneyUnconfirmedStatusViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14276,
+      "offset": 14267,
       "length": 5,
       "value": "false"
     },
@@ -74686,1407 +74317,1407 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 93858,
+      "offset": 93864,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 93873,
+      "offset": 93879,
       "length": 28,
       "value": "\"transaction_detail_sprw_id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 93913,
-      "length": 8,
-      "value": "\"SPRWID\""
+      "offset": 93919,
+      "length": 14,
+      "value": "\"端末番号\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94001,
+      "offset": 94013,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94016,
+      "offset": 94028,
       "length": 31,
       "value": "\"transaction_detail_staff_name\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94059,
+      "offset": 94071,
       "length": 14,
       "value": "\"スタッフ\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94160,
+      "offset": 94172,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94175,
+      "offset": 94187,
       "length": 39,
       "value": "\"transaction_detail_thinca_deal_number\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94226,
+      "offset": 94238,
       "length": 14,
       "value": "\"問合番号\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94326,
+      "offset": 94338,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94341,
+      "offset": 94353,
       "length": 37,
       "value": "\"transaction_detail_transaction_date\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94390,
+      "offset": 94402,
       "length": 14,
       "value": "\"取引日時\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94488,
+      "offset": 94500,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94503,
+      "offset": 94515,
       "length": 35,
       "value": "\"transaction_detail_transaction_id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94550,
+      "offset": 94562,
       "length": 14,
       "value": "\"取引番号\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94650,
+      "offset": 94662,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94665,
+      "offset": 94677,
       "length": 36,
       "value": "\"transaction_detail_transactionMode\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94713,
+      "offset": 94725,
       "length": 14,
       "value": "\"取引区分\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94821,
+      "offset": 94833,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94836,
+      "offset": 94848,
       "length": 32,
       "value": "\"transaction_detail_unconfirmed\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 94880,
+      "offset": 94892,
       "length": 26,
       "value": "\"処理未了発生日時\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95093,
+      "offset": 95105,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95108,
+      "offset": 95120,
       "length": 27,
       "value": "\"transaction_error_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95147,
+      "offset": 95159,
       "length": 114,
       "value": "\"取引が正常に完了できなかった\n可能性があります。\n売上一覧をご確認ください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95351,
+      "offset": 95363,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95366,
+      "offset": 95378,
       "length": 25,
       "value": "\"transaction_error_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95403,
+      "offset": 95415,
       "length": 29,
       "value": "\"ネットワークエラー\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95652,
+      "offset": 95664,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95667,
+      "offset": 95679,
       "length": 44,
       "value": "\"transaction_history_no_history_description\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95723,
+      "offset": 95735,
       "length": 132,
       "value": "\"別の範囲を指定してください。\n本日より１年以上前の内容は\nウェブ管理画面でご覧ください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95968,
+      "offset": 95980,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 95983,
+      "offset": 95995,
       "length": 38,
       "value": "\"transaction_history_no_history_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96033,
+      "offset": 96045,
       "length": 41,
       "value": "\"この期間の売上はありません\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96222,
+      "offset": 96234,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96237,
+      "offset": 96249,
       "length": 50,
       "value": "\"transaction_history_no_search_result_description\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96299,
+      "offset": 96311,
       "length": 65,
       "value": "\"キーワードを変えて検索しなおしてください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96479,
+      "offset": 96491,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96494,
+      "offset": 96506,
       "length": 44,
       "value": "\"transaction_history_no_search_result_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96550,
+      "offset": 96562,
       "length": 38,
       "value": "\"この検索結果はありません\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96722,
+      "offset": 96734,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96737,
+      "offset": 96749,
       "length": 34,
       "value": "\"transaction_period_error_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96783,
+      "offset": 96795,
       "length": 65,
       "value": "\"開始日は終了日より前でなければなりません。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96938,
+      "offset": 96950,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96953,
+      "offset": 96965,
       "length": 32,
       "value": "\"transaction_period_error_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 96997,
+      "offset": 97009,
       "length": 23,
       "value": "\"期間指定エラー\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97196,
+      "offset": 97208,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97211,
+      "offset": 97223,
       "length": 32,
       "value": "\"transaction_processing_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97255,
+      "offset": 97267,
       "length": 103,
       "value": "\"お時間がかかる場合があります。\n操作をせずにそのままお待ちください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97441,
+      "offset": 97453,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97456,
+      "offset": 97468,
       "length": 30,
       "value": "\"transaction_processing_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97498,
+      "offset": 97510,
       "length": 17,
       "value": "\"決済処理中\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97640,
+      "offset": 97652,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97655,
+      "offset": 97667,
       "length": 32,
       "value": "\"transaction_search_placeholder\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97699,
+      "offset": 97711,
       "length": 57,
       "value": "\"金額、カード下4桁、取引番号、決済メモ\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97816,
+      "offset": 97828,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97831,
+      "offset": 97843,
       "length": 14,
       "value": "\"transactions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97857,
+      "offset": 97869,
       "length": 8,
       "value": "\"売上\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97947,
+      "offset": 97959,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 97962,
+      "offset": 97974,
       "length": 39,
       "value": "\"unconfirmed_transaction_detail_amount\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98013,
+      "offset": 98025,
       "length": 8,
       "value": "\"金額\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98113,
+      "offset": 98125,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98128,
+      "offset": 98140,
       "length": 40,
       "value": "\"unconfirmed_transaction_detail_balance\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98180,
+      "offset": 98192,
       "length": 17,
       "value": "\"取引前残高\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98301,
+      "offset": 98313,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98316,
+      "offset": 98328,
       "length": 47,
       "value": "\"unconfirmed_transaction_detail_failed_balance\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98375,
+      "offset": 98387,
       "length": 23,
       "value": "\"取引失敗の残高\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98484,
+      "offset": 98496,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98499,
+      "offset": 98511,
       "length": 37,
       "value": "\"unconfirmed_transaction_detail_memo\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98548,
+      "offset": 98560,
       "length": 14,
       "value": "\"決済メモ\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98657,
+      "offset": 98669,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98672,
+      "offset": 98684,
       "length": 47,
       "value": "\"unconfirmed_transaction_detail_payment_method\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98731,
+      "offset": 98743,
       "length": 14,
       "value": "\"決済方法\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98855,
+      "offset": 98867,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98870,
+      "offset": 98882,
       "length": 63,
       "value": "\"unconfirmed_transaction_detail_payment_method_stores_payments\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 98945,
+      "offset": 98957,
       "length": 15,
       "value": "\"STORES 決済\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99066,
+      "offset": 99078,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99081,
+      "offset": 99093,
       "length": 53,
       "value": "\"unconfirmed_transaction_detail_section_balance_info\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99146,
+      "offset": 99158,
       "length": 20,
       "value": "\"残高パターン\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99270,
+      "offset": 99282,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99285,
+      "offset": 99297,
       "length": 57,
       "value": "\"unconfirmed_transaction_detail_section_transaction_info\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99354,
+      "offset": 99366,
       "length": 14,
       "value": "\"取引情報\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99450,
+      "offset": 99468,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99465,
+      "offset": 99483,
       "length": 40,
       "value": "\"unconfirmed_transaction_detail_sprw_id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99517,
-      "length": 8,
-      "value": "\"SPRWID\""
+      "offset": 99535,
+      "length": 14,
+      "value": "\"端末番号\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99616,
+      "offset": 99640,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99631,
+      "offset": 99655,
       "length": 43,
       "value": "\"unconfirmed_transaction_detail_staff_name\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99686,
+      "offset": 99710,
       "length": 14,
       "value": "\"スタッフ\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99805,
+      "offset": 99829,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99820,
+      "offset": 99844,
       "length": 48,
       "value": "\"unconfirmed_transaction_detail_success_balance\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 99880,
+      "offset": 99904,
       "length": 23,
       "value": "\"取引成功の残高\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100001,
+      "offset": 100025,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100016,
+      "offset": 100040,
       "length": 51,
       "value": "\"unconfirmed_transaction_detail_thinca_deal_number\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100079,
+      "offset": 100103,
       "length": 14,
       "value": "\"問合番号\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100190,
+      "offset": 100214,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100205,
+      "offset": 100229,
       "length": 49,
       "value": "\"unconfirmed_transaction_detail_transaction_date\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100266,
+      "offset": 100290,
       "length": 14,
       "value": "\"取引日時\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100375,
+      "offset": 100399,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100390,
+      "offset": 100414,
       "length": 47,
       "value": "\"unconfirmed_transaction_detail_transaction_id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100449,
+      "offset": 100473,
       "length": 14,
       "value": "\"取引番号\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100568,
+      "offset": 100592,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100583,
+      "offset": 100607,
       "length": 44,
       "value": "\"unconfirmed_transaction_detail_unconfirmed\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100639,
+      "offset": 100663,
       "length": 26,
       "value": "\"処理未了発生日時\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100762,
+      "offset": 100786,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100777,
+      "offset": 100801,
       "length": 23,
       "value": "\"unknown_network_error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100812,
+      "offset": 100836,
       "length": 38,
       "value": "\"不明なネットワークエラー\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 100985,
+      "offset": 101009,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101000,
+      "offset": 101024,
       "length": 31,
       "value": "\"unknown_network_error_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101043,
+      "offset": 101067,
       "length": 64,
       "value": "\"不明なネットワークエラーが\n発生しました。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101206,
+      "offset": 101230,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101221,
+      "offset": 101245,
       "length": 32,
       "value": "\"unregister_device_button_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101265,
+      "offset": 101289,
       "length": 32,
       "value": "\"この端末の登録を解除\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101511,
+      "offset": 101535,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101526,
+      "offset": 101550,
       "length": 34,
       "value": "\"unregister_device_dialog_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101572,
+      "offset": 101596,
       "length": 140,
       "value": "\"端末を解除すると、このSTORES 決済アプリで決済された内容が閲覧できなくなります。\n解除しますか？\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101811,
+      "offset": 101835,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101826,
+      "offset": 101850,
       "length": 32,
       "value": "\"unregister_device_dialog_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 101870,
+      "offset": 101894,
       "length": 32,
       "value": "\"登録を解除しますか？\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102026,
+      "offset": 102050,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102041,
+      "offset": 102065,
       "length": 47,
       "value": "\"unsupported_card_fallback_not_allowed_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102100,
+      "offset": 102124,
       "length": 44,
       "value": "\"別のカードをお試しください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102311,
+      "offset": 102335,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102326,
+      "offset": 102350,
       "length": 26,
       "value": "\"unsupported_card_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102364,
+      "offset": 102388,
       "length": 100,
       "value": "\"別のカードでお試しいただくか、\n磁気リーダーで読み取ってください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102555,
+      "offset": 102579,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102570,
+      "offset": 102594,
       "length": 24,
       "value": "\"unsupported_card_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102606,
+      "offset": 102630,
       "length": 31,
       "value": "\"非対応のICカードです\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102754,
+      "offset": 102778,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102769,
+      "offset": 102793,
       "length": 28,
       "value": "\"update_account_error_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102809,
+      "offset": 102833,
       "length": 49,
       "value": "\"アカウント設定を\n変更できません\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102975,
+      "offset": 102999,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 102990,
+      "offset": 103014,
       "length": 25,
       "value": "\"update_role_error_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103027,
+      "offset": 103051,
       "length": 52,
       "value": "\"マネージャー設定を\n変更できません\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103148,
+      "offset": 103172,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103163,
+      "offset": 103187,
       "length": 19,
       "value": "\"user_role_cashier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103194,
+      "offset": 103218,
       "length": 14,
       "value": "\"スタッフ\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103283,
+      "offset": 103307,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103298,
+      "offset": 103322,
       "length": 19,
       "value": "\"user_role_manager\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103329,
+      "offset": 103353,
       "length": 20,
       "value": "\"マネージャー\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103416,
+      "offset": 103440,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103431,
+      "offset": 103455,
       "length": 17,
       "value": "\"user_role_owner\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103460,
+      "offset": 103484,
       "length": 14,
       "value": "\"オーナー\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103538,
+      "offset": 103562,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103553,
+      "offset": 103577,
       "length": 20,
       "value": "\"user_status_active\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103585,
+      "offset": 103609,
       "length": 8,
       "value": "\"有効\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103663,
+      "offset": 103687,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103678,
+      "offset": 103702,
       "length": 23,
       "value": "\"user_status_suspended\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103713,
+      "offset": 103737,
       "length": 11,
       "value": "\"停止中\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103964,
+      "offset": 103988,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 103979,
+      "offset": 104003,
       "length": 22,
       "value": "\"volume_error_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104013,
+      "offset": 104037,
       "length": 167,
       "value": "\"電子マネー決済は現在の音量設定では\nお使いいただけません。\n正しくお使いいただくためには\n音量を上げてください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104274,
+      "offset": 104298,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104289,
+      "offset": 104313,
       "length": 20,
       "value": "\"volume_error_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104321,
+      "offset": 104345,
       "length": 38,
       "value": "\"音量を大きくしてください\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104451,
+      "offset": 104475,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104466,
+      "offset": 104490,
       "length": 19,
       "value": "\"web_account_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104497,
+      "offset": 104521,
       "length": 37,
       "value": "\"STORES 決済 ウェブ管理画面\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104624,
+      "offset": 104648,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104639,
+      "offset": 104663,
       "length": 15,
       "value": "\"webpage_error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104666,
+      "offset": 104690,
       "length": 38,
       "value": "\"ページを開けませんでした\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104819,
+      "offset": 104843,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104834,
+      "offset": 104858,
       "length": 23,
       "value": "\"webpage_error_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104869,
+      "offset": 104893,
       "length": 56,
       "value": "\"時間をおいてもう一度お試しください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 104986,
+      "offset": 105010,
       "length": 13,
       "value": "\"Localizable\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
-      "kind": "StringLiteral",
-      "offset": 105001,
-      "length": 12,
-      "value": "\"wechat_pay\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
       "offset": 105025,
       "length": 12,
+      "value": "\"wechat_pay\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
+      "kind": "StringLiteral",
+      "offset": 105049,
+      "length": 12,
       "value": "\"WeChat Pay\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105109,
+      "offset": 105133,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105124,
+      "offset": 105148,
       "length": 22,
       "value": "\"wechat_pay_available\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105158,
+      "offset": 105182,
       "length": 14,
       "value": "\"利用可能\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105243,
+      "offset": 105267,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105258,
+      "offset": 105282,
       "length": 24,
       "value": "\"wechat_pay_unavailable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105294,
+      "offset": 105318,
       "length": 11,
       "value": "\"未契約\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105431,
+      "offset": 105455,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105446,
+      "offset": 105470,
       "length": 31,
       "value": "\"wechat_payment_failed_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105489,
+      "offset": 105513,
       "length": 60,
       "value": "\"WeChat Pay以外の支払方法をご案内ください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105651,
+      "offset": 105675,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105666,
+      "offset": 105690,
       "length": 29,
       "value": "\"wechat_payment_failed_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105707,
+      "offset": 105731,
       "length": 38,
       "value": "\"現在ご利用いただけません\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105873,
+      "offset": 105897,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105888,
+      "offset": 105912,
       "length": 29,
       "value": "\"wechat_payment_instructions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 105929,
+      "offset": 105953,
       "length": 58,
       "value": "\"WeChat PayのQRコードを\n読み取って下さい。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106141,
+      "offset": 106165,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106156,
+      "offset": 106180,
       "length": 32,
       "value": "\"wechat_payment_pending_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106200,
+      "offset": 106224,
       "length": 82,
       "value": "\"お客さまのWeChatアプリから\n暗証番号を入力してください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106379,
+      "offset": 106403,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106394,
+      "offset": 106418,
       "length": 30,
       "value": "\"wechat_payment_pending_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106436,
+      "offset": 106460,
       "length": 32,
       "value": "\"暗証番号入力の待機中\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106589,
+      "offset": 106613,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106604,
+      "offset": 106628,
       "length": 34,
       "value": "\"wechat_payment_timed_out_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106650,
+      "offset": 106674,
       "length": 53,
       "value": "\"再度読み取りをおこなってください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106820,
+      "offset": 106844,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106835,
+      "offset": 106859,
       "length": 32,
       "value": "\"wechat_payment_timed_out_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 106879,
+      "offset": 106903,
       "length": 46,
       "value": "\"暗証番号\n確認できませんでした\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107052,
+      "offset": 107076,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107067,
+      "offset": 107091,
       "length": 31,
       "value": "\"wechat_practice_error_message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107110,
+      "offset": 107134,
       "length": 61,
       "value": "\"テスト専用QRコードを読み取ってください。\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107287,
+      "offset": 107311,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107302,
+      "offset": 107326,
       "length": 29,
       "value": "\"wechat_practice_error_title\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107343,
+      "offset": 107367,
       "length": 52,
       "value": "\"このQRコードはお使いいただけません\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107446,
+      "offset": 107470,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107461,
+      "offset": 107485,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Generated\/Public\/L10n.swift",
       "kind": "StringLiteral",
-      "offset": 107478,
+      "offset": 107502,
       "length": 8,
       "value": "\"はい\""
     },
@@ -76779,14 +76410,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Transaction Detail\/TransactionDetailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14603,
+      "offset": 14594,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/STORESPaymentsSDK\/Sources\/Scenes\/Transaction Detail\/TransactionDetailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14652,
+      "offset": 14643,
       "length": 4,
       "value": "true"
     },
