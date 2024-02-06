@@ -42,7 +42,7 @@ final class ViewController: UIViewController {
          決済処理を実行します
          */
         STP.payment(
-            presentOn: self,
+            presentOn: self, 
             amount: 100,
             memo: "Memo") { transactionType in
                 /*
